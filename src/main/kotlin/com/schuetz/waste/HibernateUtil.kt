@@ -9,34 +9,30 @@ object HibernateUtil {
     private var registry: StandardServiceRegistry? = null
     private var sessionFactory: SessionFactory? = null
 
-    fun getSessionFactory(): SessionFactory? {
-        if (sessionFactory == null) {
-            try {
-                // Create registry
-                val registry = StandardServiceRegistryBuilder().configure().build()
-                // Create MetadataSources
-                val sources = MetadataSources(registry)
-                // Create Metadata
-                val metadata = sources.metadataBuilder.build()
-                // Create SessionFactory
-                sessionFactory = metadata.sessionFactoryBuilder.build()
+    fun getSessionFactory(): SessionFactory? = sessionFactory ?: {
+        try {
+            val registry = StandardServiceRegistryBuilder().configure().build()
+            val sources = MetadataSources(registry)
+            val metadata = sources.metadataBuilder.build()
+            val sessionFactory = metadata.sessionFactoryBuilder.build()
 
-                this.registry = registry
+            this.registry = registry
+            this.sessionFactory = sessionFactory
 
-            } catch (e: Exception) {
-                e.printStackTrace()
-                if (registry != null) {
-                    StandardServiceRegistryBuilder.destroy(registry)
-                }
+            sessionFactory
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+            registry?.let {
+                StandardServiceRegistryBuilder.destroy(it)
             }
-
+            null
         }
-        return sessionFactory
-    }
+    }()
 
     fun shutdown() {
-        if (registry != null) {
-            StandardServiceRegistryBuilder.destroy(registry)
+        registry?.let {
+            StandardServiceRegistryBuilder.destroy(it)
         }
     }
 }
