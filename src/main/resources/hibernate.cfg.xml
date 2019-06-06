@@ -40,6 +40,10 @@
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
         <property name="hibernate.jdbc.time_zone">UTC</property>
 
+        <!-- Fixes (apparently harmless, just shows up in logs) exception java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented. -->
+        <!-- Src https://github.com/pgjdbc/pgjdbc/issues/1102#issuecomment-398036270 -->
+        <property name="hibernate.jdbc.lob.non_contextual_creation">true</property>
+
         <mapping class="com.schuetz.waste.Item" />
     </session-factory>
 </hibernate-configuration>
