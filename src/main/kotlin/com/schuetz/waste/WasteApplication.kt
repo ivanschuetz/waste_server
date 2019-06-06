@@ -1,7 +1,7 @@
 package com.schuetz.waste
 
-import org.hibernate.Session
-import org.hibernate.Transaction
+import com.schuetz.waste.HibernateUtil.inTransaction
+import com.schuetz.waste.HibernateUtil.openSession
 import org.slf4j.LoggerFactory
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -23,26 +23,6 @@ class WasteApplication : CommandLineRunner {
         val items = openSession()?.createQuery("from Item", Item::class.java)?.list()
         items?.forEach {
             log.info("item: $it")
-        }
-    }
-
-    fun openSession(): Session? = HibernateUtil.getSessionFactory()?.openSession() ?: {
-        log.error("Couldn't open a hibernate session.")
-        null
-    }()
-
-    fun inTransaction(f: (Session) -> Unit) {
-        val session = openSession() ?: return
-        var transaction: Transaction? = null
-        try {
-            session.use {
-                transaction = it.beginTransaction()
-                f(it)
-                transaction?.commit()
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-            transaction?.rollback()
         }
     }
 }
