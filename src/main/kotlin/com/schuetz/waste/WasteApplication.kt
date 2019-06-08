@@ -16,7 +16,7 @@ class WasteApplication : CommandLineRunner {
     private val log = LoggerFactory.getLogger(WasteApplication::class.java)
 
     override fun run(vararg args: String?) {
-        testDatabase()
+//        testDatabase()
     }
 
     private fun testDatabase() {

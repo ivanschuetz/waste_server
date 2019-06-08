@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class ItemsController(val itemDao: ItemDao) {
+class ItemsController(val itemSuggestionsDao: ItemSuggestionsDao) {
 
     @GetMapping("/items")
     @ResponseBody
-    fun items(): List<Item> = itemDao.items()
+    fun items(): List<ItemSuggestionDTO> = itemSuggestionsDao.items()
 
     @GetMapping("/search/{term}")
     @ResponseBody
-    fun search(@PathVariable term: String): List<Item> = itemDao.search(term)
+    fun search(@PathVariable term: String): List<ItemSuggestionDTO> = itemSuggestionsDao.search(term)
 }

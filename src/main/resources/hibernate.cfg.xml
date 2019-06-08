@@ -45,5 +45,7 @@
         <property name="hibernate.jdbc.lob.non_contextual_creation">true</property>
 
         <mapping class="com.schuetz.waste.Item" />
+        <mapping class="com.schuetz.waste.Container" />
+        <mapping class="com.schuetz.waste.ItemContainer" />
     </session-factory>
 </hibernate-configuration>

@@ -1,10 +1,21 @@
 package com.schuetz.waste
 
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.kotlin.KotlinModule
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+
 
 @Configuration
 class AppConfig {
     @Bean
-    fun itemDao(): ItemDao = ItemDao()
+    fun itemDao(): ItemSuggestionsDao = ItemSuggestionsDao()
+
+    @Bean
+    fun containerDao(): ContainerDao = ContainerDao()
+
+    @Bean
+    fun objectMapper() = ObjectMapper().apply {
+        registerModule(KotlinModule())
+    }
 }
