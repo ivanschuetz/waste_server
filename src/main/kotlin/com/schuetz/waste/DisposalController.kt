@@ -11,7 +11,4 @@ class DisposalController(val containerDao: ContainerDao) {
     @GetMapping("/disp/{itemId}")
     @ResponseBody
     fun containers(@PathVariable itemId: Long): List<ContainerDTO> = containerDao.containers(itemId)
-        .mapNotNull { container ->
-            container.getId()?.let { ContainerDTO(it, container.name ?: "", container.color ?: "") }
-        }
 }

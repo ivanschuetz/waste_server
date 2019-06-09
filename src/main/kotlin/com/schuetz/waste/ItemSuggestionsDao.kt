@@ -1,22 +1,19 @@
 package com.schuetz.waste
 
-import com.schuetz.waste.HibernateUtil.openSession
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.web.bind.annotation.PathVariable
+import java.sql.ResultSet
 
 class ItemSuggestionsDao {
-    fun items(): List<ItemSuggestionDTO> = openSession()
-        ?.createQuery("from Item", Item::class.java)
-        ?.list()
-        ?.toSuggestions()
-        ?: emptyList()
+    @Autowired
+    lateinit var jdbcTemplate: JdbcTemplate
 
-    fun search(@PathVariable term: String): List<ItemSuggestionDTO> = openSession()
-        ?.createQuery("from Item i where lower(i.name) LIKE lower(:term)", Item::class.java)
-        ?.setParameter("term", "%$term%")
-        ?.list()
-        ?.toSuggestions()
-        ?: emptyList()
-
-    private fun List<Item>.toSuggestions() =
-        mapNotNull { item -> item.getId()?.let { ItemSuggestionDTO(it, item.name) } }
+    fun search(@PathVariable term: String): List<ItemSuggestionDTO> = jdbcTemplate.query(
+        "select * from item where name like ?", arrayOf("%$term%")) { result: ResultSet, _: Int ->
+            ItemSuggestionDTO(
+                result.getLong("id"),
+                result.getString("name")
+            )
+        }
 }

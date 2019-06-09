@@ -1,13 +1,24 @@
 package com.schuetz.waste
 
-import com.schuetz.waste.HibernateUtil.openSession
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.jdbc.core.JdbcTemplate
+import java.sql.ResultSet
 
 class ContainerDao {
-    fun containers(itemId: Long): List<Container> =
-        openSession()
-        ?.createQuery("from Item where id = :id", Item::class.java)
-        ?.setParameter("id", itemId)
-        ?.uniqueResult()
-        ?.let { it.containers.sortedBy { it.prio }.mapNotNull { it.container } }
-        ?: emptyList()
+    @Autowired
+    lateinit var jdbcTemplate: JdbcTemplate
+
+    fun containers(itemId: Long): List<ContainerDTO> = jdbcTemplate.query(
+        "select c.id, c.name, c.color " +
+            "from item i " +
+            "inner join item_category ic on i.id = ic.item_id " +
+            "inner join category_container cc on ic.category_id = cc.category_id " +
+            "inner join container c on cc.container_id = c.id " +
+            "where i.id = ?", arrayOf(itemId)) { result: ResultSet, _: Int ->
+                ContainerDTO(
+                    result.getLong("id"),
+                    result.getString("name"),
+                    result.getString("color")
+                )
+            }
 }

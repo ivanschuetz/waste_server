@@ -4,28 +4,7 @@ plugins {
 	kotlin("jvm") version "1.3.31"
 	id("org.springframework.boot") version "2.1.5.RELEASE" apply true
 	id("io.spring.dependency-management") version "1.0.7.RELEASE" apply true
-    id("org.jetbrains.kotlin.plugin.noarg") version "1.3.31" apply true
-    id("org.jetbrains.kotlin.plugin.allopen") version "1.3.31" apply true
-    id("org.jetbrains.kotlin.plugin.jpa") version "1.3.31" apply true
 	kotlin("plugin.spring") version "1.3.31" apply true
-}
-
-//
-//// https://spring.io/blog/2016/12/16/dependency-management-plugin-1-0-0-rc1
-//dependencyManagement {
-//    imports {
-//        mavenBom("org.springframework.boot:spring-boot-parent:$2.1.5.RELEASE")
-//    }
-//}
-//
-//noArg {
-//    annotation("javax.persistence.Entity")
-//}
-
-allOpen {
-    annotation("javax.persistence.Entity")
-    annotation("javax.persistence.MappedSuperclass")
-    annotation("javax.persistence.Embeddable")
 }
 
 group = "com.schuetz"
@@ -51,11 +30,10 @@ dependencies {
 	implementation("com.h2database:h2")
 	implementation("mysql:mysql-connector-java")
 	implementation("org.postgresql:postgresql")
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.hibernate:hibernate-testing")
     testImplementation("com.h2database:h2")
 }
 
