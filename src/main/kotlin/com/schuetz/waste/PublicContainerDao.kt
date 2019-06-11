@@ -9,7 +9,7 @@ class PublicContainerDao {
     lateinit var jdbcTemplate: JdbcTemplate
 
     fun publicContainers(itemId: Long): List<PContainerDTO> = jdbcTemplate.query(
-        "select c.id, c.name, c.address " +
+        "select c.id, c.name, c.address, c.lat, c.lon " +
             "from item i " +
             "inner join item_category ic on i.id = ic.item_id " +
             "inner join category_p_container cc on ic.category_id = cc.category_id " +
@@ -18,7 +18,9 @@ class PublicContainerDao {
                 PContainerDTO(
                     result.getLong("id"),
                     result.getString("name"),
-                    result.getString("address")
+                    result.getString("address"),
+                    result.getFloat("lat"),
+                    result.getFloat("lon")
                 )
     }
 }
