@@ -59,6 +59,8 @@ CREATE TABLE IF NOT EXISTS p_container
   id              serial,
   name            VARCHAR(150) NOT NULL,
   address         VARCHAR(150) NOT NULL,
+  company         VARCHAR(150) NOT NULL,
+  phone           VARCHAR(150),
   lat             float NOT NULL,
   lon             float NOT NULL,
   PRIMARY KEY     (id),
@@ -123,9 +125,12 @@ INSERT INTO category(id, name) VALUES(6, 'Hausmüll') ON CONFLICT (name) DO UPDA
 INSERT INTO category(id, name) VALUES(7, 'Bio') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO category(id, name) VALUES(8, 'Buntglas') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 
-INSERT INTO p_container(id, name, address, lat, lon) VALUES(0, 'Recyclinghof Ilsenburger Straße', 'Ilsenburger Straße 18 - 20 10589 Berlin (Charlottenburg-Wilmersdorf)', 52.526746, 13.311367) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, lat, lon) VALUES(1, 'Recyclinghof Behmstraße', 'Behmstraße 74 10439 Berlin (Pankow)', 52.550883, 13.402125) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, lat, lon) VALUES(2, 'Recyclinghof Asgardstraße', 'Asgardstraße 3 Romain-Rolland-Straße 13089 Berlin (Pankow)', 52.580358, 13.436043) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
+INSERT INTO p_container(id, name, address, company, phone, lat, lon)
+VALUES(0, 'Recyclinghof Ilsenburger Straße', 'Ilsenburger Straße 18 - 20 10589 Berlin (Charlottenburg-Wilmersdorf)', 'BSR', null, 52.526746, 13.311367) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
+INSERT INTO p_container(id, name, address, company, phone, lat, lon)
+VALUES(1, 'Recyclinghof Behmstraße', 'Behmstraße 74 10439 Berlin (Pankow)', 'BSR', null, 52.550883, 13.402125) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
+INSERT INTO p_container(id, name, address, company, phone, lat, lon)
+VALUES(2, 'Recyclinghof Asgardstraße', 'Asgardstraße 3 Romain-Rolland-Straße 13089 Berlin (Pankow)', 'BSR', null, 52.580358, 13.436043) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
 
 INSERT INTO item(id, name) VALUES(0, 'Fruits') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item(id, name) VALUES(1, 'Batteries') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
