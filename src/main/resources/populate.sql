@@ -1,6 +1,5 @@
 --\i /Users/ischuetz/dev/waste/server/src/main/resources/populate.sql
 
-DROP TABLE item_container;
 DROP TABLE category_p_container;
 DROP TABLE category_container;
 DROP TABLE item_category;
@@ -61,6 +60,7 @@ CREATE TABLE IF NOT EXISTS p_container
   address         VARCHAR(150) NOT NULL,
   company         VARCHAR(150) NOT NULL,
   phone           VARCHAR(150),
+  url             VARCHAR(150),
   lat             float NOT NULL,
   lon             float NOT NULL,
   PRIMARY KEY     (id),
@@ -125,12 +125,18 @@ INSERT INTO category(id, name) VALUES(6, 'Hausmüll') ON CONFLICT (name) DO UPDA
 INSERT INTO category(id, name) VALUES(7, 'Bio') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO category(id, name) VALUES(8, 'Buntglas') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 
-INSERT INTO p_container(id, name, address, company, phone, lat, lon)
-VALUES(0, 'Recyclinghof Ilsenburger Straße', 'Ilsenburger Straße 18 - 20 10589 Berlin (Charlottenburg-Wilmersdorf)', 'BSR', null, 52.526746, 13.311367) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, company, phone, lat, lon)
-VALUES(1, 'Recyclinghof Behmstraße', 'Behmstraße 74 10439 Berlin (Pankow)', 'BSR', null, 52.550883, 13.402125) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, company, phone, lat, lon)
-VALUES(2, 'Recyclinghof Asgardstraße', 'Asgardstraße 3 Romain-Rolland-Straße 13089 Berlin (Pankow)', 'BSR', null, 52.580358, 13.436043) ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
+INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
+VALUES(0, 'Recyclinghof Ilsenburger Straße', 'Ilsenburger Straße 18 - 20 10589 Berlin (Charlottenburg-Wilmersdorf)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=b7cbf766-6f66-467b-8571-1ec23f8eb6f6', 52.526746, 13.311367)
+ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
+INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
+VALUES(1, 'Recyclinghof Behmstraße', 'Behmstraße 74 10439 Berlin (Pankow)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=d2578029-138e-4eef-b911-fbbc57736119', 52.550883, 13.402125)
+ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
+INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
+VALUES(2, 'Recyclinghof Asgardstraße', 'Asgardstraße 3 Romain-Rolland-Straße 13089 Berlin (Pankow)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=7671a544-5cd0-452b-b063-3daf7a42a1fd', 52.580358, 13.436043)
+ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
+INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
+VALUES(3, 'Glas container', '10178 Berlin Oranienburger Straße ggü. Nr. 17 / Mombijoupark', 'Glasiglus', null, 'https://www.berlin-recycling.de/service/standorte-glasiglus', 52.523965, 13.3974459)
+ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
 
 INSERT INTO item(id, name) VALUES(0, 'Fruits') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item(id, name) VALUES(1, 'Batteries') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
@@ -140,6 +146,7 @@ INSERT INTO item(id, name) VALUES(4, 'Electronics') ON CONFLICT (name) DO UPDATE
 INSERT INTO item(id, name) VALUES(5, 'Diapers') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item(id, name) VALUES(6, 'Tetra pak') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item(id, name) VALUES(7, 'Furniture') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(8, 'White glas') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 
 INSERT INTO item_category(item_id, category_id) VALUES(0, 7) ON CONFLICT DO NOTHING;
 INSERT INTO item_category(item_id, category_id) VALUES(1, 3) ON CONFLICT DO NOTHING;
@@ -149,6 +156,7 @@ INSERT INTO item_category(item_id, category_id) VALUES(4, 5) ON CONFLICT DO NOTH
 INSERT INTO item_category(item_id, category_id) VALUES(5, 6) ON CONFLICT DO NOTHING;
 INSERT INTO item_category(item_id, category_id) VALUES(6, 0) ON CONFLICT DO NOTHING;
 INSERT INTO item_category(item_id, category_id) VALUES(7, 1) ON CONFLICT DO NOTHING;
+INSERT INTO item_category(item_id, category_id) VALUES(8, 4) ON CONFLICT DO NOTHING;
 
 INSERT INTO category_container(category_id, container_id) VALUES(0, 4) ON CONFLICT DO NOTHING;
 INSERT INTO category_container(category_id, container_id) VALUES(2, 6) ON CONFLICT DO NOTHING;
@@ -172,6 +180,7 @@ INSERT INTO category_p_container(category_id, p_container_id) VALUES(3, 2) ON CO
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(4, 0) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(4, 1) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(4, 2) ON CONFLICT DO NOTHING;
+INSERT INTO category_p_container(category_id, p_container_id) VALUES(4, 3) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(5, 0) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(5, 1) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(5, 2) ON CONFLICT DO NOTHING;
@@ -184,6 +193,7 @@ INSERT INTO category_p_container(category_id, p_container_id) VALUES(7, 2) ON CO
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 0) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 1) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 2) ON CONFLICT DO NOTHING;
+INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 3) ON CONFLICT DO NOTHING;
 
 INSERT INTO pickup_company(id, name, city, website, phone, email)
 VALUES(0, 'Kraftzone', 'Berlin', 'https://www.kraftzone.de', '03081799980', 'info@kraftzone.de')
