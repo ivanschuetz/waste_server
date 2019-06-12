@@ -4,10 +4,12 @@ DROP TABLE item_container;
 DROP TABLE category_p_container;
 DROP TABLE category_container;
 DROP TABLE item_category;
+DROP TABLE category_pickup_company;
 DROP TABLE container;
 DROP TABLE item;
 DROP TABLE category;
 DROP TABLE p_container;
+DROP TABLE pickup_company;
 
 CREATE TABLE IF NOT EXISTS container
 (
@@ -80,6 +82,29 @@ CREATE TABLE IF NOT EXISTS category_p_container
   UNIQUE          (category_id, p_container_id),
   FOREIGN KEY (category_id) REFERENCES category (id),
   FOREIGN KEY (p_container_id) REFERENCES p_container (id)
+);
+
+CREATE TABLE IF NOT EXISTS pickup_company
+(
+  id serial,
+  name VARCHAR(150) NOT NULL,
+  city VARCHAR(150) NOT NULL,
+  website VARCHAR(150) NOT NULL,
+  phone VARCHAR(150) NOT NULL,
+  email VARCHAR(150),
+  PRIMARY KEY (id),
+  UNIQUE (name)
+);
+
+CREATE TABLE IF NOT EXISTS category_pickup_company
+(
+  category_id INTEGER,
+  company_id INTEGER,
+  min_weight FLOAT,
+  website VARCHAR(150),
+  UNIQUE (category_id, company_id),
+  FOREIGN KEY (category_id) REFERENCES category (id),
+  FOREIGN KEY (company_id) REFERENCES pickup_company (id)
 );
 
 GRANT CONNECT ON DATABASE waste TO waste_app;
@@ -164,6 +189,16 @@ INSERT INTO category_p_container(category_id, p_container_id) VALUES(7, 2) ON CO
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 0) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 1) ON CONFLICT DO NOTHING;
 INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 2) ON CONFLICT DO NOTHING;
+
+INSERT INTO pickup_company(id, name, city, website, phone, email)
+VALUES(0, 'Kraftzone', 'Berlin', 'https://www.kraftzone.de', '03081799980', 'info@kraftzone.de')
+ON CONFLICT (name) DO UPDATE SET city = EXCLUDED.city, website = EXCLUDED.website, phone = EXCLUDED.phone, email = EXCLUDED.email;
+INSERT INTO pickup_company(id, name, city, website, phone, email)
+VALUES(1, 'Sondermann', 'Berlin', 'https://www.sondermann-sperrmuell.de', '030403674330', 'berlinentsorgung@gmail.com')
+ON CONFLICT (name) DO UPDATE SET city = EXCLUDED.city, website = EXCLUDED.website, phone = EXCLUDED.phone, email = EXCLUDED.email;
+
+INSERT INTO category_pickup_company(category_id, company_id, min_weight, website) VALUES(5, 0, null, 'https://www.kraftzone.de/elektroschrott-entsorgung-berlin') ON CONFLICT DO NOTHING;
+INSERT INTO category_pickup_company(category_id, company_id, min_weight, website) VALUES(1, 1, null, null) ON CONFLICT DO NOTHING;
 
 --INSERT INTO item_container(item_id, container_id, prio) VALUES(0, 2, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
 ----INSERT INTO item_container(item_id, container_id, prio) VALUES(0, 0, 1) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
