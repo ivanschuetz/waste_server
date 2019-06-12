@@ -28,16 +28,6 @@ CREATE TABLE IF NOT EXISTS item
   UNIQUE          (name)
 );
 
---CREATE TABLE IF NOT EXISTS item_container
---(
---  item_id         INTEGER,
---  container_id    INTEGER,
---  prio            INTEGER,
---  UNIQUE          (item_id, container_id),
---  FOREIGN KEY (item_id) REFERENCES item (id),
---  FOREIGN KEY (container_id) REFERENCES container (id)
---);
-
 CREATE TABLE IF NOT EXISTS category
 (
   id              serial,
@@ -199,14 +189,3 @@ ON CONFLICT (name) DO UPDATE SET city = EXCLUDED.city, website = EXCLUDED.websit
 
 INSERT INTO category_pickup_company(category_id, company_id, min_weight, website) VALUES(5, 0, null, 'https://www.kraftzone.de/elektroschrott-entsorgung-berlin') ON CONFLICT DO NOTHING;
 INSERT INTO category_pickup_company(category_id, company_id, min_weight, website) VALUES(1, 1, null, null) ON CONFLICT DO NOTHING;
-
---INSERT INTO item_container(item_id, container_id, prio) VALUES(0, 2, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
-----INSERT INTO item_container(item_id, container_id, prio) VALUES(0, 0, 1) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
-----INSERT INTO item_container(item_id, container_id, prio) VALUES(1, 3, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
---INSERT INTO item_container(item_id, container_id, prio) VALUES(2, 0, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
---INSERT INTO item_container(item_id, container_id, prio) VALUES(3, 0, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
---INSERT INTO item_container(item_id, container_id, prio) VALUES(4, 1, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
---INSERT INTO item_container(item_id, container_id, prio) VALUES(4, 0, 1) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
---INSERT INTO item_container(item_id, container_id, prio) VALUES(5, 0, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
---INSERT INTO item_container(item_id, container_id, prio) VALUES(6, 4, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
---INSERT INTO item_container(item_id, container_id, prio) VALUES(7, 5, 0) ON CONFLICT (item_id, container_id) DO UPDATE SET prio = EXCLUDED.prio;
