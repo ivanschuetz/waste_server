@@ -10,7 +10,10 @@ class ItemSuggestionsDao {
     lateinit var jdbcTemplate: JdbcTemplate
 
     fun search(@PathVariable term: String): List<ItemSuggestionDTO> = jdbcTemplate.query(
-        "select * from item where name like ?", arrayOf("%$term%")) { result: ResultSet, _: Int ->
+        "select i.id, t.trans as name " +
+            "from item i " +
+            "inner join translations t on i.name = t.tkey " +
+            "where name like ?", arrayOf("%$term%")) { result: ResultSet, _: Int ->
             ItemSuggestionDTO(
                 result.getLong("id"),
                 result.getString("name")

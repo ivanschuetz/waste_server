@@ -1,5 +1,6 @@
 --\i /Users/ischuetz/dev/waste/server/src/main/resources/populate.sql
 
+DROP TABLE translations;
 DROP TABLE category_p_container;
 DROP TABLE category_container;
 DROP TABLE item_category;
@@ -9,6 +10,14 @@ DROP TABLE item;
 DROP TABLE category;
 DROP TABLE p_container;
 DROP TABLE pickup_company;
+
+CREATE TABLE IF NOT EXISTS translations
+(
+  tkey VARCHAR(150),
+  lang VARCHAR(7),
+  trans VARCHAR(1000),
+  UNIQUE (tkey, lang)
+);
 
 CREATE TABLE IF NOT EXISTS container
 (
@@ -105,25 +114,54 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO waste_app
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO waste_app;
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO waste_app;
 
-INSERT INTO container(id, name, color) VALUES(0, 'Restmüll', '000000') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
-INSERT INTO container(id, name, color) VALUES(1, 'Elektro', 'FFA500') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
-INSERT INTO container(id, name, color) VALUES(2, 'Bio', 'A0522D') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
---INSERT INTO container(id, name, color) VALUES(3, 'Batterien', 'D3D3D3') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
-INSERT INTO container(id, name, color) VALUES(4, 'Gelbe Tonne', 'FFFF00') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
-INSERT INTO container(id, name, color) VALUES(5, 'Sperrmüll', '666666') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
-INSERT INTO container(id, name, color) VALUES(6, 'Blaue Tonne', '0000FF') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
-INSERT INTO container(id, name, color) VALUES(7, 'Weißglas', 'FFFFFF') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
-INSERT INTO container(id, name, color) VALUES(8, 'Buntglas', '00FF00') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+INSERT INTO translations(tkey, lang, trans) VALUES('container_general', 'de', 'Restmüll') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('container_electro', 'de', 'Elektro') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('container_bio', 'de', 'Bio') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('container_yellow', 'de', 'Gelbe Tonne') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('container_bulky', 'de', 'Sperrmüll') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('container_blue', 'de', 'Blaue Tonne') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_white', 'de', 'Weißglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_color', 'de', 'Buntglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 
-INSERT INTO category(id, name) VALUES(0, 'Verpackungen') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO category(id, name) VALUES(1, 'Sperrmüll') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO category(id, name) VALUES(2, 'Papier') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO category(id, name) VALUES(3, 'Energiesparlampen') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO category(id, name) VALUES(4, 'Weißglas') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO category(id, name) VALUES(5, 'Elektro') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO category(id, name) VALUES(6, 'Hausmüll') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO category(id, name) VALUES(7, 'Bio') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO category(id, name) VALUES(8, 'Buntglas') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_packaging', 'de', 'Verpackungen') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_bulky', 'de', 'Sperrmüll') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_paper', 'de', 'Papier') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_energy_saving_lamps', 'de', 'Energiesparlampen') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_white', 'de', 'Weißglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_electro', 'de', 'Elektro') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_household', 'de', 'Hausmüll') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_bio', 'de', 'Bio') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_color', 'de', 'Buntglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+
+INSERT INTO translations(tkey, lang, trans) VALUES('item_fruits', 'de', 'Obst') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_battery', 'de', 'Batterien') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_light_bulb', 'de', 'Glühbirne') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_neon_lamp', 'de', 'Neonlampe') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_electro', 'de', 'Elektro') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_diapers', 'de', 'Windeln') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_tetra_pak', 'de', 'Tetra pak') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_furniture', 'de', 'Möbel') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_glas_white', 'de', 'Weißglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+
+INSERT INTO container(id, name, color) VALUES(0, 'container_general', '000000') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+INSERT INTO container(id, name, color) VALUES(1, 'container_electro', 'FFA500') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+INSERT INTO container(id, name, color) VALUES(2, 'container_bio', 'A0522D') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+--INSERT INTO container(id, name, color) VALUES(3, 'Batterien', 'D3D3D3') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+INSERT INTO container(id, name, color) VALUES(4, 'container_yellow', 'FFFF00') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+INSERT INTO container(id, name, color) VALUES(5, 'container_bulky', '666666') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+INSERT INTO container(id, name, color) VALUES(6, 'container_blue', '0000FF') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+INSERT INTO container(id, name, color) VALUES(7, 'container_glas_white', 'FFFFFF') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+INSERT INTO container(id, name, color) VALUES(8, 'container_glas_color', '00FF00') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
+
+INSERT INTO category(id, name) VALUES(0, 'category_packaging') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(1, 'category_bulky') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(2, 'category_paper') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(3, 'category_energy_saving_lamps') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(4, 'category_glas_white') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(5, 'category_electro') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(6, 'category_household') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(7, 'category_bio') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(8, 'category_glas_color') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 
 INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
 VALUES(0, 'Recyclinghof Ilsenburger Straße', 'Ilsenburger Straße 18 - 20 10589 Berlin (Charlottenburg-Wilmersdorf)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=b7cbf766-6f66-467b-8571-1ec23f8eb6f6', 52.526746, 13.311367)
@@ -138,15 +176,15 @@ INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
 VALUES(3, 'Glas container', '10178 Berlin Oranienburger Straße ggü. Nr. 17 / Mombijoupark', 'Glasiglus', null, 'https://www.berlin-recycling.de/service/standorte-glasiglus', 52.523965, 13.3974459)
 ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
 
-INSERT INTO item(id, name) VALUES(0, 'Fruits') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(1, 'Batteries') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(2, 'Light bulb') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(3, 'Neon lamp') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(4, 'Electronics') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(5, 'Diapers') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(6, 'Tetra pak') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(7, 'Furniture') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(8, 'White glas') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(0, 'item_fruits') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(1, 'item_battery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(2, 'item_light_bulb') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(3, 'item_neon_lamp') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(4, 'item_electro') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(5, 'item_diapers') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(6, 'item_tetra_pak') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(7, 'item_furniture') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(8, 'item_glas_white') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 
 INSERT INTO item_category(item_id, category_id) VALUES(0, 7) ON CONFLICT DO NOTHING;
 INSERT INTO item_category(item_id, category_id) VALUES(1, 3) ON CONFLICT DO NOTHING;

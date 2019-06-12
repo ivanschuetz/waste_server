@@ -9,11 +9,12 @@ class ContainerDao {
     lateinit var jdbcTemplate: JdbcTemplate
 
     fun containers(itemId: Long): List<ContainerDTO> = jdbcTemplate.query(
-        "select c.id, c.name, c.color " +
+        "select c.id, t.trans as name, c.color " +
             "from item i " +
             "inner join item_category ic on i.id = ic.item_id " +
             "inner join category_container cc on ic.category_id = cc.category_id " +
             "inner join container c on cc.container_id = c.id " +
+            "inner join translations t on c.name = t.tkey " +
             "where i.id = ?", arrayOf(itemId)) { result: ResultSet, _: Int ->
                 ContainerDTO(
                     result.getLong("id"),
