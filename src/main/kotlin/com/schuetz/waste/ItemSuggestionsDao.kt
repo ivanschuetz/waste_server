@@ -13,7 +13,7 @@ class ItemSuggestionsDao {
         "select i.id, t.trans as name " +
             "from item i " +
             "inner join translations t on i.name = t.tkey " +
-            "where t.trans like ?", arrayOf("%$term%")) { result: ResultSet, _: Int ->
+            "where lower(t.trans) like ?", arrayOf("%${term.toLowerCase()}%")) { result: ResultSet, _: Int ->
             ItemSuggestionDTO(
                 result.getLong("id"),
                 result.getString("name")
