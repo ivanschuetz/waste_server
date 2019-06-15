@@ -5,6 +5,7 @@ DROP TABLE category_p_container;
 DROP TABLE category_container;
 DROP TABLE item_category;
 DROP TABLE category_pickup_company;
+DROP TABLE p_container_hours;
 DROP TABLE container;
 DROP TABLE item;
 DROP TABLE category;
@@ -13,9 +14,9 @@ DROP TABLE pickup_company;
 
 CREATE TABLE IF NOT EXISTS translations
 (
-  tkey VARCHAR(150),
-  lang VARCHAR(7),
-  trans VARCHAR(1000),
+  tkey VARCHAR(150) NOT NULL,
+  lang VARCHAR(7) NOT NULL,
+  trans VARCHAR(1000) NOT NULL,
   UNIQUE (tkey, lang)
 );
 
@@ -46,8 +47,8 @@ CREATE TABLE IF NOT EXISTS category
 
 CREATE TABLE IF NOT EXISTS item_category
 (
-  item_id        INTEGER,
-  category_id    INTEGER,
+  item_id        INTEGER NOT NULL,
+  category_id    INTEGER NOT NULL,
   UNIQUE         (item_id, category_id),
   FOREIGN KEY (item_id) REFERENCES item (id),
   FOREIGN KEY (category_id) REFERENCES category (id)
@@ -55,8 +56,8 @@ CREATE TABLE IF NOT EXISTS item_category
 
 CREATE TABLE IF NOT EXISTS category_container
 (
-  category_id     INTEGER,
-  container_id    INTEGER,
+  category_id     INTEGER NOT NULL,
+  container_id    INTEGER NOT NULL,
   UNIQUE          (category_id, container_id),
   FOREIGN KEY (category_id) REFERENCES category (id),
   FOREIGN KEY (container_id) REFERENCES container (id)
@@ -72,17 +73,27 @@ CREATE TABLE IF NOT EXISTS p_container
   url             VARCHAR(150),
   lat             float NOT NULL,
   lon             float NOT NULL,
+  open            VARCHAR(2) NOT NULL,
   PRIMARY KEY     (id),
   UNIQUE          (address)
 );
 
 CREATE TABLE IF NOT EXISTS category_p_container
 (
-  category_id     INTEGER,
-  p_container_id    INTEGER,
+  category_id     INTEGER NOT NULL,
+  p_container_id    INTEGER NOT NULL,
   UNIQUE          (category_id, p_container_id),
   FOREIGN KEY (category_id) REFERENCES category (id),
   FOREIGN KEY (p_container_id) REFERENCES p_container (id)
+);
+
+CREATE TABLE IF NOT EXISTS p_container_hours
+(
+  p_container_id INTEGER NOT NULL,
+  weekday VARCHAR(2) NOT NULL,
+  start VARCHAR(50) NOT NULL,
+  finish VARCHAR(50) NOT NULL,
+  UNIQUE (p_container_id, weekday, start, finish)
 );
 
 CREATE TABLE IF NOT EXISTS pickup_company
@@ -99,8 +110,8 @@ CREATE TABLE IF NOT EXISTS pickup_company
 
 CREATE TABLE IF NOT EXISTS category_pickup_company
 (
-  category_id INTEGER,
-  company_id INTEGER,
+  category_id INTEGER NOT NULL,
+  company_id INTEGER NOT NULL,
   min_weight FLOAT,
   website VARCHAR(150),
   UNIQUE (category_id, company_id),
@@ -163,18 +174,34 @@ INSERT INTO category(id, name) VALUES(6, 'category_household') ON CONFLICT (name
 INSERT INTO category(id, name) VALUES(7, 'category_bio') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO category(id, name) VALUES(8, 'category_glas_color') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 
-INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
-VALUES(0, 'Recyclinghof Ilsenburger Straße', 'Ilsenburger Straße 18 - 20 10589 Berlin (Charlottenburg-Wilmersdorf)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=b7cbf766-6f66-467b-8571-1ec23f8eb6f6', 52.526746, 13.311367)
+INSERT INTO p_container(id, name, address, company, phone, url, lat, lon, open)
+VALUES(0, 'Recyclinghof Ilsenburger Straße', 'Ilsenburger Straße 18 - 20 10589 Berlin (Charlottenburg-Wilmersdorf)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=b7cbf766-6f66-467b-8571-1ec23f8eb6f6', 52.526746, 13.311367, 'h')
 ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
-VALUES(1, 'Recyclinghof Behmstraße', 'Behmstraße 74 10439 Berlin (Pankow)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=d2578029-138e-4eef-b911-fbbc57736119', 52.550883, 13.402125)
+INSERT INTO p_container(id, name, address, company, phone, url, lat, lon, open)
+VALUES(1, 'Recyclinghof Behmstraße', 'Behmstraße 74 10439 Berlin (Pankow)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=d2578029-138e-4eef-b911-fbbc57736119', 52.550883, 13.402125, 'h')
 ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
-VALUES(2, 'Recyclinghof Asgardstraße', 'Asgardstraße 3 Romain-Rolland-Straße 13089 Berlin (Pankow)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=7671a544-5cd0-452b-b063-3daf7a42a1fd', 52.580358, 13.436043)
+INSERT INTO p_container(id, name, address, company, phone, url, lat, lon, open)
+VALUES(2, 'Recyclinghof Asgardstraße', 'Asgardstraße 3 Romain-Rolland-Straße 13089 Berlin (Pankow)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=7671a544-5cd0-452b-b063-3daf7a42a1fd', 52.580358, 13.436043, 'h')
 ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, company, phone, url, lat, lon)
-VALUES(3, 'Glas container', '10178 Berlin Oranienburger Straße ggü. Nr. 17 / Mombijoupark', 'Glasiglus', null, 'https://www.berlin-recycling.de/service/standorte-glasiglus', 52.523965, 13.3974459)
+INSERT INTO p_container(id, name, address, company, phone, url, lat, lon, open)
+VALUES(3, 'Glas container', '10178 Berlin Oranienburger Straße ggü. Nr. 17 / Mombijoupark', 'Glasiglus', null, 'https://www.berlin-recycling.de/service/standorte-glasiglus', 52.523965, 13.3974459, 'a')
 ON CONFLICT (address) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
+
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'mo', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'tu', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'we', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'th', '09:30', '19:30');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'sa', '07:00', '15:30');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'mo', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'tu', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'we', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'th', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'sa', '07:00', '14:30');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'mo', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'tu', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'we', '07:00', '17:00');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'th', '09:30', '19:30');
+INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'sa', '07:00', '15:30');
 
 INSERT INTO item(id, name) VALUES(0, 'item_fruits') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item(id, name) VALUES(1, 'item_battery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
