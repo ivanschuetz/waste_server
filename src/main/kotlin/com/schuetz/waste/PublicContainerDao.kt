@@ -5,6 +5,13 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.schuetz.waste.Open.Always
 import com.schuetz.waste.Open.Hours
 import com.schuetz.waste.Open.Unknown
+import com.schuetz.waste.Weekday.FR
+import com.schuetz.waste.Weekday.MO
+import com.schuetz.waste.Weekday.SA
+import com.schuetz.waste.Weekday.SU
+import com.schuetz.waste.Weekday.TH
+import com.schuetz.waste.Weekday.TU
+import com.schuetz.waste.Weekday.WE
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.jdbc.core.JdbcTemplate
 import java.sql.ResultSet
@@ -62,17 +69,17 @@ class PublicContainerDao {
         OpeningHours(toWeekday(weekday), toHoursMins(start), toHoursMins(finish))
 
     private fun toHoursMins(str: String): HoursMins = str.split(":").let { tokens ->
-        HoursMins(tokens[0].toInt(), tokens[1].toInt())
+        HoursMins(tokens[0], tokens[1])
     }
 
     private fun toWeekday(weekdayStr: String) = when (weekdayStr) {
-        "mo" -> Weekday.MO
-        "tu" -> Weekday.TU
-        "we" -> Weekday.WE
-        "th" -> Weekday.TH
-        "fr" -> Weekday.FR
-        "sa" -> Weekday.SA
-        "su" -> Weekday.SU
+        "mo" -> MO
+        "tu" -> TU
+        "we" -> WE
+        "th" -> TH
+        "fr" -> FR
+        "sa" -> SA
+        "su" -> SU
         else -> throw RuntimeException("Invalid weekday string: $weekdayStr")
     }
 }

@@ -11,6 +11,6 @@ sealed class Open {
 
 data class OpeningHours(val weekday: Weekday, val start: HoursMins, val end: HoursMins)
 
-data class HoursMins(val hours: Int, val mins: Int)
+data class HoursMins(val hours: String, val mins: String)
 
 enum class Weekday { MO, TU, WE, TH, FR, SA, SU }
