@@ -11,6 +11,8 @@ INSERT INTO item(id, name) VALUES(9, 'item_clothes') ON CONFLICT (name) DO UPDAT
 
 INSERT INTO item(id, name) VALUES(10, 'item_med_passed') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(10, 6) ON CONFLICT DO NOTHING;
+--TODO add entry for meds category
+
 INSERT INTO item(id, name) VALUES(11, 'item_noodles_plastic_window') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(11, 2) ON CONFLICT DO NOTHING;
 INSERT INTO item(id, name) VALUES(12, 'item_energy_saving_lamp') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;

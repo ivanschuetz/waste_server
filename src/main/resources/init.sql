@@ -1,16 +1,14 @@
-
-
-DROP TABLE translations;
-DROP TABLE category_p_container;
-DROP TABLE category_container;
-DROP TABLE item_category;
-DROP TABLE category_pickup_company;
-DROP TABLE p_container_hours;
-DROP TABLE container;
-DROP TABLE item;
-DROP TABLE category;
-DROP TABLE p_container;
-DROP TABLE pickup_company;
+DROP TABLE IF EXISTS translations;
+DROP TABLE IF EXISTS category_p_container;
+DROP TABLE IF EXISTS category_container;
+DROP TABLE IF EXISTS item_category;
+DROP TABLE IF EXISTS category_pickup_company;
+DROP TABLE IF EXISTS p_container_hours;
+DROP TABLE IF EXISTS container;
+DROP TABLE IF EXISTS item;
+DROP TABLE IF EXISTS category;
+DROP TABLE IF EXISTS p_container;
+DROP TABLE IF EXISTS pickup_company;
 
 CREATE TABLE IF NOT EXISTS translations
 (
@@ -147,8 +145,9 @@ INSERT INTO translations(tkey, lang, trans) VALUES('category_bio', 'de', 'Bio') 
 INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_color', 'de', 'Buntglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_clothes', 'de', 'Klamotten') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_green', 'de', 'Grünglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
-INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap', 'de', 'Wertstofftonne') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_container', 'de', 'Wertstofftonne') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_brown', 'de', 'Braunglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_meds', 'de', 'Medikamente') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 
 INSERT INTO translations(tkey, lang, trans) VALUES('item_fruits', 'de', 'Obst') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_battery', 'de', 'Batterien') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
@@ -260,6 +259,52 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_chair', 'de', 'Stuhl') 
 INSERT INTO translations(tkey, lang, trans) VALUES('item_microwave', 'de', 'Mikrowelle') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cutlery', 'de', 'Besteck') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 
+INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_metal', 'de', 'Schrott') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_sanitary_ware', 'de', 'Sanitärkeramik') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_natural_cork', 'de', 'Naturkork') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_tiles', 'de', 'Mineralischer Bauschutt (Fliesen)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_brick', 'de', 'Ziegel') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_ceramic', 'de', 'Keramik') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_fluorescent_tube', 'de', 'Leuchtstoffröhren') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_energy_saving_lamps', 'de', 'Energiesparlampen') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_led', 'de', 'LEDs') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_greenery', 'de', 'Laub und Rasenschnitt') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_plastic_small', 'de', 'Kunststoffe - kleinteilig') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_small', 'de', 'kleinteiliger Schrott') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_battery_car', 'de', 'Kfz-Batterien') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_batteries_home', 'de', 'Haushaltsbatterien') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_white', 'de', 'Weißglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_green', 'de', 'Grünglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_brown', 'de', 'Braunglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_electro_small', 'de', 'Elektrokleingeräte') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_printer_cartridge', 'de', 'Druckerpatronen') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_cd', 'de', 'CDs') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_electro', 'de', 'Elektrogeräte') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_tires', 'de', 'Altreifen') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_wood', 'de', 'Altholz') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_files_confidential', 'de', 'Akten (vertraulich)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_painting', 'de', 'Altfarben') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_item_med_passed', 'de', 'Altmedikamente') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_oil', 'de', 'Altöl') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_cement_asbestos', 'de', 'Asbestzement') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_emulsion_paint', 'de', 'Dispersionsfarben') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_fire_extinguisher', 'de', 'Feuerlöscher') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_photo_chemicals_liquid', 'de', 'Fotochemikalien (flüssig)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_leachate', 'de', 'Laugen') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_thinner', 'de', 'Lösungsmittel') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_operator_resources_stained_with_oil', 'de', 'Ölverschmutzte Betriebsmittel') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_pesticide', 'de', 'Pestizide') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_mercury', 'de', 'Quecksilber und quecksilberhaltige Abfälle') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_cleaning_agent', 'de', 'Reinigungsmittel') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_harmful_substances', 'de', 'Schadstoffe') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_construction_waste', 'de', 'Bauabfälle') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_roofing_cardboard', 'de', 'Dachpappe') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_greenery', 'de', 'Laub') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_construction_non_minerals', 'de', 'Nichtmineralische Bauelemente') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_construction_tiles', 'de', 'Mineralischer Bauschutt (Fliesen)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_construction_brick', 'de', 'Mineralischer Bauschutt (Ziegel)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_construction_ceramic', 'de', 'Mineralischer Bauschutt (Keramik)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+
 INSERT INTO container(id, name, color) VALUES(0, 'container_general', '000000') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
 INSERT INTO container(id, name, color) VALUES(1, 'container_electro', 'FFA500') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
 INSERT INTO container(id, name, color) VALUES(2, 'container_bio', 'CC7722') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name, color = EXCLUDED.color;
@@ -285,35 +330,6 @@ INSERT INTO category(id, name) VALUES(9, 'category_clothes') ON CONFLICT (name) 
 INSERT INTO category(id, name) VALUES(10, 'category_scrap') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO category(id, name) VALUES(11, 'category_glas_brown') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 
-INSERT INTO p_container(id, name, address, company, phone, url, lat, lon, open)
-VALUES(0, 'Recyclinghof Ilsenburger Straße', 'Ilsenburger Straße 18 - 20 10589 Berlin (Charlottenburg-Wilmersdorf)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=b7cbf766-6f66-467b-8571-1ec23f8eb6f6', 52.526746, 13.311367, 'h')
-ON CONFLICT (id) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, company, phone, url, lat, lon, open)
-VALUES(1, 'Recyclinghof Behmstraße', 'Behmstraße 74 10439 Berlin (Pankow)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=d2578029-138e-4eef-b911-fbbc57736119', 52.550883, 13.402125, 'h')
-ON CONFLICT (id) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, company, phone, url, lat, lon, open)
-VALUES(2, 'Recyclinghof Asgardstraße', 'Asgardstraße 3 Romain-Rolland-Straße 13089 Berlin (Pankow)', 'BSR', null, 'https://www.bsr.de/recyclinghoefe-20503.php?currRCLocation=7671a544-5cd0-452b-b063-3daf7a42a1fd', 52.580358, 13.436043, 'h')
-ON CONFLICT (id) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-INSERT INTO p_container(id, name, address, company, phone, url, lat, lon, open)
-VALUES(3, 'Glas container', '10178 Berlin Oranienburger Straße ggü. Nr. 17 / Mombijoupark', 'Glasiglus', null, 'https://www.berlin-recycling.de/service/standorte-glasiglus', 52.523965, 13.3974459, 'a')
-ON CONFLICT (id) DO UPDATE SET address = EXCLUDED.address, company = EXCLUDED.company, phone = EXCLUDED.phone, url = EXCLUDED.url, lat = EXCLUDED.lat, lon = EXCLUDED.lon;
-
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'mo', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'tu', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'we', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'th', '09:30', '19:30');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(0, 'sa', '07:00', '15:30');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'mo', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'tu', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'we', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'th', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(1, 'sa', '07:00', '14:30');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'mo', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'tu', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'we', '07:00', '17:00');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'th', '09:30', '19:30');
-INSERT INTO p_container_hours(p_container_id, weekday, start, finish) VALUES(2, 'sa', '07:00', '15:30');
-
 INSERT INTO category_container(category_id, container_id) VALUES(0, 4) ON CONFLICT DO NOTHING;
 INSERT INTO category_container(category_id, container_id) VALUES(2, 6) ON CONFLICT DO NOTHING;
 INSERT INTO category_container(category_id, container_id) VALUES(4, 7) ON CONFLICT DO NOTHING;
@@ -322,36 +338,6 @@ INSERT INTO category_container(category_id, container_id) VALUES(7, 2) ON CONFLI
 INSERT INTO category_container(category_id, container_id) VALUES(8, 8) ON CONFLICT DO NOTHING;
 INSERT INTO category_container(category_id, container_id) VALUES(10, 10) ON CONFLICT DO NOTHING;
 INSERT INTO category_container(category_id, container_id) VALUES(11, 9) ON CONFLICT DO NOTHING;
-
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(0, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(0, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(0, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(1, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(1, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(1, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(2, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(2, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(2, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(3, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(3, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(3, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(4, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(4, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(4, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(4, 3) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(5, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(5, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(5, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(6, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(6, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(6, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(7, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(7, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(7, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 0) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 1) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 2) ON CONFLICT DO NOTHING;
-INSERT INTO category_p_container(category_id, p_container_id) VALUES(8, 3) ON CONFLICT DO NOTHING;
 
 INSERT INTO pickup_company(id, name, city, website, phone, email)
 VALUES(0, 'Kraftzone', 'Berlin', 'https://www.kraftzone.de', '03081799980', 'info@kraftzone.de')
