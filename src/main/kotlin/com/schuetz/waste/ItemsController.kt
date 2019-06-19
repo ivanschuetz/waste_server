@@ -2,6 +2,7 @@ package com.schuetz.waste
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestHeader
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RestController
 
@@ -9,5 +10,6 @@ import org.springframework.web.bind.annotation.RestController
 class ItemsController(val itemSuggestionsDao: ItemSuggestionsDao) {
     @GetMapping("/search/{term}")
     @ResponseBody
-    fun search(@PathVariable term: String): List<ItemSuggestionDTO> = itemSuggestionsDao.search(term)
+    fun search(@PathVariable term: String, @RequestHeader("lang") lang: String): List<ItemSuggestionDTO> =
+        itemSuggestionsDao.search(term, lang)
 }
