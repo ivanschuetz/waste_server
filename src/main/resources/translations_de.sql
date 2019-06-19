@@ -17,7 +17,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_white', 'de', 
 INSERT INTO translations(tkey, lang, trans) VALUES('category_electro', 'de', 'Elektro') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_household', 'de', 'Restmüll') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_bio', 'de', 'Bio') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
-INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_color', 'de', 'Buntglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_clothes', 'de', 'Klamotten') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_green', 'de', 'Grünglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_container', 'de', 'Wertstofftonne') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
@@ -38,7 +37,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_med_passed', 'de', 'Abg
 INSERT INTO translations(tkey, lang, trans) VALUES('item_noodles_plastic_window', 'de', 'Nudelverpackung mit Plastikfenster') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_energy_saving_lamp', 'de', 'Energiesparlampe') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_coffee_filter_unbleached', 'de', 'Kaffeefilter (ungebleicht)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
-INSERT INTO translations(tkey, lang, trans) VALUES('item_cheese_rind_unwaxed', 'de', 'Käserinde (ohne Wachs)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cheese_rind_unwaxed', 'de', 'Käserinde (ohne Wachs)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_tempo', 'de', 'Tempo') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_baking_paper', 'de', 'Backpapier') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
@@ -146,8 +144,8 @@ INSERT INTO translations(tkey, lang, trans) VALUES('category_led', 'de', 'LEDs')
 INSERT INTO translations(tkey, lang, trans) VALUES('category_greenery', 'de', 'Laub und Rasenschnitt') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_plastic_small', 'de', 'Kunststoffe - kleinteilig') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_small', 'de', 'kleinteiliger Schrott') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
-INSERT INTO translations(tkey, lang, trans) VALUES('category_battery_car', 'de', 'Kfz-Batterien') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
-INSERT INTO translations(tkey, lang, trans) VALUES('category_batteries_home', 'de', 'Haushaltsbatterien') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_battery_car', 'de', 'Kfz-Batterie') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_batteries_home', 'de', 'Haushaltsbatterie') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_white', 'de', 'Weißglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_green', 'de', 'Grünglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_brown', 'de', 'Braunglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
