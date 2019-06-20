@@ -222,9 +222,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(81, 0) ON CONFLICT DO NOT
 INSERT INTO item(id, name) VALUES(82, 'item_paper_laminated') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(82, 6) ON CONFLICT DO NOTHING;
 
-INSERT INTO item(id, name) VALUES(82, 'item_glas_white') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item_category(item_id, category_id) VALUES(82, 4) ON CONFLICT DO NOTHING;
-
 INSERT INTO item(id, name) VALUES(83, 'item_glas_green') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(83, 8) ON CONFLICT DO NOTHING;
 
