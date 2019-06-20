@@ -55,6 +55,7 @@ class PublicContainerDao {
 
     private fun toOpen(type: String, openingHoursJson: String?): Open = when (type) {
         "a" -> Always
+        "u" -> Unknown
         "h" -> if (openingHoursJson == null || openingHoursJson == "[null]") {
             Unknown
         } else {
