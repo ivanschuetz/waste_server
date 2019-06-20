@@ -131,6 +131,12 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_table', 'en', 'Tich') O
 INSERT INTO translations(tkey, lang, trans) VALUES('item_chair', 'en', 'Chair') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_microwave', 'en', 'Microwave') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cutlery', 'en', 'Cutlery') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_pet', 'en', 'Dead pet') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_cat', 'en', 'Dead cat') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_dog', 'en', 'Dead dog') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_rat_pet', 'en', 'Dead rat (pet)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_rabbit', 'en', 'Dead rabbit') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_parrot', 'en', 'Dead parrot') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 
 INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_metal', 'en', 'Scrap metal') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_sanitary_ware', 'en', 'Sanitary Ware') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;

@@ -301,6 +301,19 @@ INSERT INTO item_category(item_id, category_id) VALUES(108, 1) ON CONFLICT DO NO
 INSERT INTO item(id, name) VALUES(109, 'item_cutlery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(109, 1) ON CONFLICT DO NOTHING;
 
+INSERT INTO item(id, name) VALUES(110, 'item_dead_pet');
+INSERT INTO item_category(item_id, category_id) VALUES(110, 12);
+INSERT INTO item(id, name) VALUES(111, 'item_dead_cat');
+INSERT INTO item_category(item_id, category_id) VALUES(111, 12);
+INSERT INTO item(id, name) VALUES(112, 'item_dead_dog');
+INSERT INTO item_category(item_id, category_id) VALUES(112, 12);
+INSERT INTO item(id, name) VALUES(113, 'item_dead_rat_pet');
+INSERT INTO item_category(item_id, category_id) VALUES(113, 12);
+INSERT INTO item(id, name) VALUES(114, 'item_dead_rabbit');
+INSERT INTO item_category(item_id, category_id) VALUES(114, 12);
+INSERT INTO item(id, name) VALUES(115, 'item_dead_parrot');
+INSERT INTO item_category(item_id, category_id) VALUES(115, 12);
+
 INSERT INTO item_category(item_id, category_id) VALUES(0, 7) ON CONFLICT DO NOTHING;
 INSERT INTO item_category(item_id, category_id) VALUES(1, 3) ON CONFLICT DO NOTHING;
 INSERT INTO item_category(item_id, category_id) VALUES(2, 6) ON CONFLICT DO NOTHING;

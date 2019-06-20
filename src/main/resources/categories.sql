@@ -10,3 +10,4 @@ INSERT INTO category(id, name) VALUES(8, 'category_glas_green') ON CONFLICT (nam
 INSERT INTO category(id, name) VALUES(9, 'category_clothes') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO category(id, name) VALUES(10, 'category_scrap') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO category(id, name) VALUES(11, 'category_glas_brown') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO category(id, name) VALUES(12, 'category_dead_pet') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;

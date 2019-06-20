@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS p_container
   address         VARCHAR(150) NOT NULL,
   company         VARCHAR(150) NOT NULL,
   phone           VARCHAR(150),
-  url             VARCHAR(150),
+  url             VARCHAR(250),
   lat             float NOT NULL,
   lon             float NOT NULL,
   open            VARCHAR(2) NOT NULL,

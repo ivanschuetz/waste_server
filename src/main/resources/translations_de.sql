@@ -131,6 +131,12 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_table', 'de', 'Tisch') 
 INSERT INTO translations(tkey, lang, trans) VALUES('item_chair', 'de', 'Stuhl') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_microwave', 'de', 'Mikrowelle') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cutlery', 'de', 'Besteck') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_pet', 'de', 'Totes haustier') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_cat', 'de', 'Tote Katze') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_dog', 'de', 'Toter Hund') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_rat_pet', 'de', 'Tote Ratte (Haustier)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_rabbit', 'de', 'Totes Kaninchen') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_parrot', 'de', 'Totes Papagei') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 
 INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_metal', 'de', 'Schrott') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_sanitary_ware', 'de', 'Sanitärkeramik') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
@@ -177,3 +183,4 @@ INSERT INTO translations(tkey, lang, trans) VALUES('category_construction_non_mi
 INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_construction_tiles', 'de', 'Mineralischer Bauschutt (Fliesen)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_construction_brick', 'de', 'Mineralischer Bauschutt (Ziegel)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_construction_ceramic', 'de', 'Mineralischer Bauschutt (Keramik)') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+INSERT INTO translations(tkey, lang, trans) VALUES('category_dead_pet', 'de', 'Totes Haustier') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
