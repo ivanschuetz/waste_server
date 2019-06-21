@@ -15,15 +15,12 @@ class ItemsController(val itemSuggestionsDao: ItemSuggestionsDao) {
             println("ERROR: Bad request, term is too long: $term")
             throw BadRequestException()
         }
-        if (lang.length > 2) {
-            println("ERROR: Bad request, lang has incorrect length: $lang")
+        if (lang.length > 10) { // Block evidently malicious content
+            println("ERROR: Bad request, lang has suspicious length: $lang")
             throw BadRequestException()
         }
-        if (lang != "de" && lang != "en") {
-            println("ERROR: Bad request, wrong lang: $lang")
-            throw BadRequestException()
-        }
+        val actualLang = extractValidLanguage(lang)
 
-        return itemSuggestionsDao.search(term, lang)
+        return itemSuggestionsDao.search(term, actualLang)
     }
 }

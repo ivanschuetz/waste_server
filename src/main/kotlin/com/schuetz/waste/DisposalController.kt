@@ -16,17 +16,14 @@ class DisposalController(val containerDao: ContainerDao, val publicContainerDao:
         if (itemId < 0) {
             throw BadRequestException()
         }
-        if (lang.length > 2) {
-            println("ERROR: Bad request, lang has incorrect length: $lang")
+        if (lang.length > 10) { // Block evidently malicious content
+            println("ERROR: Bad request, lang has suspicious length: $lang")
             throw BadRequestException()
         }
-        if (lang != "de" && lang != "en") {
-            println("ERROR: Bad request, wrong lang: $lang")
-            throw BadRequestException()
-        }
+        val actualLang = extractValidLanguage(lang)
 
         return DisposalOptionsResult(
-            containerDao.containers(itemId, lang),
+            containerDao.containers(itemId, actualLang),
             publicContainerDao.publicContainers(itemId),
             pickupCompaniesDao.companies(itemId)
         )
