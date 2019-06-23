@@ -27,6 +27,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-jetty")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework:spring-jdbc")
+	compile("org.springframework.boot:spring-boot-starter-security")
 	implementation("com.h2database:h2")
 	implementation("mysql:mysql-connector-java")
 	implementation("org.postgresql:postgresql")

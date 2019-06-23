@@ -5,6 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.security.config.annotation.web.builders.HttpSecurity
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
+import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.servlet.config.annotation.CorsRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 
@@ -28,6 +32,18 @@ class MyConfiguration {
             override fun addCorsMappings(registry: CorsRegistry) {
                 registry.addMapping("/**")
             }
+        }
+    }
+}
+
+
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig : WebSecurityConfigurerAdapter() {
+
+    override fun configure(http: HttpSecurity) {
+        http.cors().configurationSource {
+            CorsConfiguration().applyPermitDefaultValues()
         }
     }
 }
