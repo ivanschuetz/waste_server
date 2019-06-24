@@ -138,6 +138,8 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_rat_pet', 'de', 'T
 INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_rabbit', 'de', 'Totes Kaninchen') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('item_dead_parrot', 'de', 'Totes Papagei') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 
+INSERT INTO translations(tkey, lang, trans) VALUES('item_lab_tubes', 'de', 'Reagenzglas') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
+
 INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_metal', 'de', 'Schrott') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_sanitary_ware', 'de', 'Sanitärkeramik') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;
 INSERT INTO translations(tkey, lang, trans) VALUES('category_natural_cork', 'de', 'Naturkork') ON CONFLICT (tkey, lang) DO UPDATE SET trans = EXCLUDED.trans;

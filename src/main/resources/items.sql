@@ -314,6 +314,270 @@ INSERT INTO item_category(item_id, category_id) VALUES(114, 12);
 INSERT INTO item(id, name) VALUES(115, 'item_dead_parrot');
 INSERT INTO item_category(item_id, category_id) VALUES(115, 12);
 
+-- new
+
+-- TODO cat
+--INSERT INTO item(id, name) VALUES(110, 'item_pipe') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item_category(item_id, category_id) VALUES(110, 1) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(111, 'item_lab_tubes') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(111, 1) ON CONFLICT DO NOTHING;
+
+-- TODO cat
+--INSERT INTO item(id, name) VALUES(112, 'item_lab_sulfur') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item_category(item_id, category_id) VALUES(112, 1) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(113, 'item_nail_polish') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(113, 100032) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(114, 'item_rechargeable_battery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(114, 100012) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(115, 'item_aerosol_can_not_dangerous') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(115, 10) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(116, 'item_aerosol_can_dangerous') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(116, 100032) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(117, 'item_computer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(117, 1) ON CONFLICT DO NOTHING;
+INSERT INTO item_category(item_id, category_id) VALUES(117, 5) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(118, 'item_harddrive') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(118, 100013);
+
+INSERT INTO item(id, name) VALUES(119, 'item_speakers') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(119, 5);
+-- TODO-small
+
+INSERT INTO item(id, name) VALUES(120, 'item_watch') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(120, 100013);
+
+INSERT INTO item(id, name) VALUES(121, 'item_clock') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(121, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(121, 5);
+
+INSERT INTO item(id, name) VALUES(122, 'item_ventilator') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(122, 5);
+-- TODO-small
+
+INSERT INTO item(id, name) VALUES(123, 'item_car_parts') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(123, 13) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(124, 'item_air_conditioner') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(124, 5);
+-- TODO-small
+
+INSERT INTO item(id, name) VALUES(125, 'item_printer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(125, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(125, 5);
+
+INSERT INTO item(id, name) VALUES(126, 'item_scanner') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(126, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(126, 5);
+
+INSERT INTO item(id, name) VALUES(127, 'item_coffee_machine') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(127, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(127, 5);
+
+INSERT INTO item(id, name) VALUES(128, 'item_notebook') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(128, 2) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(129, 'item_books') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(129, 2) ON CONFLICT DO NOTHING;
+INSERT INTO item_category(item_id, category_id) VALUES(129, 2) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(130, 'item_thermometer_mercury') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(130, 100030) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(130, 'item_thermometer_digital') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(130, 100013);
+
+INSERT INTO item(id, name) VALUES(131, 'item_injection_used') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(131, 100001) ON CONFLICT DO NOTHING;
+-- TODO confirm
+
+INSERT INTO item(id, name) VALUES(132, 'item_injection_not_used') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item_category(item_id, category_id) VALUES(132, ??) ON CONFLICT DO NOTHING; TODO
+
+INSERT INTO item(id, name) VALUES(133, 'item_tool_metal') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(133, 100000) ON CONFLICT DO NOTHING;
+INSERT INTO item_category(item_id, category_id) VALUES(133, 100010) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(134, 'item_hammer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item_category(item_id, category_id) VALUES(134, ??) ON CONFLICT DO NOTHING; TODO
+
+INSERT INTO item(id, name) VALUES(135, 'item_saw') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item_category(item_id, category_id) VALUES(135, ??) ON CONFLICT DO NOTHING; TODO
+
+INSERT INTO item(id, name) VALUES(135, 'item_screwdriver') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item_category(item_id, category_id) VALUES(135, ??) ON CONFLICT DO NOTHING; TODO
+
+INSERT INTO item(id, name) VALUES(136, 'item_boring_machine') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(136, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(136, 5);
+
+INSERT INTO item(id, name) VALUES(137, 'item_paint_brush') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(137, 6) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(138, 'item_make_up_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(138, 0) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(139, 'item_make_up_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(139, 0) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(140, 'item_magnet') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(140, 100002) ON CONFLICT DO NOTHING;
+-- TODO small
+
+INSERT INTO item(id, name) VALUES(141, 'item_tampon') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(141, 6) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(142, 'item_condom') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(142, 6) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(143, 'item_ear_plugs') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(143, 6) ON CONFLICT DO NOTHING; -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(144, 'item_cage_metal_small') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(144, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(144, 5);
+
+INSERT INTO item(id, name) VALUES(145, 'item_cage_metal_large') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item_category(item_id, category_id) VALUES(145, 100002) ON CONFLICT DO NOTHING;
+
+INSERT INTO item(id, name) VALUES(146, 'item_cage_grid_metal_small');
+INSERT INTO item_category(item_id, category_id) VALUES(146, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(146, 5);
+
+INSERT INTO item(id, name) VALUES(147, 'item_cage_grid_metal_large');
+INSERT INTO item_category(item_id, category_id) VALUES(147, 100002);
+
+INSERT INTO item(id, name) VALUES(148, 'item_binoculars');
+INSERT INTO item_category(item_id, category_id) VALUES(148, 6); -- TODO confirm - kein wertstoff, sperrmuell?
+
+INSERT INTO item(id, name) VALUES(149, 'item_microscope');
+--INSERT INTO item_category(item_id, category_id) VALUES(149, ?); -- TODO
+
+INSERT INTO item(id, name) VALUES(150, 'item_hair_human');
+INSERT INTO item_category(item_id, category_id) VALUES(150, 7);
+
+INSERT INTO item(id, name) VALUES(151, 'item_hair_animal');
+INSERT INTO item_category(item_id, category_id) VALUES(151, 7);
+
+INSERT INTO item(id, name) VALUES(152, 'item_cotton_buds');
+INSERT INTO item_category(item_id, category_id) VALUES(152, 6);
+
+INSERT INTO item(id, name) VALUES(153, 'item_cleaning_pad');
+INSERT INTO item_category(item_id, category_id) VALUES(153, 6);
+
+INSERT INTO item(id, name) VALUES(154, 'item_steel_wool');
+INSERT INTO item_category(item_id, category_id) VALUES(154, 6);
+
+INSERT INTO item(id, name) VALUES(155, 'item_usb_stick');
+INSERT INTO item_category(item_id, category_id) VALUES(155, 100013);
+
+INSERT INTO item(id, name) VALUES(156, 'item_breathing_mask');
+INSERT INTO item_category(item_id, category_id) VALUES(156, 6); -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(157, 'item_adapter_electro');
+INSERT INTO item_category(item_id, category_id) VALUES(157, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(157, 5);
+
+INSERT INTO item(id, name) VALUES(158, 'item_stamp');
+INSERT INTO item_category(item_id, category_id) VALUES(158, 2); -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(159, 'item_vitamines');
+INSERT INTO item_category(item_id, category_id) VALUES(159, 6);
+
+INSERT INTO item(id, name) VALUES(160, 'item_sticky_notes');
+INSERT INTO item_category(item_id, category_id) VALUES(160, 2); -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(161, 'item_ash');
+INSERT INTO item_category(item_id, category_id) VALUES(161, 6);
+
+INSERT INTO item(id, name) VALUES(162, 'item_lamp');
+INSERT INTO item_category(item_id, category_id) VALUES(162, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(162, 5);
+INSERT INTO item_category(item_id, category_id) VALUES(162, 1);
+
+INSERT INTO item(id, name) VALUES(163, 'item_apple_watch');
+INSERT INTO item_category(item_id, category_id) VALUES(163, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(163, 5);
+-- TODO apple store?
+
+INSERT INTO item(id, name) VALUES(164, 'item_couch');
+INSERT INTO item_category(item_id, category_id) VALUES(164, 1);
+
+INSERT INTO item(id, name) VALUES(165, 'item_sofa');
+INSERT INTO item_category(item_id, category_id) VALUES(165, 1);
+
+INSERT INTO item(id, name) VALUES(166, 'item_chair');
+INSERT INTO item_category(item_id, category_id) VALUES(166, 1); -- TODO klapstuhl
+
+INSERT INTO item(id, name) VALUES(167, 'item_water_cooker');
+INSERT INTO item_category(item_id, category_id) VALUES(167, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(167, 5);
+
+INSERT INTO item(id, name) VALUES(168, 'item_laundry_rack_metal');
+INSERT INTO item_category(item_id, category_id) VALUES(168, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(168, 1);
+
+-- TODO schrottplaetze in berlin ?
+
+INSERT INTO item(id, name) VALUES(169, 'item_laundry_rack_plastic');
+INSERT INTO item_category(item_id, category_id) VALUES(169, 10);
+INSERT INTO item_category(item_id, category_id) VALUES(169, 1);
+
+INSERT INTO item(id, name) VALUES(170, 'item_washing_machine');
+INSERT INTO item_category(item_id, category_id) VALUES(170, 5);
+INSERT INTO item_category(item_id, category_id) VALUES(170, 1);
+
+INSERT INTO item(id, name) VALUES(171, 'item_haar_drier');
+INSERT INTO item_category(item_id, category_id) VALUES(171, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(171, 5);
+
+INSERT INTO item(id, name) VALUES(172, 'item_phone');
+INSERT INTO item_category(item_id, category_id) VALUES(172, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(172, 5);
+
+INSERT INTO item(id, name) VALUES(173, 'item_iphone');
+INSERT INTO item_category(item_id, category_id) VALUES(173, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(173, 5);
+
+INSERT INTO item(id, name) VALUES(174, 'item_smartphone');
+INSERT INTO item_category(item_id, category_id) VALUES(174, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(174, 5);
+
+INSERT INTO item(id, name) VALUES(175, 'item_grease');
+INSERT INTO item_category(item_id, category_id) VALUES(175, 6);
+
+INSERT INTO item(id, name) VALUES(175, 'item_grease');
+INSERT INTO item_category(item_id, category_id) VALUES(175, 6);
+
+INSERT INTO item(id, name) VALUES(176, 'item_foto_albums');
+INSERT INTO item_category(item_id, category_id) VALUES(176, 6); -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(177, 'item_litter_pets');
+INSERT INTO item_category(item_id, category_id) VALUES(177, 6);
+
+INSERT INTO item(id, name) VALUES(178, 'item_wifi_audio');
+INSERT INTO item_category(item_id, category_id) VALUES(178, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(178, 5);
+
+INSERT INTO item(id, name) VALUES(179, 'item_headphones');
+INSERT INTO item_category(item_id, category_id) VALUES(179, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(179, 5);
+
+INSERT INTO item(id, name) VALUES(180, 'item_jacket');
+INSERT INTO item_category(item_id, category_id) VALUES(180, 9);
+
+INSERT INTO item(id, name) VALUES(181, 'item_socks');
+INSERT INTO item_category(item_id, category_id) VALUES(181, 9);
+
+INSERT INTO item(id, name) VALUES(182, 'item_skirt');
+INSERT INTO item_category(item_id, category_id) VALUES(182, 9);
+
 INSERT INTO item_category(item_id, category_id) VALUES(0, 7) ON CONFLICT DO NOTHING;
 INSERT INTO item_category(item_id, category_id) VALUES(1, 3) ON CONFLICT DO NOTHING;
 INSERT INTO item_category(item_id, category_id) VALUES(2, 6) ON CONFLICT DO NOTHING;
