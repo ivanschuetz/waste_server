@@ -13,14 +13,10 @@ INSERT INTO translations(tkey, lang, trans) VALUES('category_packaging', 'de', '
 INSERT INTO translations(tkey, lang, trans) VALUES('category_bulky', 'de', 'Sperrmüll');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_paper', 'de', 'Papier');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_energy_saving_lamps', 'de', 'Energiesparlampen');
-INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_white', 'de', 'Weißglas');
-INSERT INTO translations(tkey, lang, trans) VALUES('category_electro', 'de', 'Elektro');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_residual', 'de', 'Restmüll');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_bio', 'de', 'Bio');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_clothes', 'de', 'Klamotten');
-INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_green', 'de', 'Grünglas');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_scrap_container', 'de', 'Wertstofftonne');
-INSERT INTO translations(tkey, lang, trans) VALUES('category_glas_brown', 'de', 'Braunglas');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_meds', 'de', 'Medikamente');
 
 INSERT INTO translations(tkey, lang, trans) VALUES('item_fruits', 'de', 'Obst');
@@ -103,10 +99,8 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_plastic_bag', 'de', 'Pl
 INSERT INTO translations(tkey, lang, trans) VALUES('item_yoghurt_cup', 'de', 'Joghurtbecher');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_plastic_bottles_disposable', 'de', 'Kunststoff-Einwegflaschen');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_paper_laminated', 'de', 'Papier (beschichtet)');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_glas_white', 'de', 'Weißes Glas');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_glas_green', 'de', 'Grünes Glas');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_glas_brown', 'de', 'Braunes Glas');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_glas_non_brown_or_white', 'de', 'Glas (nicht braun oder weiß)');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_glas_green', 'de', 'Grünglas');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_glas_brown', 'de', 'Braunglas');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_glas_non_brown_or_white', 'de', 'Glas (nicht braun oder weiß)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_pillow', 'de', 'Kissen');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_shoes', 'de', 'Schuhe');
@@ -147,7 +141,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_tiles', 'de
 INSERT INTO translations(tkey, lang, trans) VALUES('category_brick', 'de', 'Ziegel');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_ceramic', 'de', 'Keramik');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_fluorescent_tube', 'de', 'Leuchtstoffröhren');
-INSERT INTO translations(tkey, lang, trans) VALUES('category_energy_saving_lamps', 'de', 'Energiesparlampen');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_led', 'de', 'LEDs');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_greenery', 'de', 'Laub und Rasenschnitt');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_plastic_small', 'de', 'Kunststoffe - kleinteilig');
@@ -180,7 +173,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('category_cleaning_agent', 'd
 INSERT INTO translations(tkey, lang, trans) VALUES('category_harmful_substances', 'de', 'Schadstoffe');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_construction_waste', 'de', 'Bauabfälle');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_roofing_cardboard', 'de', 'Dachpappe');
-INSERT INTO translations(tkey, lang, trans) VALUES('category_greenery', 'de', 'Laub');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_construction_non_minerals', 'de', 'Nichtmineralische Bauelemente');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_construction_tiles', 'de', 'Mineralischer Bauschutt (Fliesen)');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_mineral_construction_brick', 'de', 'Mineralischer Bauschutt (Ziegel)');
@@ -326,7 +318,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_gloves_rubber', 'de', '
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cheese_rind_waxed', 'de', 'Käserinde (mit Wachs)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_game_board', 'de', 'Spielplatte');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_vitrine_glass', 'de', 'Vitrinenglas');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_tape', 'de', 'Kassetten');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_drinking_glass', 'de', 'Trinkglas');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_dirt', 'de', 'Kehricht');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_rag', 'de', 'Lappen');
@@ -350,13 +341,11 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_wax_paper', 'de', 'Waxp
 INSERT INTO translations(tkey, lang, trans) VALUES('item_sausage_casing', 'de', 'Wurstpelle');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_paper_dirty', 'de', 'Verschmutztes Papier');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_video_tape', 'de', 'Videoband');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_video_tape', 'de', 'Videoband');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cd_player', 'de', 'CD-Player');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_walkman', 'de', 'Walkman');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_sim_card', 'de', 'SIM-Karte');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_electronic_parts', 'de', 'Elektronikbausteine');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_electronic_board', 'de', 'Platine (Elektronik)');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_wiper_blade', 'de', 'Wischblatt');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_wiper_blade', 'de', 'Wischblatt');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_handkerchief', 'de', 'Taschentücher');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cosmetic_pad', 'de', 'Kosmetiktuch');
@@ -383,14 +372,11 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_electronic_organ', 'de'
 INSERT INTO translations(tkey, lang, trans) VALUES('item_heater', 'de', 'Heizkörper');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_heating_oil', 'de', 'Heizöl');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_radiant_heater', 'de', 'Heizstrahler');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_radiant_heater', 'de', 'Heizstrahler');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_shirt', 'de', 'Shirt');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_heraklith_plate', 'de', 'Heraklith plate');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_herbicide', 'de', 'Herbicide');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_stove', 'de', 'Stove');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cleaning_agent', 'de', 'Cleaning agent');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_hay', 'de', 'Hay');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_hay', 'de', 'Hay');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_heat_resisting_glas', 'de', 'Hitzebeständiges Glas');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_hay', 'de', 'Hay');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_chemicals_hobby', 'de', 'Hobby chemicals');
@@ -412,8 +398,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_dog_feces', 'de', 'Dog 
 INSERT INTO translations(tkey, lang, trans) VALUES('item_toilet_paper_not_used', 'de', 'Toilet paper (not used)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_toilet_paper_used', 'de', 'Toilet paper (used)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_lcd_monitor', 'de', 'LCD Bildschirm');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_cd_player', 'de', 'CD player');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_walkman', 'de', 'Walkman');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_computer_monitor', 'de', 'Bildschirm');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_computer_keyboard', 'de', 'Computer keyboard');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_music_keyboard', 'de', 'Keyboard');
@@ -450,19 +434,16 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_playstation', 'de', 'Pl
 INSERT INTO translations(tkey, lang, trans) VALUES('item_nintendo', 'de', 'Nintendo');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_coconut_oil', 'de', 'Kokosöl');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_motor', 'de', 'Motor');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_pizza_carton', 'de', 'Pizzakartons (used)');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_pizza_carton', 'de', 'Pizzakartons');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_pizza_carton_used', 'de', 'Pizzakarton (benutzt)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_carton_with_food_rests', 'de', 'Kartons mit Speiseresten');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_french_bowl_used', 'de', 'Pommesschale (benutzt)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_napkin_used', 'de', 'Serviette (benutzt)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_napkin_not_used', 'de', 'Serviette (unbenutzt)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_receipt', 'de', 'Kassenbon');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_ticket', 'de', 'Fahrkarte');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_ticket', 'de', 'Fahrkarte');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_aluminium_foil', 'de', 'Alufolie');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_toy_car', 'de', 'Autospielzeug');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_arduino', 'de', 'Arduino');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_raspberry_pi', 'de', 'Raspberry Pi');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_raspberry_pi', 'de', 'Raspberry Pi');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_drone', 'de', 'Drohne');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_doll_cloth', 'de', 'Puppe (Stoff)');
@@ -479,7 +460,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_bathing_suit', 'de', 'B
 INSERT INTO translations(tkey, lang, trans) VALUES('item_bathing_trunks', 'de', 'Badehose');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_ipad', 'de', 'iPad');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_tablet', 'de', 'Tablet (computer)');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_tablet', 'de', 'Tablet (computer)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_soccer_ball', 'de', 'Fußball');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_volleyball', 'de', 'Volleyball');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_tennis_ball', 'de', 'Tennisball');
@@ -495,7 +475,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_credit_card', 'de', 'So
 INSERT INTO translations(tkey, lang, trans) VALUES('item_debit_card', 'de', 'EC-Karte');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_identity_card', 'de', 'Personalausweis');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_passport', 'de', 'Reisepass');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_passport', 'de', 'Reisepass');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_wallet', 'de', 'Brieftasche');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_muenzen', 'de', 'Münzen');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_banknotes', 'de', 'Geldscheine');
@@ -509,7 +488,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_boots_usable', 'de', 'S
 INSERT INTO translations(tkey, lang, trans) VALUES('item_boots_not_usable', 'de', 'Stiefel (unbenutzbar)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_shoes_not_usable', 'de', 'Schuhe (nicht benutzbar)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_vr_set', 'de', 'Virtual Reality Set');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_vr_set', 'de', 'Virtual Reality Set');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_baby_bottle_plastic', 'de', 'Babyflasche (Plastik)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_baby_bottle_glas_white', 'de', 'Babyflasche (white glas)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_pregnancy_test', 'de', 'Schwangerschaftstest');
@@ -522,7 +500,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_t_shirt', 'de', 'T-Shir
 INSERT INTO translations(tkey, lang, trans) VALUES('item_shorts', 'de', 'Shorts');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_jeans', 'de', 'Jeans');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_chalk', 'de', 'Kreide');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_whiteboard', 'de', 'Weißwandtafel');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_whiteboard', 'de', 'Weißwandtafel');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_crutches', 'de', 'Krücken');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_sewing_machine', 'de', 'Nähmaschine');
@@ -566,7 +543,7 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_belt', 'de', 'Gürtel')
 INSERT INTO translations(tkey, lang, trans) VALUES('item_sandals', 'de', 'Sandale');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_pvc_packaging', 'de', 'PVC Verpackung');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_pvc_floor_cover', 'de', 'Bodenbeläge aus PVC');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_pvc_packaging', 'de', 'Bodenbeläge aus PVC');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_pvc_carpet', 'de', 'Bodenbeläge aus PVC');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_sound_card', 'de', 'Soundkarte');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_graphics_card', 'de', 'Grafikkarte');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_figurine', 'de', 'Figurine');
@@ -575,7 +552,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_uniform', 'de', 'Unifor
 INSERT INTO translations(tkey, lang, trans) VALUES('item_suitcase', 'de', 'Koffer');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_gift_paper_coated', 'de', 'Geschenkpapier (beschichtet)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_gift_paper_not_coated', 'de', 'Geschenkpapier (unbeschichtet)');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_gift_paper_not_coated', 'de', 'Geschenkpapier (unbeschichtet)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_aquarium', 'de', 'Aquarium');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_terrarium', 'de', 'Terrarium');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_gasoline', 'de', 'Benzin');
@@ -583,7 +559,6 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_handcuffs', 'de', 'Hand
 INSERT INTO translations(tkey, lang, trans) VALUES('item_heat_shrink_tubing', 'de', 'Schrumpfschlauch');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_pincers', 'de', 'Zange');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_tweezers', 'de', 'Pinzette (Metall)');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_toilet_lid', 'de', 'Toilettendeckel');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_toilet_lid', 'de', 'Toilettendeckel');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_tube', 'de', 'Schlauch');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_bicycle_saddle', 'de', 'Fahrradsattel');
@@ -603,6 +578,5 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_ring_metal', 'de', 'Rin
 INSERT INTO translations(tkey, lang, trans) VALUES('item_ring_plastic', 'de', 'Ring (Kunststoff)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_chewing_gum', 'de', 'Kaugummi');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_stone', 'de', 'Stein');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_shelf', 'de', 'Regal');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_shelf', 'de', 'Regal');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_coffee_maker_glass_can', 'de', 'Glaskanne aus der Kaffeemaschine');
