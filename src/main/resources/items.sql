@@ -11,7 +11,7 @@ INSERT INTO item(id, name) VALUES(9, 'item_clothes') ON CONFLICT (name) DO UPDAT
 
 INSERT INTO item(id, name) VALUES(10, 'item_med_passed') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(10, 6);
---TODO add entry for meds category
+-- TODO add entry for meds category
 
 INSERT INTO item(id, name) VALUES(11, 'item_noodles_plastic_window') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(11, 2);
@@ -85,7 +85,7 @@ INSERT INTO item_category(item_id, category_id) VALUES(36, 6);
 INSERT INTO item(id, name) VALUES(37, 'item_porcelain') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(37, 6);
 
--- todo replace this repeated item
+-- TODO replace this repeated item
 --INSERT INTO item(id, name) VALUES(38, 'item_porcelain') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 --INSERT INTO item_category(item_id, category_id) VALUES(38, 6);
 
@@ -317,319 +317,322 @@ INSERT INTO item_category(item_id, category_id) VALUES(115, 12);
 -- new
 
 -- TODO cat
---INSERT INTO item(id, name) VALUES(110, 'item_pipe') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item(id, name) VALUES(110, 'item_pipe') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Tobacco pipe = Tabakspfeife
 --INSERT INTO item_category(item_id, category_id) VALUES(110, 1);
 
 INSERT INTO item(id, name) VALUES(111, 'item_lab_tubes') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
 INSERT INTO item_category(item_id, category_id) VALUES(111, 1);
 
 -- TODO cat
---INSERT INTO item(id, name) VALUES(112, 'item_lab_sulfur') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item(id, name) VALUES(112, 'item_lab_sulfur') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Sulfur = Schwefel
 --INSERT INTO item_category(item_id, category_id) VALUES(112, 1);
 
-INSERT INTO item(id, name) VALUES(113, 'item_nail_polish') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(113, 'item_nail_polish') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Nail polish = Nagellack
 INSERT INTO item_category(item_id, category_id) VALUES(113, 100032);
 
-INSERT INTO item(id, name) VALUES(114, 'item_rechargeable_battery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(114, 'item_rechargeable_battery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Rechargeable Battery = Akku
 INSERT INTO item_category(item_id, category_id) VALUES(114, 100012);
 
-INSERT INTO item(id, name) VALUES(115, 'item_aerosol_can_not_dangerous') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(115, 'item_aerosol_can_not_dangerous') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Aerosol (not marked as dangerous) = Aerosol (nicht als gefährlich markiert)
 INSERT INTO item_category(item_id, category_id) VALUES(115, 10);
 
-INSERT INTO item(id, name) VALUES(116, 'item_aerosol_can_dangerous') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(116, 'item_aerosol_can_dangerous') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Aerosol (dangerous) = Aerosol (gefährlich)
 INSERT INTO item_category(item_id, category_id) VALUES(116, 100032);
 
-INSERT INTO item(id, name) VALUES(117, 'item_computer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(117, 'item_computer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Computer = Computer
 INSERT INTO item_category(item_id, category_id) VALUES(117, 1);
 INSERT INTO item_category(item_id, category_id) VALUES(117, 5);
 
-INSERT INTO item(id, name) VALUES(118, 'item_harddrive') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(118, 'item_harddrive') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Hard drive = Festplatte
 INSERT INTO item_category(item_id, category_id) VALUES(118, 100013);
 
-INSERT INTO item(id, name) VALUES(119, 'item_speakers') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(119, 'item_speakers') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Speakers = Lautsprecher
 INSERT INTO item_category(item_id, category_id) VALUES(119, 5);
 -- TODO-small
 
-INSERT INTO item(id, name) VALUES(120, 'item_watch') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(120, 'item_watch') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Watch = Armbanduhr
 INSERT INTO item_category(item_id, category_id) VALUES(120, 100013);
 
-INSERT INTO item(id, name) VALUES(121, 'item_clock') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(121, 'item_clock') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Clock = Uhr
 INSERT INTO item_category(item_id, category_id) VALUES(121, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(121, 5);
 
-INSERT INTO item(id, name) VALUES(122, 'item_ventilator') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(122, 'item_ventilator') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Ventilator = Ventilator
 INSERT INTO item_category(item_id, category_id) VALUES(122, 5);
 -- TODO-small
 
-INSERT INTO item(id, name) VALUES(123, 'item_car_parts') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(123, 'item_car_parts') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Car parts = Autoteile
 INSERT INTO item_category(item_id, category_id) VALUES(123, 13);
 
-INSERT INTO item(id, name) VALUES(124, 'item_air_conditioner') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(124, 'item_air_conditioner') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Air Conditioner = Klimaanlage
 INSERT INTO item_category(item_id, category_id) VALUES(124, 5);
 -- TODO-small
 
-INSERT INTO item(id, name) VALUES(125, 'item_printer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(125, 'item_printer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Printer = Drucker
 INSERT INTO item_category(item_id, category_id) VALUES(125, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(125, 5);
 
-INSERT INTO item(id, name) VALUES(126, 'item_scanner') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(126, 'item_scanner') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Scanner = Scanner
 INSERT INTO item_category(item_id, category_id) VALUES(126, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(126, 5);
 
-INSERT INTO item(id, name) VALUES(127, 'item_coffee_machine') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(127, 'item_coffee_machine') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Coffee Machine = Kaffeemaschine
 INSERT INTO item_category(item_id, category_id) VALUES(127, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(127, 5);
 
-INSERT INTO item(id, name) VALUES(128, 'item_notebook') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(128, 'item_notebook') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Notebook = Notizbuch
 INSERT INTO item_category(item_id, category_id) VALUES(128, 2);
 
-INSERT INTO item(id, name) VALUES(129, 'item_books') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(129, 'item_books') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Book = Buch
 INSERT INTO item_category(item_id, category_id) VALUES(129, 2);
 INSERT INTO item_category(item_id, category_id) VALUES(129, 2);
 
-INSERT INTO item(id, name) VALUES(130, 'item_thermometer_mercury') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(130, 'item_thermometer_mercury') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Mercury thermometer = Quecksilberthermometer
 INSERT INTO item_category(item_id, category_id) VALUES(130, 100030);
 
-INSERT INTO item(id, name) VALUES(130, 'item_thermometer_digital') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(130, 'item_thermometer_digital') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Digital thermometer = Digitales Thermometer
 INSERT INTO item_category(item_id, category_id) VALUES(130, 100013);
 
-INSERT INTO item(id, name) VALUES(131, 'item_injection_used') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(131, 'item_injection_used') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Injection (used) = Spritze (benutzt)
 INSERT INTO item_category(item_id, category_id) VALUES(131, 100001);
 -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(132, 'item_injection_not_used') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(132, 'item_injection_not_used') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Injection (not used) = Spritze (nicht benutzt)
 --INSERT INTO item_category(item_id, category_id) VALUES(132, ??); TODO
 
-INSERT INTO item(id, name) VALUES(133, 'item_tool_metal') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(133, 'item_tool_metal') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Tool (metal) = Werkzeug (Metall)
 INSERT INTO item_category(item_id, category_id) VALUES(133, 100000);
 INSERT INTO item_category(item_id, category_id) VALUES(133, 100010);
 
-INSERT INTO item(id, name) VALUES(134, 'item_hammer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(134, 'item_hammer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Hammer = Hammer
 --INSERT INTO item_category(item_id, category_id) VALUES(134, ??); TODO
 
-INSERT INTO item(id, name) VALUES(135, 'item_saw') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(135, 'item_saw') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Saw = Säge
 --INSERT INTO item_category(item_id, category_id) VALUES(135, ??); TODO
 
-INSERT INTO item(id, name) VALUES(135, 'item_screwdriver') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(135, 'item_screwdriver') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Screwdriver = Schraubenzieher
 --INSERT INTO item_category(item_id, category_id) VALUES(135, ??); TODO
 
-INSERT INTO item(id, name) VALUES(136, 'item_boring_machine') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(136, 'item_boring_machine') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Boring machine = Bohrmaschine
 INSERT INTO item_category(item_id, category_id) VALUES(136, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(136, 5);
 
-INSERT INTO item(id, name) VALUES(137, 'item_paint_brush') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(137, 'item_paint_brush') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Paint brush = Pinsel
 INSERT INTO item_category(item_id, category_id) VALUES(137, 6);
 
-INSERT INTO item(id, name) VALUES(138, 'item_make_up_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(138, 'item_make_up_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Make-up = Make-up
 INSERT INTO item_category(item_id, category_id) VALUES(138, 0);
 
-INSERT INTO item(id, name) VALUES(139, 'item_make_up_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item_category(item_id, category_id) VALUES(139, 0);
+-- TODO replace
+--INSERT INTO item(id, name) VALUES(139, 'item_make_up_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item_category(item_id, category_id) VALUES(139, 0);
 
-INSERT INTO item(id, name) VALUES(140, 'item_magnet') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(140, 'item_magnet') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Magnet = Magnet
 INSERT INTO item_category(item_id, category_id) VALUES(140, 100002);
 -- TODO small
 
-INSERT INTO item(id, name) VALUES(141, 'item_tampon') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(141, 'item_tampon') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Tampon = Tampon
 INSERT INTO item_category(item_id, category_id) VALUES(141, 6);
 
-INSERT INTO item(id, name) VALUES(142, 'item_condom') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(142, 'item_condom') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Condom = Condom
 INSERT INTO item_category(item_id, category_id) VALUES(142, 6);
 
-INSERT INTO item(id, name) VALUES(143, 'item_ear_plugs') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(143, 'item_ear_plugs') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Ear plugs = Gehörschutzstöpsel
 INSERT INTO item_category(item_id, category_id) VALUES(143, 6); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(144, 'item_cage_metal_small') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(144, 'item_cage_metal_small') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Cage (metal, small) = Käfig (Metall, klein)
 INSERT INTO item_category(item_id, category_id) VALUES(144, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(144, 5);
 
-INSERT INTO item(id, name) VALUES(145, 'item_cage_metal_large') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(145, 'item_cage_metal_large') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Cage (metal, large) = Käfig (Metall, groß)
 INSERT INTO item_category(item_id, category_id) VALUES(145, 100002);
 
-INSERT INTO item(id, name) VALUES(146, 'item_cage_grid_metal_small');
-INSERT INTO item_category(item_id, category_id) VALUES(146, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(146, 5);
+-- TODO replace
+--INSERT INTO item(id, name) VALUES(146, 'item_cage_grid_metal_small');
+--INSERT INTO item_category(item_id, category_id) VALUES(146, 100013);
+--INSERT INTO item_category(item_id, category_id) VALUES(146, 5);
+--
+--INSERT INTO item(id, name) VALUES(147, 'item_cage_grid_metal_large');
+--INSERT INTO item_category(item_id, category_id) VALUES(147, 100002);
 
-INSERT INTO item(id, name) VALUES(147, 'item_cage_grid_metal_large');
-INSERT INTO item_category(item_id, category_id) VALUES(147, 100002);
-
-INSERT INTO item(id, name) VALUES(148, 'item_binoculars');
+INSERT INTO item(id, name) VALUES(148, 'item_binoculars'); -- Binoculars = Ferngläser
 INSERT INTO item_category(item_id, category_id) VALUES(148, 6); -- TODO confirm - kein wertstoff, sperrmuell?
 
-INSERT INTO item(id, name) VALUES(149, 'item_microscope');
+INSERT INTO item(id, name) VALUES(149, 'item_microscope'); -- Microscope = Mikroskop
 --INSERT INTO item_category(item_id, category_id) VALUES(149, ?); -- TODO
 
-INSERT INTO item(id, name) VALUES(150, 'item_hair_human');
-INSERT INTO item_category(item_id, category_id) VALUES(150, 7);
+-- TODO replace
+--INSERT INTO item(id, name) VALUES(150, 'item_hair_human'); -- Hair (human)
+--INSERT INTO item_category(item_id, category_id) VALUES(150, 7);
 
-INSERT INTO item(id, name) VALUES(151, 'item_hair_animal');
+INSERT INTO item(id, name) VALUES(151, 'item_hair'); -- Hair = Haare
 INSERT INTO item_category(item_id, category_id) VALUES(151, 7);
 
-INSERT INTO item(id, name) VALUES(152, 'item_cotton_buds');
+INSERT INTO item(id, name) VALUES(152, 'item_cotton_buds'); -- Cotton buds = Wattestäbchen
 INSERT INTO item_category(item_id, category_id) VALUES(152, 6);
 
-INSERT INTO item(id, name) VALUES(153, 'item_cleaning_pad');
+INSERT INTO item(id, name) VALUES(153, 'item_cleaning_pad'); -- Cleaning pad = Reinigungskissen
 INSERT INTO item_category(item_id, category_id) VALUES(153, 6);
 
-INSERT INTO item(id, name) VALUES(154, 'item_steel_wool');
+INSERT INTO item(id, name) VALUES(154, 'item_steel_wool'); -- Steel wool = Stahlwolle
 INSERT INTO item_category(item_id, category_id) VALUES(154, 6);
 
-INSERT INTO item(id, name) VALUES(155, 'item_usb_stick');
+INSERT INTO item(id, name) VALUES(155, 'item_usb_stick'); -- USB stick = USB stick
 INSERT INTO item_category(item_id, category_id) VALUES(155, 100013);
 
-INSERT INTO item(id, name) VALUES(156, 'item_breathing_mask');
+INSERT INTO item(id, name) VALUES(156, 'item_breathing_mask'); -- Breathing mask = Atemmaske
 INSERT INTO item_category(item_id, category_id) VALUES(156, 6); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(157, 'item_adapter_electro');
+INSERT INTO item(id, name) VALUES(157, 'item_adapter_electro'); -- Adapter (electronic) = Adapter (elektronisch)
 INSERT INTO item_category(item_id, category_id) VALUES(157, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(157, 5);
 
-INSERT INTO item(id, name) VALUES(158, 'item_stamp');
+INSERT INTO item(id, name) VALUES(158, 'item_stamp'); -- Postage stamp = Briefmarke
 INSERT INTO item_category(item_id, category_id) VALUES(158, 2); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(159, 'item_vitamines');
+INSERT INTO item(id, name) VALUES(159, 'item_vitamines'); -- Vitamins = Vitamine
 INSERT INTO item_category(item_id, category_id) VALUES(159, 100020);
 
-INSERT INTO item(id, name) VALUES(160, 'item_sticky_notes');
+INSERT INTO item(id, name) VALUES(160, 'item_sticky_notes'); -- Sticky notes = Haftnotizzettel
 INSERT INTO item_category(item_id, category_id) VALUES(160, 2); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(161, 'item_ash');
+INSERT INTO item(id, name) VALUES(161, 'item_ash'); -- Ashes = Asche
 INSERT INTO item_category(item_id, category_id) VALUES(161, 6);
 
-INSERT INTO item(id, name) VALUES(162, 'item_lamp');
+INSERT INTO item(id, name) VALUES(162, 'item_lamp'); -- Lamp = Lampe
 INSERT INTO item_category(item_id, category_id) VALUES(162, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(162, 5);
 INSERT INTO item_category(item_id, category_id) VALUES(162, 1);
 
-INSERT INTO item(id, name) VALUES(163, 'item_apple_watch');
+INSERT INTO item(id, name) VALUES(163, 'item_apple_watch'); -- Apple watch = Apple watch
 INSERT INTO item_category(item_id, category_id) VALUES(163, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(163, 5);
 -- TODO apple store?
 
-INSERT INTO item(id, name) VALUES(164, 'item_couch');
+INSERT INTO item(id, name) VALUES(164, 'item_couch'); -- Couch = Couch
 INSERT INTO item_category(item_id, category_id) VALUES(164, 1);
 
-INSERT INTO item(id, name) VALUES(165, 'item_sofa');
+INSERT INTO item(id, name) VALUES(165, 'item_sofa'); -- Sofa = Sofa
 INSERT INTO item_category(item_id, category_id) VALUES(165, 1);
 
-INSERT INTO item(id, name) VALUES(166, 'item_chair');
+INSERT INTO item(id, name) VALUES(166, 'item_chair'); -- Chair = Stuhl
 INSERT INTO item_category(item_id, category_id) VALUES(166, 1); -- TODO klapstuhl
 
-INSERT INTO item(id, name) VALUES(167, 'item_water_cooker');
+INSERT INTO item(id, name) VALUES(167, 'item_water_cooker'); -- Watercooker (electronic) = Wasserkocher (elektronisch)
 INSERT INTO item_category(item_id, category_id) VALUES(167, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(167, 5);
 
-INSERT INTO item(id, name) VALUES(168, 'item_laundry_rack_metal');
+INSERT INTO item(id, name) VALUES(168, 'item_laundry_rack_metal'); -- Laundry rack (metal) = Wäscheständer (Metall)
 INSERT INTO item_category(item_id, category_id) VALUES(168, 100000);
 INSERT INTO item_category(item_id, category_id) VALUES(168, 1);
 
 -- TODO schrottplaetze in berlin ?
 
-INSERT INTO item(id, name) VALUES(169, 'item_laundry_rack_plastic');
+INSERT INTO item(id, name) VALUES(169, 'item_laundry_rack_plastic'); -- Laundry rack (plastic) = Wäscheständer  (Plastik)
 INSERT INTO item_category(item_id, category_id) VALUES(169, 10);
 INSERT INTO item_category(item_id, category_id) VALUES(169, 1);
 
-INSERT INTO item(id, name) VALUES(170, 'item_washing_machine');
+INSERT INTO item(id, name) VALUES(170, 'item_washing_machine'); -- Washing machine = Waschmaschine
 INSERT INTO item_category(item_id, category_id) VALUES(170, 5);
 INSERT INTO item_category(item_id, category_id) VALUES(170, 1);
 
-INSERT INTO item(id, name) VALUES(171, 'item_haar_drier');
+INSERT INTO item(id, name) VALUES(171, 'item_hair_drier'); -- Hairdrier = Haartrockner
 INSERT INTO item_category(item_id, category_id) VALUES(171, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(171, 5);
 
-INSERT INTO item(id, name) VALUES(172, 'item_phone');
+INSERT INTO item(id, name) VALUES(172, 'item_phone_electronic'); -- Phone = Telephon
 INSERT INTO item_category(item_id, category_id) VALUES(172, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(172, 5);
 
-INSERT INTO item(id, name) VALUES(173, 'item_iphone');
-INSERT INTO item_category(item_id, category_id) VALUES(173, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(173, 5);
+-- TODO non electronic phone
+--INSERT INTO item(id, name) VALUES(173, 'item_iphone');
+--INSERT INTO item_category(item_id, category_id) VALUES(173, 100013);
+--INSERT INTO item_category(item_id, category_id) VALUES(173, 5);
 
-INSERT INTO item(id, name) VALUES(174, 'item_smartphone');
+INSERT INTO item(id, name) VALUES(174, 'item_smartphone'); -- Smartphone = Smartphone
 INSERT INTO item_category(item_id, category_id) VALUES(174, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(174, 5);
 
-INSERT INTO item(id, name) VALUES(175, 'item_grease');
-INSERT INTO item_category(item_id, category_id) VALUES(175, 6);
+INSERT INTO item(id, name) VALUES(175, 'item_grease'); -- Grease = Fett
+INSERT INTO item_category(item_id, category_id) VALUES(175, 6); -- TODO p container category?
 
-INSERT INTO item(id, name) VALUES(175, 'item_grease');
-INSERT INTO item_category(item_id, category_id) VALUES(175, 6);
+-- TODO replace
+--INSERT INTO item(id, name) VALUES(175, 'item_grease');
+--INSERT INTO item_category(item_id, category_id) VALUES(175, 6);
 
-INSERT INTO item(id, name) VALUES(176, 'item_foto_albums');
+INSERT INTO item(id, name) VALUES(176, 'item_foto_albums'); -- Foto album = Fotoalbum
 INSERT INTO item_category(item_id, category_id) VALUES(176, 6); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(177, 'item_litter_pets');
+INSERT INTO item(id, name) VALUES(177, 'item_litter_pets'); -- Pet litter (used) = Haustierstreu (benutzt)
 INSERT INTO item_category(item_id, category_id) VALUES(177, 6);
 
 INSERT INTO item(id, name) VALUES(178, 'item_hifi_audio'); -- HiFi-Anlage | Hi-fi system
 INSERT INTO item_category(item_id, category_id) VALUES(178, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(178, 5);
 
-INSERT INTO item(id, name) VALUES(179, 'item_headphones');
+INSERT INTO item(id, name) VALUES(179, 'item_headphones'); -- Headphones = Kopfhörer
 INSERT INTO item_category(item_id, category_id) VALUES(179, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(179, 5);
 
-INSERT INTO item(id, name) VALUES(180, 'item_jacket');
+INSERT INTO item(id, name) VALUES(180, 'item_jacket'); -- Jacket = Jacke
 INSERT INTO item_category(item_id, category_id) VALUES(180, 9);
 
-INSERT INTO item(id, name) VALUES(181, 'item_socks');
+INSERT INTO item(id, name) VALUES(181, 'item_socks'); -- Socks = Socke
 INSERT INTO item_category(item_id, category_id) VALUES(181, 9);
 
-INSERT INTO item(id, name) VALUES(182, 'item_skirt');
+INSERT INTO item(id, name) VALUES(182, 'item_skirt'); -- Skirt = Rock
 INSERT INTO item_category(item_id, category_id) VALUES(182, 9);
 
-INSERT INTO item(id, name) VALUES(183, 'item_scarf');
+INSERT INTO item(id, name) VALUES(183, 'item_scarf'); -- Scarf = Schal
 INSERT INTO item_category(item_id, category_id) VALUES(183, 9);
 
-INSERT INTO item(id, name) VALUES(184, 'item_gloves');
+INSERT INTO item(id, name) VALUES(184, 'item_gloves'); -- Gloves = Handschuhe
 INSERT INTO item_category(item_id, category_id) VALUES(184, 9);
 
-INSERT INTO item(id, name) VALUES(185, 'item_bracelet');
-INSERT INTO item_category(item_id, category_id) VALUES(185, 6);
+-- TODO materials?
+--INSERT INTO item(id, name) VALUES(185, 'item_bracelet'); -- Bracelet = Armband
+--INSERT INTO item_category(item_id, category_id) VALUES(185, 6);
 
-INSERT INTO item(id, name) VALUES(186, 'item_lipstick');
+INSERT INTO item(id, name) VALUES(186, 'item_lipstick'); -- Lipstick = Lippenstift
 INSERT INTO item_category(item_id, category_id) VALUES(186, 6);
 
-INSERT INTO item(id, name) VALUES(187, 'item_glas_with_plastic_parts');
+INSERT INTO item(id, name) VALUES(187, 'item_glas_with_plastic_parts'); -- Glass with plastic parts = Glas mit Plastikteile
 --INSERT INTO item_category(item_id, category_id) VALUES(187, 6); -- TODO
 
-INSERT INTO item(id, name) VALUES(188, 'item_flour');
+INSERT INTO item(id, name) VALUES(188, 'item_flour'); -- Flour = Mehl
 INSERT INTO item_category(item_id, category_id) VALUES(188, 7);
 
-INSERT INTO item(id, name) VALUES(189, 'item_bread');
+INSERT INTO item(id, name) VALUES(189, 'item_bread'); -- Bread = Brot
 INSERT INTO item_category(item_id, category_id) VALUES(189, 7);
 
-INSERT INTO item(id, name) VALUES(190, 'item_eggshells');
+INSERT INTO item(id, name) VALUES(190, 'item_eggshells'); -- Eggshell = Eierschale
 INSERT INTO item_category(item_id, category_id) VALUES(190, 7);
 
-INSERT INTO item(id, name) VALUES(190, 'item_potatoes');
+INSERT INTO item(id, name) VALUES(190, 'item_potatoes'); -- Potato = Kartoffel
 INSERT INTO item_category(item_id, category_id) VALUES(190, 7);
 
-INSERT INTO item(id, name) VALUES(191, 'item_pears');
+INSERT INTO item(id, name) VALUES(191, 'item_pears'); -- Pear = Birne
 INSERT INTO item_category(item_id, category_id) VALUES(191, 7);
 
-INSERT INTO item(id, name) VALUES(192, 'item_strawberries');
+INSERT INTO item(id, name) VALUES(192, 'item_strawberries'); -- Strawberry = Erdbeere
 INSERT INTO item_category(item_id, category_id) VALUES(192, 7);
 
-INSERT INTO item(id, name) VALUES(193, 'item_lemons');
+INSERT INTO item(id, name) VALUES(193, 'item_lemons'); -- Lemon = Zitrone
 INSERT INTO item_category(item_id, category_id) VALUES(193, 7);
 
-INSERT INTO item(id, name) VALUES(193, 'item_lemons');
-INSERT INTO item_category(item_id, category_id) VALUES(193, 7);
-
-INSERT INTO item(id, name) VALUES(194, 'item_tea_bag');
+INSERT INTO item(id, name) VALUES(194, 'item_tea_bag'); -- Tea bag = Teebeutel
 INSERT INTO item_category(item_id, category_id) VALUES(194, 7);
 
-INSERT INTO item(id, name) VALUES(195, 'item_condiments_no_package');
+INSERT INTO item(id, name) VALUES(195, 'item_condiments_no_package'); -- Condiments (without package) = Gewürze (ohne Verpackung)
 INSERT INTO item_category(item_id, category_id) VALUES(195, 7);
 
-INSERT INTO item(id, name) VALUES(196, 'item_earth');
+INSERT INTO item(id, name) VALUES(196, 'item_earth'); -- Earth = Erde
 INSERT INTO item_category(item_id, category_id) VALUES(196, 7);
 
-INSERT INTO item(id, name) VALUES(197, 'item_plant_leaves');
+INSERT INTO item(id, name) VALUES(197, 'item_plant_leaves'); -- Plant leaves = Blätter (Pflanze)
 INSERT INTO item_category(item_id, category_id) VALUES(197, 7);
 
-INSERT INTO item(id, name) VALUES(198, 'item_nuts');
+INSERT INTO item(id, name) VALUES(198, 'item_nuts'); -- Nuts = Nüsse
 INSERT INTO item_category(item_id, category_id) VALUES(198, 7);
 
 --INSERT INTO item(id, name) VALUES(199, 'item_honig_no_package');
@@ -637,206 +640,205 @@ INSERT INTO item_category(item_id, category_id) VALUES(198, 7);
 
 -- TODO/NOTE START: for all these items write in translation no package! - later with hints maybe remove
 
-INSERT INTO item(id, name) VALUES(199, 'item_cereal');
+INSERT INTO item(id, name) VALUES(199, 'item_cereal'); -- Cereal = Getreide
 INSERT INTO item_category(item_id, category_id) VALUES(199, 7);
 
-INSERT INTO item(id, name) VALUES(200, 'item_milk');
+INSERT INTO item(id, name) VALUES(200, 'item_milk'); -- Milk = Milch
 INSERT INTO item_category(item_id, category_id) VALUES(200, 14);
 
-INSERT INTO item(id, name) VALUES(201, 'item_juice');
+INSERT INTO item(id, name) VALUES(201, 'item_juice'); -- Juice = Saft
 INSERT INTO item_category(item_id, category_id) VALUES(201, 14);
 
-INSERT INTO item(id, name) VALUES(202, 'item_yogurt');
+INSERT INTO item(id, name) VALUES(202, 'item_yogurt'); -- Yogurt = Joghurt
 INSERT INTO item_category(item_id, category_id) VALUES(202, 14);
 
-INSERT INTO item(id, name) VALUES(203, 'item_butter');
+INSERT INTO item(id, name) VALUES(203, 'item_butter'); -- Butter = Butter
 INSERT INTO item_category(item_id, category_id) VALUES(203, 7);
 
-INSERT INTO item(id, name) VALUES(204, 'item_margarine');
+INSERT INTO item(id, name) VALUES(204, 'item_margarine'); -- Margarine = Margarine
 INSERT INTO item_category(item_id, category_id) VALUES(204, 7);
 
-INSERT INTO item(id, name) VALUES(205, 'item_jam');
+INSERT INTO item(id, name) VALUES(205, 'item_jam'); -- Jam = Marmelade
 INSERT INTO item_category(item_id, category_id) VALUES(205, 7);
 
-INSERT INTO item(id, name) VALUES(206, 'item_conserves');
+INSERT INTO item(id, name) VALUES(206, 'item_conserves'); -- Conserve = Konserve
 INSERT INTO item_category(item_id, category_id) VALUES(206, 7);
 
 -- TODO/NOTE END
 
-INSERT INTO item(id, name) VALUES(207, 'item_hamburger');
+INSERT INTO item(id, name) VALUES(207, 'item_hamburger'); -- Hamburger = Hamburger
 INSERT INTO item_category(item_id, category_id) VALUES(207, 6); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(208, 'item_hot_dog');
+INSERT INTO item(id, name) VALUES(208, 'item_hot_dog'); -- Hot dog = Hot Dog
 INSERT INTO item_category(item_id, category_id) VALUES(208, 6); -- TODO confirm
 
 -- TODO/NOTE: write in translation no package! - later with hints maybe remove
-INSERT INTO item(id, name) VALUES(209, 'item_pickles');
+INSERT INTO item(id, name) VALUES(209, 'item_pickles'); -- Pickles = Gewürzgurke
 INSERT INTO item_category(item_id, category_id) VALUES(209, 7);
 
-INSERT INTO item(id, name) VALUES(210, 'item_bucket_plastic');
+INSERT INTO item(id, name) VALUES(210, 'item_bucket_plastic'); -- Bucket (plastic) = Eimer (Plastik)
 INSERT INTO item_category(item_id, category_id) VALUES(210, 10);
 
-INSERT INTO item(id, name) VALUES(211, 'item_silicone_cartridge_green_point');
+INSERT INTO item(id, name) VALUES(211, 'item_silicone_cartridge_green_point'); -- Silicone Cartridge (green point) = Silikon Kartusche (grüner Punkt)
 INSERT INTO item_category(item_id, category_id) VALUES(211, 10);
 
-INSERT INTO item(id, name) VALUES(212, 'item_silicone_cartridge_green_point');
-INSERT INTO item_category(item_id, category_id) VALUES(212, 10);
+-- TODO replace
+--INSERT INTO item(id, name) VALUES(212, 'item_silicone_cartridge_green_point');
+--INSERT INTO item_category(item_id, category_id) VALUES(212, 10);
 
-INSERT INTO item(id, name) VALUES(213, 'item_silicone_cartridge_not_green_point');
+INSERT INTO item(id, name) VALUES(213, 'item_silicone_cartridge_not_green_point'); -- Silicone Cartridge (not green point) = Silikon Kartusche (nicht grüner Punkt)
 INSERT INTO item_category(item_id, category_id) VALUES(213, 6);
 
-INSERT INTO item(id, name) VALUES(214, 'item_silicone');
+INSERT INTO item(id, name) VALUES(214, 'item_silicone'); -- Silicone = Silikon
 INSERT INTO item_category(item_id, category_id) VALUES(214, 6);
 
-INSERT INTO item(id, name) VALUES(215, 'item_glasses');
+INSERT INTO item(id, name) VALUES(215, 'item_glasses'); -- Glasses = Brille
 INSERT INTO item_category(item_id, category_id) VALUES(215, 6);
 
-INSERT INTO item(id, name) VALUES(216, 'item_candles');
+INSERT INTO item(id, name) VALUES(216, 'item_candles'); -- Candle = Kerze
 INSERT INTO item_category(item_id, category_id) VALUES(216, 6);
 
-INSERT INTO item(id, name) VALUES(217, 'item_candles');
-INSERT INTO item_category(item_id, category_id) VALUES(217, 6);
+-- TODO replace
+--INSERT INTO item(id, name) VALUES(217, 'item_candles');
+--INSERT INTO item_category(item_id, category_id) VALUES(217, 6);
 
-INSERT INTO item(id, name) VALUES(218, 'item_parasol');
+INSERT INTO item(id, name) VALUES(218, 'item_parasol'); -- Parasol = Sonnenschirm
 INSERT INTO item_category(item_id, category_id) VALUES(218, 6);
 
-INSERT INTO item(id, name) VALUES(219, 'item_broom');
+INSERT INTO item(id, name) VALUES(219, 'item_broom'); -- Broom = Besen
 INSERT INTO item_category(item_id, category_id) VALUES(219, 6);
 
-INSERT INTO item(id, name) VALUES(220, 'item_mop');
+INSERT INTO item(id, name) VALUES(220, 'item_mop'); -- Mop = Wischmob
 INSERT INTO item_category(item_id, category_id) VALUES(220, 6);
 
-INSERT INTO item(id, name) VALUES(221, 'item_christmas_tree_lights');
+INSERT INTO item(id, name) VALUES(221, 'item_christmas_lights'); -- Christmas Lights = Weihnachtslichter
 INSERT INTO item_category(item_id, category_id) VALUES(221, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(221, 5);
 
-INSERT INTO item(id, name) VALUES(222, 'item_led');
+INSERT INTO item(id, name) VALUES(222, 'item_led'); -- LED = LED
 INSERT INTO item_category(item_id, category_id) VALUES(222, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(222, 5);
 
-INSERT INTO item(id, name) VALUES(223, 'item_chain_lights');
+INSERT INTO item(id, name) VALUES(223, 'item_chain_lights'); -- Chain lights = Kettenlichter
 INSERT INTO item_category(item_id, category_id) VALUES(223, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(223, 5);
 
-INSERT INTO item(id, name) VALUES(224, 'item_christmas_balls');
+INSERT INTO item(id, name) VALUES(224, 'item_christmas_bauble'); -- Christmas bauble = Weihnachtskugel
 INSERT INTO item_category(item_id, category_id) VALUES(224, 6);
 
 INSERT INTO item(id, name) VALUES(225, 'item_clip'); -- Clip = Klammer
 INSERT INTO item_category(item_id, category_id) VALUES(225, 10);
 
-INSERT INTO item(id, name) VALUES(226, 'item_stapler');
+INSERT INTO item(id, name) VALUES(226, 'item_stapler'); -- Stacker = Stapler
 INSERT INTO item_category(item_id, category_id) VALUES(226, 6);
 
-INSERT INTO item(id, name) VALUES(227, 'item_tag'); -- Etikett
+INSERT INTO item(id, name) VALUES(227, 'item_tag'); -- Tag = Etikett
 INSERT INTO item_category(item_id, category_id) VALUES(227, 6);
 
-INSERT INTO item(id, name) VALUES(228, 'item_rests_sharpen_pencil'); -- Anspizreste
+INSERT INTO item(id, name) VALUES(228, 'item_rests_sharpen_pencil'); -- Sharpener rests = Anspitzreste
 INSERT INTO item_category(item_id, category_id) VALUES(228, 6);
 
-INSERT INTO item(id, name) VALUES(229, 'item_punch_pocket'); -- Prospekthüllen
+INSERT INTO item(id, name) VALUES(229, 'item_punch_pocket'); -- Punched pocket = Prospekthüllen
 INSERT INTO item_category(item_id, category_id) VALUES(229, 10);
 
-INSERT INTO item(id, name) VALUES(230, 'item_styrofoam_home');
+INSERT INTO item(id, name) VALUES(230, 'item_styrofoam_home'); -- Styrofoam (home) = Styropor (Heimbedarf)
 INSERT INTO item_category(item_id, category_id) VALUES(230, 10);
 
-INSERT INTO item(id, name) VALUES(231, 'item_styrofoam_construction');
+INSERT INTO item(id, name) VALUES(231, 'item_styrofoam_construction'); -- Styrofoam (construction) = Styropor (Bau)
 INSERT INTO item_category(item_id, category_id) VALUES(231, 6);
 
-INSERT INTO item(id, name) VALUES(232, 'item_helmet');
+INSERT INTO item(id, name) VALUES(232, 'item_helmet'); -- Helmet = Helm
 INSERT INTO item_category(item_id, category_id) VALUES(232, 6);
 
-INSERT INTO item(id, name) VALUES(233, 'item_isolation_cup'); -- Isolierbecher
+INSERT INTO item(id, name) VALUES(233, 'item_isolation_cup'); -- Isolation cup = Isolierbecher
 INSERT INTO item_category(item_id, category_id) VALUES(233, 6);
 
-INSERT INTO item(id, name) VALUES(234, 'item_films'); -- Filme
+INSERT INTO item(id, name) VALUES(234, 'item_films'); -- Films = Filme
 INSERT INTO item_category(item_id, category_id) VALUES(234, 6);
 
-INSERT INTO item(id, name) VALUES(235, 'item_garden_tube'); -- Gartenschlauch
-INSERT INTO item_category(item_id, category_id) VALUES(235, 6);
+INSERT INTO item(id, name) VALUES(235, 'item_garden_tube'); -- Garden tube = Gartenschlauch
+--INSERT INTO item_category(item_id, category_id) VALUES(235, 6); -- TODO confirm - different material?
 
-INSERT INTO item(id, name) VALUES(236, 'item_q_tips'); -- Q-Tips
+INSERT INTO item(id, name) VALUES(236, 'item_q_tips'); -- Q-Tips = Q-Tips
 INSERT INTO item_category(item_id, category_id) VALUES(236, 6);
 
-INSERT INTO item(id, name) VALUES(237, 'item_toilet_brush'); -- Toilettenbürste
+INSERT INTO item(id, name) VALUES(237, 'item_toilet_brush'); -- Toilet brush = Toilettenbürste
 INSERT INTO item_category(item_id, category_id) VALUES(237, 6);
 
-INSERT INTO item(id, name) VALUES(238, 'item_tooth_brush'); -- Zahnbürsten
+INSERT INTO item(id, name) VALUES(238, 'item_tooth_brush'); -- Toothbrush = Zahnbürsten
 INSERT INTO item_category(item_id, category_id) VALUES(238, 6);
 
-INSERT INTO item(id, name) VALUES(238, 'item_dental_floss'); -- Zahnseide
+INSERT INTO item(id, name) VALUES(238, 'item_dental_floss'); -- Dental floss = Zahnseide
 INSERT INTO item_category(item_id, category_id) VALUES(238, 6);
 
-INSERT INTO item(id, name) VALUES(239, 'item_sanitary_towel'); -- Damenbinden
+INSERT INTO item(id, name) VALUES(239, 'item_sanitary_towel'); -- Sanitary towel = Damenbinden
 INSERT INTO item_category(item_id, category_id) VALUES(239, 6);
 
-INSERT INTO item(id, name) VALUES(240, 'item_incontinence_articles'); -- Inkontinenzartikel
-INSERT INTO item_category(item_id, category_id) VALUES(240, 6);
+INSERT INTO item(id, name) VALUES(240, 'item_incontinence_articles'); -- Incontinence articles = Inkontinenzartikel
+INSERT INTO item_category(item_id, category_id) VALUES(240, 6); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(241, 'item_menstruation_cup'); -- Menstruationstasse
+INSERT INTO item(id, name) VALUES(241, 'item_menstruation_cup'); -- Menstruation cup = Menstruationstasse
 INSERT INTO item_category(item_id, category_id) VALUES(241, 6);
 
-INSERT INTO item(id, name) VALUES(242, 'item_band_aid'); -- Pflaster
+INSERT INTO item(id, name) VALUES(242, 'item_band_aid'); -- Band-aid = Pflaster
 INSERT INTO item_category(item_id, category_id) VALUES(242, 6);
 
-INSERT INTO item(id, name) VALUES(243, 'item_cotton_used'); -- Watte (benutzt)
+INSERT INTO item(id, name) VALUES(243, 'item_cotton_used'); -- Cotton (used) = Watte (benutzt)
 INSERT INTO item_category(item_id, category_id) VALUES(243, 6);
 
-INSERT INTO item(id, name) VALUES(243, 'item_cotton_not_used'); -- Watte (unbenutzt)
+INSERT INTO item(id, name) VALUES(243, 'item_cotton_not_used'); -- Cotton (not used) = Watte (unbenutzt)
 INSERT INTO item_category(item_id, category_id) VALUES(243, 7);
 
-INSERT INTO item(id, name) VALUES(244, 'item_ashtray'); -- Aschenbecher
+INSERT INTO item(id, name) VALUES(244, 'item_ashtray'); -- Ashtray = Aschenbecher
 INSERT INTO item_category(item_id, category_id) VALUES(244, 6);
 
-INSERT INTO item(id, name) VALUES(245, 'item_baking_pan'); -- Backformen
-INSERT INTO item_category(item_id, category_id) VALUES(245, 6);
-
-INSERT INTO item(id, name) VALUES(245, 'item_baking_pan_metal'); -- Backformen (Metall)
+INSERT INTO item(id, name) VALUES(245, 'item_baking_pan_metal'); -- Baking pan (metal) = Backformen (Metall)
 INSERT INTO item_category(item_id, category_id) VALUES(245, 10);
 
-INSERT INTO item(id, name) VALUES(246, 'item_baking_pan_ceramik'); -- Backformen (Keramik)
+INSERT INTO item(id, name) VALUES(246, 'item_baking_pan_ceramik'); -- Baking pan (ceramic) = Backformen (Keramik)
 INSERT INTO item_category(item_id, category_id) VALUES(246, 6);
 
-INSERT INTO item(id, name) VALUES(247, 'item_comb_plastic'); -- Kamm
+INSERT INTO item(id, name) VALUES(247, 'item_comb_plastic'); -- Comb (plastic) = Kamm (Plastik)
 INSERT INTO item_category(item_id, category_id) VALUES(247, 10);
 
-INSERT INTO item(id, name) VALUES(248, 'item_airtight_bag'); -- Frischhaltebeutel
+INSERT INTO item(id, name) VALUES(248, 'item_airtight_bag'); -- Airtight bag = Frischhaltebeutel
 INSERT INTO item_category(item_id, category_id) VALUES(248, 10);
 
-INSERT INTO item(id, name) VALUES(249, 'item_pizza_film_plastic'); -- Frischhaltebeutel
+INSERT INTO item(id, name) VALUES(249, 'item_pizza_film_plastic'); -- Pizza film = Frischhaltebeutel
 INSERT INTO item_category(item_id, category_id) VALUES(249, 10);
 
-INSERT INTO item(id, name) VALUES(250, 'item_gloves_rubber'); -- Gummihandschuhe
+INSERT INTO item(id, name) VALUES(250, 'item_gloves_rubber'); -- Rubber gloves = Gummihandschuhe
 INSERT INTO item_category(item_id, category_id) VALUES(250, 6);
 
-INSERT INTO item(id, name) VALUES(251, 'item_cheese_rind_waxed'); -- Käserinde (mit Wachs)
+INSERT INTO item(id, name) VALUES(251, 'item_cheese_rind_waxed'); -- Cheese rind (waxed) = Käserinde (mit Wachs)
 INSERT INTO item_category(item_id, category_id) VALUES(251, 6);
 
-INSERT INTO item(id, name) VALUES(252, 'item_game_board'); -- Spielplatte
+INSERT INTO item(id, name) VALUES(252, 'item_game_board'); -- Game board = Spielplatte
 INSERT INTO item_category(item_id, category_id) VALUES(252, 6);
 
-INSERT INTO item(id, name) VALUES(253, 'item_game_board'); -- Spielplatte
+INSERT INTO item(id, name) VALUES(253, 'item_vitrine_glass'); -- Vitrine glass = Vitrinenglas
 INSERT INTO item_category(item_id, category_id) VALUES(253, 6);
 
-INSERT INTO item(id, name) VALUES(254, 'item_cassettes'); -- Kassetten
+INSERT INTO item(id, name) VALUES(254, 'item_tape'); -- Tappe = Kassetten
 INSERT INTO item_category(item_id, category_id) VALUES(254, 6);
 
-INSERT INTO item(id, name) VALUES(255, 'item_cassettes'); -- Kassetten
+INSERT INTO item(id, name) VALUES(255, 'item_drinking_glass'); -- Drinking glass = Trinkglas
 INSERT INTO item_category(item_id, category_id) VALUES(255, 6);
 
-INSERT INTO item(id, name) VALUES(256, 'item_dirt'); -- Kehricht
+INSERT INTO item(id, name) VALUES(256, 'item_dirt'); -- Dirt = Kehricht
 INSERT INTO item_category(item_id, category_id) VALUES(256, 6);
 
-INSERT INTO item(id, name) VALUES(257, 'item_rag'); -- Lappen
+INSERT INTO item(id, name) VALUES(257, 'item_rag'); -- Rag = Lappen
 INSERT INTO item_category(item_id, category_id) VALUES(257, 6);
 
-INSERT INTO item(id, name) VALUES(258, 'item_nylons'); -- Nylonstrümpfe
+INSERT INTO item(id, name) VALUES(258, 'item_nylons'); -- Nylons = Nylonstrümpfe
 INSERT INTO item_category(item_id, category_id) VALUES(258, 6);
 
-INSERT INTO item(id, name) VALUES(259, 'item_pergament_drawing'); -- Pergamentpapier (Zeichnen)
+INSERT INTO item(id, name) VALUES(259, 'item_pergament_drawing'); -- Pergament (drawing) = Pergamentpapier (Zeichnen)
 INSERT INTO item_category(item_id, category_id) VALUES(259, 6);
 
 INSERT INTO item(id, name) VALUES(260, 'item_glas_broken'); -- Zerbrochenes Glas
-INSERT INTO item_category(item_id, category_id) VALUES(260, 6);
+--INSERT INTO item_category(item_id, category_id) VALUES(260, 6); -- TODO where did I get this from? It it true (if e.g. glass is from bottles)?
 
 INSERT INTO item(id, name) VALUES(261, 'item_school_bag_usable'); -- Schultasche (benutzbar)
 INSERT INTO item_category(item_id, category_id) VALUES(261, 9);
@@ -1027,8 +1029,8 @@ INSERT INTO item(id, name) VALUES(315, 'item_hay'); -- Heu = Hay
 INSERT INTO item_category(item_id, category_id) VALUES(315, 7);
 INSERT INTO item_category(item_id, category_id) VALUES(315, 100008);
 
-INSERT INTO item(id, name) VALUES(316, 'item_heat_resisting_glas'); -- Hitzebeständiges Glas = heat-resisting glas
---INSERT INTO item_category(item_id, category_id) VALUES(316, ?); -- TODO call bsr. which cateogory?
+INSERT INTO item(id, name) VALUES(316, 'item_heat_resisting_glas'); -- heat-resisting glas = Hitzebeständiges Glas
+INSERT INTO item_category(item_id, category_id) VALUES(316, 6);
 
 INSERT INTO item(id, name) VALUES(317, 'item_hay'); -- Heu = Hay
 INSERT INTO item_category(item_id, category_id) VALUES(317, 7);
@@ -1475,8 +1477,8 @@ INSERT INTO item(id, name) VALUES(452, 'item_roomba'); -- Roomba = Roomba
 INSERT INTO item_category(item_id, category_id) VALUES(452, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(452, 5);
 
-INSERT INTO ITEM(ID, NAME) VALUES(453, 'ITEM_ROOMBA'); -- ROOMBA = ROOMBA
-INSERT INTO ITEM_CATEGORY(ITEM_ID, CATEGORY_ID) VALUES(453, 100013);
+insert into item(id, name) values(453, 'item_car_glass'); -- Car glass = Autoglas
+--insert into item_category(item_id, category_id) values(453, ?); -- TODO autoschrottplatz? siehe https://www.hausjournal.net/glaeser-entsorgen
 
 INSERT INTO item(id, name) VALUES(454, 'item_fish_raw'); -- Fish (raw) = Fisch (Roh)
 INSERT INTO item_category(item_id, category_id) VALUES(454, 100013);
@@ -1717,6 +1719,11 @@ INSERT INTO item_category(item_id, category_id) VALUES(522, 1);
 
 INSERT INTO item(id, name) VALUES(523, 'item_shelf'); -- Shelf = Regal
 INSERT INTO item_category(item_id, category_id) VALUES(523, 1);
+
+INSERT INTO item(id, name) VALUES(524, 'item_coffee_maker_glass_can'); -- Coffee maker jar (glass) = Glaskanne aus der Kaffeemaschine
+INSERT INTO item_category(item_id, category_id) VALUES(524, 6);
+
+
 
 INSERT INTO item_category(item_id, category_id) VALUES(1, 3);
 INSERT INTO item_category(item_id, category_id) VALUES(2, 6);
