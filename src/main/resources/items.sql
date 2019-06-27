@@ -1,304 +1,304 @@
-INSERT INTO item(id, name) VALUES(0, 'item_fruits') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(1, 'item_battery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(2, 'item_light_bulb') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(3, 'item_neon_lamp') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(4, 'item_electro') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(5, 'item_diapers') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(6, 'item_tetra_pak') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(7, 'item_furniture') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(8, 'item_glas_white') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
-INSERT INTO item(id, name) VALUES(9, 'item_clothes') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(0, 'item_fruits');
+INSERT INTO item(id, name) VALUES(1, 'item_battery');
+INSERT INTO item(id, name) VALUES(2, 'item_light_bulb');
+INSERT INTO item(id, name) VALUES(3, 'item_neon_lamp');
+INSERT INTO item(id, name) VALUES(4, 'item_electro');
+INSERT INTO item(id, name) VALUES(5, 'item_diapers');
+INSERT INTO item(id, name) VALUES(6, 'item_tetra_pak');
+INSERT INTO item(id, name) VALUES(7, 'item_furniture');
+INSERT INTO item(id, name) VALUES(8, 'item_glas_white');
+INSERT INTO item(id, name) VALUES(9, 'item_clothes');
 
-INSERT INTO item(id, name) VALUES(10, 'item_med_passed') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(10, 'item_med_passed');
 INSERT INTO item_category(item_id, category_id) VALUES(10, 6);
 -- TODO add entry for meds category
 
-INSERT INTO item(id, name) VALUES(11, 'item_noodles_plastic_window') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(11, 'item_noodles_plastic_window');
 INSERT INTO item_category(item_id, category_id) VALUES(11, 2);
-INSERT INTO item(id, name) VALUES(12, 'item_energy_saving_lamp') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(12, 'item_energy_saving_lamp');
 INSERT INTO item_category(item_id, category_id) VALUES(12, 3);
-INSERT INTO item(id, name) VALUES(13, 'item_coffee_filter_unbleached') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(13, 'item_coffee_filter_unbleached');
 INSERT INTO item_category(item_id, category_id) VALUES(13, 7);
-INSERT INTO item(id, name) VALUES(14, 'item_cheese_rind_unwaxed') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(14, 'item_cheese_rind_unwaxed');
 INSERT INTO item_category(item_id, category_id) VALUES(14, 7);
-INSERT INTO item(id, name) VALUES(15, 'item_tempo') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(15, 'item_tempo');
 INSERT INTO item_category(item_id, category_id) VALUES(15, 6);
-INSERT INTO item(id, name) VALUES(16, 'item_baking_paper') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(16, 'item_baking_paper');
 INSERT INTO item_category(item_id, category_id) VALUES(16, 6);
-INSERT INTO item(id, name) VALUES(17, 'item_coffee_capules') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(17, 'item_coffee_capules');
 INSERT INTO item_category(item_id, category_id) VALUES(17, 0);
-INSERT INTO item(id, name) VALUES(18, 'item_old_pictures') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(18, 'item_old_pictures');
 INSERT INTO item_category(item_id, category_id) VALUES(18, 6);
 
-INSERT INTO item(id, name) VALUES(19, 'item_letter_envelope') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(19, 'item_letter_envelope');
 INSERT INTO item_category(item_id, category_id) VALUES(19, 2);
-INSERT INTO item(id, name) VALUES(20, 'item_letter_envelope_plastic_window') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(20, 'item_letter_envelope_plastic_window');
 INSERT INTO item_category(item_id, category_id) VALUES(20, 2);
 
-INSERT INTO item(id, name) VALUES(21, 'item_can') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(21, 'item_can');
 INSERT INTO item_category(item_id, category_id) VALUES(21, 0);
 
-INSERT INTO item(id, name) VALUES(22, 'item_paper_bag') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(22, 'item_paper_bag');
 INSERT INTO item_category(item_id, category_id) VALUES(22, 2);
 
-INSERT INTO item(id, name) VALUES(23, 'item_plastic_container') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(23, 'item_plastic_container');
 INSERT INTO item_category(item_id, category_id) VALUES(23, 0);
 
-INSERT INTO item(id, name) VALUES(24, 'item_metal_big') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(24, 'item_metal_big');
 INSERT INTO item_category(item_id, category_id) VALUES(24, 6);
-INSERT INTO item(id, name) VALUES(25, 'item_screw') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(25, 'item_screw');
 INSERT INTO item_category(item_id, category_id) VALUES(25, 6);
 
-INSERT INTO item(id, name) VALUES(26, 'item_nails') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(26, 'item_nails');
 INSERT INTO item_category(item_id, category_id) VALUES(26, 6);
 
-INSERT INTO item(id, name) VALUES(27, 'item_plants_dead') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(27, 'item_plants_dead');
 INSERT INTO item_category(item_id, category_id) VALUES(27, 7);
 
-INSERT INTO item(id, name) VALUES(28, 'item_foliage') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(28, 'item_foliage');
 INSERT INTO item_category(item_id, category_id) VALUES(28, 7);
 
-INSERT INTO item(id, name) VALUES(29, 'item_wallpaper') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(29, 'item_wallpaper');
 INSERT INTO item_category(item_id, category_id) VALUES(29, 6);
 
-INSERT INTO item(id, name) VALUES(30, 'item_glas_window') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(30, 'item_glas_window');
 INSERT INTO item_category(item_id, category_id) VALUES(30, 6);
 
-INSERT INTO item(id, name) VALUES(31, 'item_glas_mirror') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(31, 'item_glas_mirror');
 INSERT INTO item_category(item_id, category_id) VALUES(31, 6);
 
-INSERT INTO item(id, name) VALUES(32, 'item_vacuum_cleaner_bag') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(32, 'item_vacuum_cleaner_bag');
 INSERT INTO item_category(item_id, category_id) VALUES(32, 6);
 
-INSERT INTO item(id, name) VALUES(33, 'item_rubber') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(33, 'item_rubber');
 INSERT INTO item_category(item_id, category_id) VALUES(33, 6);
 
-INSERT INTO item(id, name) VALUES(34, 'item_hygienic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(34, 'item_hygienic');
 INSERT INTO item_category(item_id, category_id) VALUES(34, 6);
 
-INSERT INTO item(id, name) VALUES(35, 'item_sticky_tape') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(35, 'item_sticky_tape');
 INSERT INTO item_category(item_id, category_id) VALUES(35, 6);
 
-INSERT INTO item(id, name) VALUES(36, 'item_leather') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(36, 'item_leather');
 INSERT INTO item_category(item_id, category_id) VALUES(36, 6);
 
-INSERT INTO item(id, name) VALUES(37, 'item_porcelain') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(37, 'item_porcelain');
 INSERT INTO item_category(item_id, category_id) VALUES(37, 6);
 
 -- TODO replace this repeated item
---INSERT INTO item(id, name) VALUES(38, 'item_porcelain') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item(id, name) VALUES(38, 'item_porcelain');
 --INSERT INTO item_category(item_id, category_id) VALUES(38, 6);
 
-INSERT INTO item(id, name) VALUES(39, 'item_ceramic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(39, 'item_ceramic');
 INSERT INTO item_category(item_id, category_id) VALUES(39, 6);
 
-INSERT INTO item(id, name) VALUES(40, 'item_kitchen_sponge') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(40, 'item_kitchen_sponge');
 INSERT INTO item_category(item_id, category_id) VALUES(40, 6);
 
-INSERT INTO item(id, name) VALUES(41, 'item_kitchen_cloth') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(41, 'item_kitchen_cloth');
 INSERT INTO item_category(item_id, category_id) VALUES(41, 6);
 
-INSERT INTO item(id, name) VALUES(42, 'item_street_litter') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(42, 'item_street_litter');
 INSERT INTO item_category(item_id, category_id) VALUES(42, 6);
 
-INSERT INTO item(id, name) VALUES(43, 'item_cigarette_butt') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(43, 'item_cigarette_butt');
 INSERT INTO item_category(item_id, category_id) VALUES(43, 6);
 
-INSERT INTO item(id, name) VALUES(45, 'item_egg_shells') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(45, 'item_egg_shells');
 INSERT INTO item_category(item_id, category_id) VALUES(45, 7);
 
-INSERT INTO item(id, name) VALUES(46, 'item_garden_trash') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(46, 'item_garden_trash');
 INSERT INTO item_category(item_id, category_id) VALUES(46, 7);
 
-INSERT INTO item(id, name) VALUES(47, 'item_coffee_tea_rests') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(47, 'item_coffee_tea_rests');
 INSERT INTO item_category(item_id, category_id) VALUES(47, 7);
 
-INSERT INTO item(id, name) VALUES(48, 'item_vegetables') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(48, 'item_vegetables');
 INSERT INTO item_category(item_id, category_id) VALUES(48, 7);
 
-INSERT INTO item(id, name) VALUES(49, 'item_lawn') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(49, 'item_lawn');
 INSERT INTO item_category(item_id, category_id) VALUES(49, 7);
 
-INSERT INTO item(id, name) VALUES(50, 'item_meat_cooked') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(50, 'item_meat_cooked');
 INSERT INTO item_category(item_id, category_id) VALUES(50, 7);
 
-INSERT INTO item(id, name) VALUES(51, 'item_food_rests') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(51, 'item_food_rests');
 INSERT INTO item_category(item_id, category_id) VALUES(51, 7);
 
-INSERT INTO item(id, name) VALUES(52, 'item_weed') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(52, 'item_weed');
 INSERT INTO item_category(item_id, category_id) VALUES(52, 7);
 
-INSERT INTO item(id, name) VALUES(52, 'item_weed') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(52, 'item_weed');
 INSERT INTO item_category(item_id, category_id) VALUES(52, 7);
 
-INSERT INTO item(id, name) VALUES(53, 'item_bones') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(53, 'item_bones');
 INSERT INTO item_category(item_id, category_id) VALUES(53, 6);
 
-INSERT INTO item(id, name) VALUES(54, 'item_meat_raw') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(54, 'item_meat_raw');
 INSERT INTO item_category(item_id, category_id) VALUES(54, 6);
 
-INSERT INTO item(id, name) VALUES(55, 'item_food_liquids') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(55, 'item_food_liquids');
 INSERT INTO item_category(item_id, category_id) VALUES(55, 6);
 
 -- TODO replace duplicate
---INSERT INTO item(id, name) VALUES(56, 'item_food_liquids') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item(id, name) VALUES(56, 'item_food_liquids');
 --INSERT INTO item_category(item_id, category_id) VALUES(56, 6);
 
-INSERT INTO item(id, name) VALUES(57, 'item_diapers_compostable') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(57, 'item_diapers_compostable');
 INSERT INTO item_category(item_id, category_id) VALUES(57, 6);
 
-INSERT INTO item(id, name) VALUES(58, 'item_pot') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(58, 'item_pot');
 INSERT INTO item_category(item_id, category_id) VALUES(58, 10);
 
-INSERT INTO item(id, name) VALUES(59, 'item_pan') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(59, 'item_pan');
 INSERT INTO item_category(item_id, category_id) VALUES(59, 10);
 
-INSERT INTO item(id, name) VALUES(60, 'item_cabel') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(60, 'item_cabel');
 INSERT INTO item_category(item_id, category_id) VALUES(60, 10);
 
-INSERT INTO item(id, name) VALUES(61, 'item_toy_children') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(61, 'item_toy_children');
 INSERT INTO item_category(item_id, category_id) VALUES(61, 10);
 
-INSERT INTO item(id, name) VALUES(62, 'item_bowl_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(62, 'item_bowl_plastic');
 INSERT INTO item_category(item_id, category_id) VALUES(62, 10);
 
-INSERT INTO item(id, name) VALUES(63, 'item_flower_pot_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(63, 'item_flower_pot_plastic');
 INSERT INTO item_category(item_id, category_id) VALUES(63, 10);
 
-INSERT INTO item(id, name) VALUES(64, 'item_cd') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(64, 'item_cd');
 INSERT INTO item_category(item_id, category_id) VALUES(64, 100015);
 
-INSERT INTO item(id, name) VALUES(65, 'item_dvd') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(65, 'item_dvd');
 INSERT INTO item_category(item_id, category_id) VALUES(65, 100015);
 
-INSERT INTO item(id, name) VALUES(66, 'item_newspaper') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(66, 'item_newspaper');
 INSERT INTO item_category(item_id, category_id) VALUES(66, 2);
 
-INSERT INTO item(id, name) VALUES(67, 'item_prospects') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(67, 'item_prospects');
 INSERT INTO item_category(item_id, category_id) VALUES(67, 2);
 
-INSERT INTO item(id, name) VALUES(68, 'item_catalog') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(68, 'item_catalog');
 INSERT INTO item_category(item_id, category_id) VALUES(68, 2);
 
-INSERT INTO item(id, name) VALUES(69, 'item_paper') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(69, 'item_paper');
 INSERT INTO item_category(item_id, category_id) VALUES(69, 2);
 
-INSERT INTO item(id, name) VALUES(70, 'item_packing_paper') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(70, 'item_packing_paper');
 INSERT INTO item_category(item_id, category_id) VALUES(70, 2);
 
-INSERT INTO item(id, name) VALUES(71, 'item_packing_cardboard') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(71, 'item_packing_cardboard');
 INSERT INTO item_category(item_id, category_id) VALUES(71, 2);
 
-INSERT INTO item(id, name) VALUES(72, 'item_can_drink') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(72, 'item_can_drink');
 INSERT INTO item_category(item_id, category_id) VALUES(72, 0);
 
-INSERT INTO item(id, name) VALUES(73, 'item_can_conserves') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(73, 'item_can_conserves');
 INSERT INTO item_category(item_id, category_id) VALUES(73, 0);
 
-INSERT INTO item(id, name) VALUES(74, 'item_aluminium') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(74, 'item_aluminium');
 INSERT INTO item_category(item_id, category_id) VALUES(74, 0);
 
-INSERT INTO item(id, name) VALUES(75, 'item_drinks_composite_material') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(75, 'item_drinks_composite_material');
 INSERT INTO item_category(item_id, category_id) VALUES(75, 0);
 
-INSERT INTO item(id, name) VALUES(76, 'item_milk_bag') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(76, 'item_milk_bag');
 INSERT INTO item_category(item_id, category_id) VALUES(76, 0);
 
-INSERT INTO item(id, name) VALUES(77, 'item_juice_bag') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(77, 'item_juice_bag');
 INSERT INTO item_category(item_id, category_id) VALUES(77, 0);
 
-INSERT INTO item(id, name) VALUES(78, 'item_plastic_film') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(78, 'item_plastic_film');
 INSERT INTO item_category(item_id, category_id) VALUES(78, 0);
 
-INSERT INTO item(id, name) VALUES(79, 'item_plastic_bag') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(79, 'item_plastic_bag');
 INSERT INTO item_category(item_id, category_id) VALUES(79, 0);
 
-INSERT INTO item(id, name) VALUES(80, 'item_yoghurt_cup') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(80, 'item_yoghurt_cup');
 INSERT INTO item_category(item_id, category_id) VALUES(80, 0);
 
-INSERT INTO item(id, name) VALUES(81, 'item_plastic_bottles_disposable') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(81, 'item_plastic_bottles_disposable');
 INSERT INTO item_category(item_id, category_id) VALUES(81, 0);
 
-INSERT INTO item(id, name) VALUES(82, 'item_paper_laminated') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(82, 'item_paper_laminated');
 INSERT INTO item_category(item_id, category_id) VALUES(82, 6);
 
-INSERT INTO item(id, name) VALUES(83, 'item_glas_green') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(83, 'item_glas_green');
 INSERT INTO item_category(item_id, category_id) VALUES(83, 8);
 
-INSERT INTO item(id, name) VALUES(84, 'item_glas_brown') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(84, 'item_glas_brown');
 INSERT INTO item_category(item_id, category_id) VALUES(84, 11);
 
-INSERT INTO item(id, name) VALUES(85, 'item_glas_non_brown_or_white') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(85, 'item_glas_non_brown_or_white');
 INSERT INTO item_category(item_id, category_id) VALUES(85, 8);
 
-INSERT INTO item(id, name) VALUES(86, 'item_pillow') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(86, 'item_pillow');
 INSERT INTO item_category(item_id, category_id) VALUES(86, 6);
 
-INSERT INTO item(id, name) VALUES(87, 'item_shoes_usable') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Shoes (usable) = Schuhe (benutzbar)
+INSERT INTO item(id, name) VALUES(87, 'item_shoes_usable'); -- Shoes (usable) = Schuhe (benutzbar)
 INSERT INTO item_category(item_id, category_id) VALUES(87, 9);
 
-INSERT INTO item(id, name) VALUES(88, 'item_bed_clothes') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(88, 'item_bed_clothes');
 INSERT INTO item_category(item_id, category_id) VALUES(88, 9);
 
-INSERT INTO item(id, name) VALUES(89, 'item_bed_cover') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(89, 'item_bed_cover');
 INSERT INTO item_category(item_id, category_id) VALUES(89, 9);
 
-INSERT INTO item(id, name) VALUES(90, 'item_curtains') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(90, 'item_curtains');
 INSERT INTO item_category(item_id, category_id) VALUES(90, 9);
 
-INSERT INTO item(id, name) VALUES(91, 'item_mattress') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(91, 'item_mattress');
 INSERT INTO item_category(item_id, category_id) VALUES(91, 1);
 INSERT INTO item_category(item_id, category_id) VALUES(91, 9);
 
-INSERT INTO item(id, name) VALUES(93, 'item_table_cloth') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(93, 'item_table_cloth');
 INSERT INTO item_category(item_id, category_id) VALUES(93, 9);
 
-INSERT INTO item(id, name) VALUES(94, 'item_cap') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(94, 'item_cap');
 INSERT INTO item_category(item_id, category_id) VALUES(94, 9);
 
-INSERT INTO item(id, name) VALUES(95, 'item_hat') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(95, 'item_hat');
 INSERT INTO item_category(item_id, category_id) VALUES(95, 9);
 
-INSERT INTO item(id, name) VALUES(96, 'item_knitted_materials') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(96, 'item_knitted_materials');
 INSERT INTO item_category(item_id, category_id) VALUES(96, 9);
 
-INSERT INTO item(id, name) VALUES(97, 'item_socks') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(97, 'item_socks');
 INSERT INTO item_category(item_id, category_id) VALUES(97, 9);
 
-INSERT INTO item(id, name) VALUES(98, 'item_underwear') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(98, 'item_underwear');
 INSERT INTO item_category(item_id, category_id) VALUES(98, 9);
 
-INSERT INTO item(id, name) VALUES(99, 'item_broken_clothes_wool') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(99, 'item_broken_clothes_wool');
 INSERT INTO item_category(item_id, category_id) VALUES(99, 9);
 
-INSERT INTO item(id, name) VALUES(100, 'item_broken_clothes_synth') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(100, 'item_broken_clothes_synth');
 INSERT INTO item_category(item_id, category_id) VALUES(100, 6);
 
-INSERT INTO item(id, name) VALUES(101, 'item_broken_shoes') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(101, 'item_broken_shoes');
 INSERT INTO item_category(item_id, category_id) VALUES(101, 6);
 
-INSERT INTO item(id, name) VALUES(102, 'item_clothes_painting_or_oil') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(102, 'item_clothes_painting_or_oil');
 INSERT INTO item_category(item_id, category_id) VALUES(102, 6);
 
-INSERT INTO item(id, name) VALUES(103, 'item_fridge') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(103, 'item_fridge');
 INSERT INTO item_category(item_id, category_id) VALUES(103, 1);
 
-INSERT INTO item(id, name) VALUES(104, 'item_oven') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(104, 'item_oven');
 INSERT INTO item_category(item_id, category_id) VALUES(104, 1);
 
-INSERT INTO item(id, name) VALUES(105, 'item_bed') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(105, 'item_bed');
 INSERT INTO item_category(item_id, category_id) VALUES(105, 1);
 
-INSERT INTO item(id, name) VALUES(106, 'item_table') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(106, 'item_table');
 INSERT INTO item_category(item_id, category_id) VALUES(106, 1);
 
-INSERT INTO item(id, name) VALUES(107, 'item_chair') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(107, 'item_chair');
 INSERT INTO item_category(item_id, category_id) VALUES(107, 1);
 
-INSERT INTO item(id, name) VALUES(108, 'item_microwave') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(108, 'item_microwave');
 INSERT INTO item_category(item_id, category_id) VALUES(108, 1);
 
-INSERT INTO item(id, name) VALUES(109, 'item_cutlery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(109, 'item_cutlery');
 INSERT INTO item_category(item_id, category_id) VALUES(109, 1);
 
 INSERT INTO item(id, name) VALUES(110, 'item_dead_pet');
@@ -317,134 +317,134 @@ INSERT INTO item_category(item_id, category_id) VALUES(115, 12);
 -- new
 
 -- TODO cat
---INSERT INTO item(id, name) VALUES(110, 'item_pipe') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Tobacco pipe = Tabakspfeife
+--INSERT INTO item(id, name) VALUES(110, 'item_pipe'); -- Tobacco pipe = Tabakspfeife
 --INSERT INTO item_category(item_id, category_id) VALUES(110, 1);
 
-INSERT INTO item(id, name) VALUES(111, 'item_lab_tubes') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+INSERT INTO item(id, name) VALUES(111, 'item_lab_tubes');
 INSERT INTO item_category(item_id, category_id) VALUES(111, 1);
 
 -- TODO cat
---INSERT INTO item(id, name) VALUES(112, 'item_lab_sulfur') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Sulfur = Schwefel
+--INSERT INTO item(id, name) VALUES(112, 'item_lab_sulfur'); -- Sulfur = Schwefel
 --INSERT INTO item_category(item_id, category_id) VALUES(112, 1);
 
-INSERT INTO item(id, name) VALUES(113, 'item_nail_polish') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Nail polish = Nagellack
+INSERT INTO item(id, name) VALUES(113, 'item_nail_polish'); -- Nail polish = Nagellack
 INSERT INTO item_category(item_id, category_id) VALUES(113, 100032);
 
-INSERT INTO item(id, name) VALUES(114, 'item_rechargeable_battery') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Rechargeable Battery = Akku
+INSERT INTO item(id, name) VALUES(114, 'item_rechargeable_battery'); -- Rechargeable Battery = Akku
 INSERT INTO item_category(item_id, category_id) VALUES(114, 100012);
 
-INSERT INTO item(id, name) VALUES(115, 'item_aerosol_can_not_dangerous') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Aerosol (not marked as dangerous) = Aerosol (nicht als gefährlich markiert)
+INSERT INTO item(id, name) VALUES(115, 'item_aerosol_can_not_dangerous'); -- Aerosol (not marked as dangerous) = Aerosol (nicht als gefährlich markiert)
 INSERT INTO item_category(item_id, category_id) VALUES(115, 10);
 
-INSERT INTO item(id, name) VALUES(116, 'item_aerosol_can_dangerous') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Aerosol (dangerous) = Aerosol (gefährlich)
+INSERT INTO item(id, name) VALUES(116, 'item_aerosol_can_dangerous'); -- Aerosol (dangerous) = Aerosol (gefährlich)
 INSERT INTO item_category(item_id, category_id) VALUES(116, 100032);
 
-INSERT INTO item(id, name) VALUES(117, 'item_computer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Computer = Computer
+INSERT INTO item(id, name) VALUES(117, 'item_computer'); -- Computer = Computer
 INSERT INTO item_category(item_id, category_id) VALUES(117, 1);
 INSERT INTO item_category(item_id, category_id) VALUES(117, 5);
 
-INSERT INTO item(id, name) VALUES(118, 'item_harddrive') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Hard drive = Festplatte
+INSERT INTO item(id, name) VALUES(118, 'item_harddrive'); -- Hard drive = Festplatte
 INSERT INTO item_category(item_id, category_id) VALUES(118, 100013);
 
-INSERT INTO item(id, name) VALUES(119, 'item_speakers') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Speakers = Lautsprecher
+INSERT INTO item(id, name) VALUES(119, 'item_speakers'); -- Speakers = Lautsprecher
 INSERT INTO item_category(item_id, category_id) VALUES(119, 5);
 -- TODO-small
 
-INSERT INTO item(id, name) VALUES(120, 'item_watch') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Watch = Armbanduhr
+INSERT INTO item(id, name) VALUES(120, 'item_watch'); -- Watch = Armbanduhr
 INSERT INTO item_category(item_id, category_id) VALUES(120, 100013);
 
-INSERT INTO item(id, name) VALUES(121, 'item_clock') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Clock = Uhr
+INSERT INTO item(id, name) VALUES(121, 'item_clock'); -- Clock = Uhr
 INSERT INTO item_category(item_id, category_id) VALUES(121, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(121, 5);
 
-INSERT INTO item(id, name) VALUES(122, 'item_ventilator') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Ventilator = Ventilator
+INSERT INTO item(id, name) VALUES(122, 'item_ventilator'); -- Ventilator = Ventilator
 INSERT INTO item_category(item_id, category_id) VALUES(122, 5);
 -- TODO-small
 
-INSERT INTO item(id, name) VALUES(123, 'item_car_parts') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Car parts = Autoteile
+INSERT INTO item(id, name) VALUES(123, 'item_car_parts'); -- Car parts = Autoteile
 INSERT INTO item_category(item_id, category_id) VALUES(123, 13);
 
-INSERT INTO item(id, name) VALUES(124, 'item_air_conditioner') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Air Conditioner = Klimaanlage
+INSERT INTO item(id, name) VALUES(124, 'item_air_conditioner'); -- Air Conditioner = Klimaanlage
 INSERT INTO item_category(item_id, category_id) VALUES(124, 5);
 -- TODO-small
 
-INSERT INTO item(id, name) VALUES(125, 'item_printer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Printer = Drucker
+INSERT INTO item(id, name) VALUES(125, 'item_printer'); -- Printer = Drucker
 INSERT INTO item_category(item_id, category_id) VALUES(125, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(125, 5);
 
-INSERT INTO item(id, name) VALUES(126, 'item_scanner') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Scanner = Scanner
+INSERT INTO item(id, name) VALUES(126, 'item_scanner'); -- Scanner = Scanner
 INSERT INTO item_category(item_id, category_id) VALUES(126, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(126, 5);
 
-INSERT INTO item(id, name) VALUES(127, 'item_coffee_machine') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Coffee Machine = Kaffeemaschine
+INSERT INTO item(id, name) VALUES(127, 'item_coffee_machine'); -- Coffee Machine = Kaffeemaschine
 INSERT INTO item_category(item_id, category_id) VALUES(127, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(127, 5);
 
-INSERT INTO item(id, name) VALUES(128, 'item_notebook') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Notebook = Notizbuch
+INSERT INTO item(id, name) VALUES(128, 'item_notebook'); -- Notebook = Notizbuch
 INSERT INTO item_category(item_id, category_id) VALUES(128, 2);
 
-INSERT INTO item(id, name) VALUES(129, 'item_books') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Book = Buch
+INSERT INTO item(id, name) VALUES(129, 'item_books'); -- Book = Buch
 INSERT INTO item_category(item_id, category_id) VALUES(129, 2);
 INSERT INTO item_category(item_id, category_id) VALUES(129, 2);
 
-INSERT INTO item(id, name) VALUES(130, 'item_thermometer_mercury') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Mercury thermometer = Quecksilberthermometer
+INSERT INTO item(id, name) VALUES(130, 'item_thermometer_mercury'); -- Mercury thermometer = Quecksilberthermometer
 INSERT INTO item_category(item_id, category_id) VALUES(130, 100030);
 
-INSERT INTO item(id, name) VALUES(130, 'item_thermometer_digital') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Digital thermometer = Digitales Thermometer
+INSERT INTO item(id, name) VALUES(130, 'item_thermometer_digital'); -- Digital thermometer = Digitales Thermometer
 INSERT INTO item_category(item_id, category_id) VALUES(130, 100013);
 
-INSERT INTO item(id, name) VALUES(131, 'item_injection_used') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Injection (used) = Spritze (benutzt)
+INSERT INTO item(id, name) VALUES(131, 'item_injection_used'); -- Injection (used) = Spritze (benutzt)
 INSERT INTO item_category(item_id, category_id) VALUES(131, 100001);
 -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(132, 'item_injection_not_used') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Injection (not used) = Spritze (nicht benutzt)
+INSERT INTO item(id, name) VALUES(132, 'item_injection_not_used'); -- Injection (not used) = Spritze (nicht benutzt)
 --INSERT INTO item_category(item_id, category_id) VALUES(132, ??); TODO
 
-INSERT INTO item(id, name) VALUES(133, 'item_tool_metal') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Tool (metal) = Werkzeug (Metall)
+INSERT INTO item(id, name) VALUES(133, 'item_tool_metal'); -- Tool (metal) = Werkzeug (Metall)
 INSERT INTO item_category(item_id, category_id) VALUES(133, 100000);
 INSERT INTO item_category(item_id, category_id) VALUES(133, 100010);
 
-INSERT INTO item(id, name) VALUES(134, 'item_hammer') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Hammer = Hammer
+INSERT INTO item(id, name) VALUES(134, 'item_hammer'); -- Hammer = Hammer
 --INSERT INTO item_category(item_id, category_id) VALUES(134, ??); TODO
 
-INSERT INTO item(id, name) VALUES(135, 'item_saw') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Saw = Säge
+INSERT INTO item(id, name) VALUES(135, 'item_saw'); -- Saw = Säge
 --INSERT INTO item_category(item_id, category_id) VALUES(135, ??); TODO
 
-INSERT INTO item(id, name) VALUES(135, 'item_screwdriver') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Screwdriver = Schraubenzieher
+INSERT INTO item(id, name) VALUES(135, 'item_screwdriver'); -- Screwdriver = Schraubenzieher
 --INSERT INTO item_category(item_id, category_id) VALUES(135, ??); TODO
 
-INSERT INTO item(id, name) VALUES(136, 'item_boring_machine') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Boring machine = Bohrmaschine
+INSERT INTO item(id, name) VALUES(136, 'item_boring_machine'); -- Boring machine = Bohrmaschine
 INSERT INTO item_category(item_id, category_id) VALUES(136, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(136, 5);
 
-INSERT INTO item(id, name) VALUES(137, 'item_paint_brush') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Paint brush = Pinsel
+INSERT INTO item(id, name) VALUES(137, 'item_paint_brush'); -- Paint brush = Pinsel
 INSERT INTO item_category(item_id, category_id) VALUES(137, 6);
 
-INSERT INTO item(id, name) VALUES(138, 'item_make_up_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Make-up = Make-up
+INSERT INTO item(id, name) VALUES(138, 'item_make_up_plastic'); -- Make-up = Make-up
 INSERT INTO item_category(item_id, category_id) VALUES(138, 0);
 
 -- TODO replace
---INSERT INTO item(id, name) VALUES(139, 'item_make_up_plastic') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name;
+--INSERT INTO item(id, name) VALUES(139, 'item_make_up_plastic');
 --INSERT INTO item_category(item_id, category_id) VALUES(139, 0);
 
-INSERT INTO item(id, name) VALUES(140, 'item_magnet') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Magnet = Magnet
+INSERT INTO item(id, name) VALUES(140, 'item_magnet'); -- Magnet = Magnet
 INSERT INTO item_category(item_id, category_id) VALUES(140, 100002);
 -- TODO small
 
-INSERT INTO item(id, name) VALUES(141, 'item_tampon') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Tampon = Tampon
+INSERT INTO item(id, name) VALUES(141, 'item_tampon'); -- Tampon = Tampon
 INSERT INTO item_category(item_id, category_id) VALUES(141, 6);
 
-INSERT INTO item(id, name) VALUES(142, 'item_condom') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Condom = Condom
+INSERT INTO item(id, name) VALUES(142, 'item_condom'); -- Condom = Condom
 INSERT INTO item_category(item_id, category_id) VALUES(142, 6);
 
-INSERT INTO item(id, name) VALUES(143, 'item_ear_plugs') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Ear plugs = Gehörschutzstöpsel
+INSERT INTO item(id, name) VALUES(143, 'item_ear_plugs'); -- Ear plugs = Gehörschutzstöpsel
 INSERT INTO item_category(item_id, category_id) VALUES(143, 6); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(144, 'item_cage_metal_small') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Cage (metal, small) = Käfig (Metall, klein)
+INSERT INTO item(id, name) VALUES(144, 'item_cage_metal_small'); -- Cage (metal, small) = Käfig (Metall, klein)
 INSERT INTO item_category(item_id, category_id) VALUES(144, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(144, 5);
 
-INSERT INTO item(id, name) VALUES(145, 'item_cage_metal_large') ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name; -- Cage (metal, large) = Käfig (Metall, groß)
+INSERT INTO item(id, name) VALUES(145, 'item_cage_metal_large'); -- Cage (metal, large) = Käfig (Metall, groß)
 INSERT INTO item_category(item_id, category_id) VALUES(145, 100002);
 
 -- TODO replace
@@ -1477,7 +1477,7 @@ INSERT INTO item(id, name) VALUES(452, 'item_roomba'); -- Roomba = Roomba
 INSERT INTO item_category(item_id, category_id) VALUES(452, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(452, 5);
 
-insert into item(id, name) values(453, 'item_car_glass'); -- Car glass = Autoglas
+INSERT INTO item(id, name) VALUES(453, 'item_car_glass'); -- Car glass = Autoglas
 --insert into item_category(item_id, category_id) values(453, ?); -- TODO autoschrottplatz? siehe https://www.hausjournal.net/glaeser-entsorgen
 
 INSERT INTO item(id, name) VALUES(454, 'item_fish_raw'); -- Fish (raw) = Fisch (Roh)
