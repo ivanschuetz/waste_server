@@ -1,13 +1,12 @@
 INSERT INTO translations(tkey, lang, trans) VALUES('container_general', 'en', 'Residual container');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_electro', 'en', 'Electronics');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_bio', 'en', 'Bio');
-INSERT INTO translations(tkey, lang, trans) VALUES('container_yellow', 'en', 'Yellow container');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_bulky', 'en', 'Bulky waste');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_blue', 'en', 'Blue container');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_white', 'en', 'White glas');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_green', 'en', 'Green glas');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_brown', 'en', 'Brow glas');
-INSERT INTO translations(tkey, lang, trans) VALUES('container_scrap', 'en', 'Orange container');
+INSERT INTO translations(tkey, lang, trans) VALUES('container_scrap', 'en', 'Yellow / Orange container');
 
 INSERT INTO translations(tkey, lang, trans) VALUES('category_packaging', 'en', 'Packaging');
 INSERT INTO translations(tkey, lang, trans) VALUES('category_bulky', 'en', 'Bulky waste');
