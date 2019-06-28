@@ -215,7 +215,7 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_ear_plugs', 'de', 'Geh�
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cage_metal_small', 'de', 'Käfig (Metall, klein)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cage_metal_large', 'de', 'Käfig (Metall, groß)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_binoculars', 'de', 'Ferngläser');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_microscope', 'de', 'Mikroskop');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_microscope_electric', 'de', 'Elektronisches Mikroskop');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_hair', 'de', 'Haare');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cotton_buds', 'de', 'Wattestäbchen');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cleaning_pad', 'de', 'Reinigungskissen');
@@ -299,7 +299,7 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_films', 'de', 'Filme');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_garden_tube', 'de', 'Gartenschlauch');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_q_tips', 'de', 'Q-Tips');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_toilet_brush', 'de', 'Toilettenbürste');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_tooth_brush', 'de', 'Zahnbürsten');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_tooth_brush', 'de', 'Zahnbürste');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_dental_floss', 'de', 'Zahnseide');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_sanitary_towel', 'de', 'Damenbinden');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_incontinence_articles', 'de', 'Inkontinenzartikel');

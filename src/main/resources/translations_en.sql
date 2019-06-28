@@ -214,7 +214,7 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_ear_plugs', 'en', 'Ear 
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cage_metal_small', 'en', 'Cage (metal, small)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cage_metal_large', 'en', 'Cage (metal, large)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_binoculars', 'en', 'Binoculars');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_microscope', 'en', 'Microscope');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_microscope_electric', 'en', 'Electric microscope');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_hair', 'en', 'Hair');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cotton_buds', 'en', 'Cotton buds');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_cleaning_pad', 'en', 'Cleaning pad');
