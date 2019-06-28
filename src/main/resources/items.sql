@@ -1676,7 +1676,7 @@ INSERT INTO item(id, name) VALUES(544, 'item_respirator'); -- Respirator = Beatm
 INSERT INTO item_category(item_id, category_id) VALUES(544, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(544, 5);
 
-INSERT INTO item(id, name) VALUES(545, 'item_respirator'); -- Inhaler (electronic) = Inhalationsgerät (elektronisch)
+INSERT INTO item(id, name) VALUES(545, 'item_inhaler'); -- Inhaler (electronic) = Inhalationsgerät (elektronisch)
 INSERT INTO item_category(item_id, category_id) VALUES(545, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(545, 5);
 
@@ -1701,7 +1701,7 @@ INSERT INTO item_category(item_id, category_id) VALUES(551, 100033);
 INSERT INTO item(id, name) VALUES(552, 'item_schist_construction'); -- Schist (construction) = Schiefer (Bau)
 INSERT INTO item_category(item_id, category_id) VALUES(552, 100033);
 
-INSERT INTO item(id, name) VALUES(553, 'item_schist_construction'); -- Limestone (construction) = Kalkstein (Bau)
+INSERT INTO item(id, name) VALUES(553, 'item_limestone_construction'); -- Limestone (construction) = Kalkstein (Bau)
 INSERT INTO item_category(item_id, category_id) VALUES(553, 100033);
 
 INSERT INTO item(id, name) VALUES(554, 'item_baking_gloves'); -- Baking gloves = Backhandschuhe
@@ -1730,7 +1730,7 @@ INSERT INTO item(id, name) VALUES(560, 'item_weights'); -- Weights = Gewichte
 INSERT INTO item(id, name) VALUES(561, 'item_oil_sprayer'); -- Oil sprayer (Metal / Glas) = Ölsprüher (Metall / Glas)
 --INSERT INTO item_category(item_id, category_id) VALUES(561, ?); -- TODO ask, also Tipp to separate parts
 
-INSERT INTO item(id, name) VALUES(562, 'item_start_collar); -- Star collar = Sternverschluss
+INSERT INTO item(id, name) VALUES(562, 'item_start_collar'); -- Star collar = Sternverschluss
 --INSERT INTO item_category(item_id, category_id) VALUES(562, ?); -- TODO ask, also probably different materials?
 
 INSERT INTO item(id, name) VALUES(563, 'item_cork_coasters'); -- Cork coasters = Kork Untersetzer
@@ -1751,9 +1751,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(567, 6);
 INSERT INTO item(id, name) VALUES(568, 'item_pencil_sharpener'); -- Pencil sharpener = Anspitzer
 INSERT INTO item_category(item_id, category_id) VALUES(568, 6);
 
-INSERT INTO item(id, name) VALUES(569, 'item_pencil_sharpener'); -- Pencil sharpener = Anspitzer
-INSERT INTO item_category(item_id, category_id) VALUES(569, 6);
-
 INSERT INTO item(id, name) VALUES(570, 'item_eraser'); -- Eraser = Radiergummi
 INSERT INTO item_category(item_id, category_id) VALUES(570, 6);
 
@@ -1762,9 +1759,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(571, 6);
 
 INSERT INTO item(id, name) VALUES(572, 'item_cat_scratching_post_cardboard'); -- Cat scratching post (cardboard) = Kratzbrett (Pappe)
 INSERT INTO item_category(item_id, category_id) VALUES(572, 2); -- TODO confirm
-
-INSERT INTO item(id, name) VALUES(573, 'item_cat_scratching_post_cardboard'); -- Cat scratching post (cardboard) = Kratzbrett (Pappe)
-INSERT INTO item_category(item_id, category_id) VALUES(573, 2); -- TODO confirm
 
 INSERT INTO item(id, name) VALUES(574, 'item_tank_top'); -- Tank top = Muskelshirt
 INSERT INTO item_category(item_id, category_id) VALUES(574, 9);
@@ -1798,9 +1792,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(581, 5);
 INSERT INTO item(id, name) VALUES(582, 'item_shoulder_pad'); -- Shoulder pad = Schulterpolster
 INSERT INTO item_category(item_id, category_id) VALUES(582, 9);
 
-INSERT INTO item(id, name) VALUES(583, 'item_shoulder_pad'); -- Shoulder pad = Schulterpolster
-INSERT INTO item_category(item_id, category_id) VALUES(583, 9);
-
 INSERT INTO item(id, name) VALUES(584, 'item_whistle'); -- Whistle = Pfeife
 INSERT INTO item_category(item_id, category_id) VALUES(584, 6);
 
@@ -1820,9 +1811,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(588, 7);
 
 INSERT INTO item(id, name) VALUES(589, 'item_cold_pack'); -- Cold pack = Kühlakkus
 INSERT INTO item_category(item_id, category_id) VALUES(589, 6);
-
-INSERT INTO item(id, name) VALUES(590, 'item_cold_pack'); -- Cold pack = Kühlkompresse
-INSERT INTO item_category(item_id, category_id) VALUES(590, 6);
 
 INSERT INTO item(id, name) VALUES(591, 'item_incense_stick'); -- Incense stick = Räucherstäbchen
 INSERT INTO item_category(item_id, category_id) VALUES(591, 6);
@@ -1846,9 +1834,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(595, 6);
 
 INSERT INTO item(id, name) VALUES(596, 'item_sand_paper'); -- Sand paper = Schleifpapier
 INSERT INTO item_category(item_id, category_id) VALUES(596, 6);
-
-INSERT INTO item(id, name) VALUES(597, 'item_sand_paper'); -- Sand paper = Schleifpapier
-INSERT INTO item_category(item_id, category_id) VALUES(597, 6);
 
 INSERT INTO item_category(item_id, category_id) VALUES(1, 3);
 INSERT INTO item_category(item_id, category_id) VALUES(2, 6);
