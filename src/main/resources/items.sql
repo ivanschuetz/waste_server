@@ -1210,6 +1210,7 @@ INSERT INTO item_category(item_id, category_id) VALUES(389, 5);
 INSERT INTO item(id, name) VALUES(390, 'item_doll_cloth'); -- Doll (cloth) = Puppe (Stoff)
 INSERT INTO item_category(item_id, category_id) VALUES(390, 6);
 
+-- TODO comment items without category so they don't appear in the suggestions
 INSERT INTO item(id, name) VALUES(391, 'item_sex_doll'); -- Sex doll = Sexpuppe
 --INSERT INTO item_category(item_id, category_id) VALUES(391, ?); -- TODO sondermueell
 
@@ -1612,7 +1613,7 @@ INSERT INTO item_category(item_id, category_id) VALUES(520, 6);
 INSERT INTO item(id, name) VALUES(521, 'item_stone'); -- Stone = Stein
 --INSERT INTO item_category(item_id, category_id) VALUES(521, ?); -- TODO
 
-INSERT INTO item(id, name) VALUES(522, 'item_shelf'); -- Shelf = Regal
+INSERT INTO item(id, name) VALUES(522, 'item_shelf'); -- Shelf (wood) = Regal (Holz)
 INSERT INTO item_category(item_id, category_id) VALUES(522, 1);
 
 INSERT INTO item(id, name) VALUES(524, 'item_coffee_maker_glass_can'); -- Coffee maker jar (glass) = Glaskanne aus der Kaffeemaschine
@@ -1667,6 +1668,187 @@ INSERT INTO item(id, name) VALUES(541, 'item_cutting_board_glas'); -- Cutting bo
 
 INSERT INTO item(id, name) VALUES(542, 'item_cutting_board_wood'); -- Cutting board (wood) = Schneidebrett (Holz)
 --INSERT INTO item_category(item_id, category_id) VALUES(542, ?); -- TODO
+
+INSERT INTO item(id, name) VALUES(543, 'item_ply_wood'); -- Ply wood = Sperrholz
+INSERT INTO item_category(item_id, category_id) VALUES(543, 100027);
+
+INSERT INTO item(id, name) VALUES(544, 'item_respirator'); -- Respirator = Beatmungsgerät
+INSERT INTO item_category(item_id, category_id) VALUES(544, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(544, 5);
+
+INSERT INTO item(id, name) VALUES(545, 'item_respirator'); -- Inhaler (electronic) = Inhalationsgerät (elektronisch)
+INSERT INTO item_category(item_id, category_id) VALUES(545, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(545, 5);
+
+INSERT INTO item(id, name) VALUES(546, 'item_hoodie'); -- Hoodie = Hoodie
+INSERT INTO item_category(item_id, category_id) VALUES(546, 9);
+
+INSERT INTO item(id, name) VALUES(547, 'item_sex_toy_silicone'); -- Sex toy (silicone) = Sexspielzeug (Silikon)
+INSERT INTO item_category(item_id, category_id) VALUES(547, 6);
+
+INSERT INTO item(id, name) VALUES(548, 'item_sex_toy_plastic'); -- Sex toy (plastic) = Sexspielzeug (Plastik)
+INSERT INTO item_category(item_id, category_id) VALUES(548, 6);
+
+INSERT INTO item(id, name) VALUES(549, 'item_sweater'); -- Sweater = Pullover
+INSERT INTO item_category(item_id, category_id) VALUES(549, 9);
+
+INSERT INTO item(id, name) VALUES(550, 'item_marmor_construction'); -- Marble (construction) = Marmor (Bau)
+INSERT INTO item_category(item_id, category_id) VALUES(550, 100033);
+
+INSERT INTO item(id, name) VALUES(551, 'item_granite_construction'); -- Granite (construction) = Granit (Bau)
+INSERT INTO item_category(item_id, category_id) VALUES(551, 100033);
+
+INSERT INTO item(id, name) VALUES(552, 'item_schist_construction'); -- Schist (construction) = Schiefer (Bau)
+INSERT INTO item_category(item_id, category_id) VALUES(552, 100033);
+
+INSERT INTO item(id, name) VALUES(553, 'item_schist_construction'); -- Limestone (construction) = Kalkstein (Bau)
+INSERT INTO item_category(item_id, category_id) VALUES(553, 100033);
+
+INSERT INTO item(id, name) VALUES(554, 'item_baking_gloves'); -- Baking gloves = Backhandschuhe
+INSERT INTO item_category(item_id, category_id) VALUES(554, 6);
+
+INSERT INTO item(id, name) VALUES(555, 'item_welder_gloves'); -- Welder gloves = Schweißerhandschuhe
+INSERT INTO item_category(item_id, category_id) VALUES(555, 6);
+
+--INSERT INTO item(id, name) VALUES(556, 'item_welding_mask'); -- Welding mask = Schweißmaske
+--INSERT INTO item_category(item_id, category_id) VALUES(556, ?); -- TODO ask
+
+INSERT INTO item(id, name) VALUES(557, 'item_welding_machine'); -- Welding machine = Schweißgerät
+INSERT INTO item_category(item_id, category_id) VALUES(557, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(557, 5);
+
+INSERT INTO item(id, name) VALUES(558, 'item_oscilloscope'); -- Oscilloscope = Oszilloskop
+INSERT INTO item_category(item_id, category_id) VALUES(558, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(558, 5);
+
+--INSERT INTO item(id, name) VALUES(559, 'item_Dumbbell'); -- Dumbbell = Hantel
+----INSERT INTO item_category(item_id, category_id) VALUES(559, ?); -- TODO ask
+
+INSERT INTO item(id, name) VALUES(560, 'item_weights'); -- Weights = Gewichte
+--INSERT INTO item_category(item_id, category_id) VALUES(560, ?); -- TODO ask, also probably different materials?
+
+INSERT INTO item(id, name) VALUES(561, 'item_oil_sprayer'); -- Oil sprayer (Metal / Glas) = Ölsprüher (Metall / Glas)
+--INSERT INTO item_category(item_id, category_id) VALUES(561, ?); -- TODO ask, also Tipp to separate parts
+
+INSERT INTO item(id, name) VALUES(562, 'item_start_collar); -- Star collar = Sternverschluss
+--INSERT INTO item_category(item_id, category_id) VALUES(562, ?); -- TODO ask, also probably different materials?
+
+INSERT INTO item(id, name) VALUES(563, 'item_cork_coasters'); -- Cork coasters = Kork Untersetzer
+--INSERT INTO item_category(item_id, category_id) VALUES(563, ?); -- TODO ask -- naturkork? if yes use cat from bsr (100002)
+
+INSERT INTO item(id, name) VALUES(564, 'item_head_scratcher_metal'); -- Head scratcher (metal) = Kopf-Massage-Spinne (Metall)
+INSERT INTO item_category(item_id, category_id) VALUES(564, 10); -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(565, 'item_pen_mine'); -- Pen mine = Kugelschreibermine
+INSERT INTO item_category(item_id, category_id) VALUES(565, 6);
+
+INSERT INTO item(id, name) VALUES(566, 'item_pen'); -- Pen = Kugelschreiber
+INSERT INTO item_category(item_id, category_id) VALUES(566, 6);
+
+INSERT INTO item(id, name) VALUES(567, 'item_pencil'); -- Pencil = Bleistift
+INSERT INTO item_category(item_id, category_id) VALUES(567, 6);
+
+INSERT INTO item(id, name) VALUES(568, 'item_pencil_sharpener'); -- Pencil sharpener = Anspitzer
+INSERT INTO item_category(item_id, category_id) VALUES(568, 6);
+
+INSERT INTO item(id, name) VALUES(569, 'item_pencil_sharpener'); -- Pencil sharpener = Anspitzer
+INSERT INTO item_category(item_id, category_id) VALUES(569, 6);
+
+INSERT INTO item(id, name) VALUES(570, 'item_eraser'); -- Eraser = Radiergummi
+INSERT INTO item_category(item_id, category_id) VALUES(570, 6);
+
+INSERT INTO item(id, name) VALUES(571, 'item_crayon'); -- Crayon = Buntstift
+INSERT INTO item_category(item_id, category_id) VALUES(571, 6);
+
+INSERT INTO item(id, name) VALUES(572, 'item_cat_scratching_post_cardboard'); -- Cat scratching post (cardboard) = Kratzbrett (Pappe)
+INSERT INTO item_category(item_id, category_id) VALUES(572, 2); -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(573, 'item_cat_scratching_post_cardboard'); -- Cat scratching post (cardboard) = Kratzbrett (Pappe)
+INSERT INTO item_category(item_id, category_id) VALUES(573, 2); -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(574, 'item_tank_top'); -- Tank top = Muskelshirt
+INSERT INTO item_category(item_id, category_id) VALUES(574, 9);
+
+INSERT INTO item(id, name) VALUES(575, 'item_bra'); -- Bra = BH
+INSERT INTO item_category(item_id, category_id) VALUES(575, 9);
+
+INSERT INTO item(id, name) VALUES(576, 'item_toaster'); -- Toaster = Toaster
+INSERT INTO item_category(item_id, category_id) VALUES(576, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(576, 5);
+
+INSERT INTO item(id, name) VALUES(577, 'item_sandwich_maker'); -- Sandwich maker = Sandwich Toaster
+INSERT INTO item_category(item_id, category_id) VALUES(577, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(577, 5);
+
+INSERT INTO item(id, name) VALUES(578, 'item_mixer'); -- Mixer = Mixer
+INSERT INTO item_category(item_id, category_id) VALUES(578, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(578, 5);
+
+INSERT INTO item(id, name) VALUES(579, 'item_electric_pillow'); -- Electric pillow = Heizkissen
+INSERT INTO item_category(item_id, category_id) VALUES(579, 100013); -- TODO tipp - separate materials
+INSERT INTO item_category(item_id, category_id) VALUES(579, 5);
+
+INSERT INTO item(id, name) VALUES(580, 'item_bath_sponge'); -- Bath sponge = Badeschwamm
+INSERT INTO item_category(item_id, category_id) VALUES(580, 6);
+
+INSERT INTO item(id, name) VALUES(581, 'item_face_sauna'); -- Face sauna = Gesichtssauna
+INSERT INTO item_category(item_id, category_id) VALUES(581, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(581, 5);
+
+INSERT INTO item(id, name) VALUES(582, 'item_shoulder_pad'); -- Shoulder pad = Schulterpolster
+INSERT INTO item_category(item_id, category_id) VALUES(582, 9);
+
+INSERT INTO item(id, name) VALUES(583, 'item_shoulder_pad'); -- Shoulder pad = Schulterpolster
+INSERT INTO item_category(item_id, category_id) VALUES(583, 9);
+
+INSERT INTO item(id, name) VALUES(584, 'item_whistle'); -- Whistle = Pfeife
+INSERT INTO item_category(item_id, category_id) VALUES(584, 6);
+
+INSERT INTO item(id, name) VALUES(585, 'item_multitool'); -- Multitool = Mulitfunktionswerkzeug
+INSERT INTO item_category(item_id, category_id) VALUES(585, 10);
+INSERT INTO item_category(item_id, category_id) VALUES(585, 100010);
+
+INSERT INTO item(id, name) VALUES(586, 'item_knife'); -- Knife = Messer
+INSERT INTO item_category(item_id, category_id) VALUES(586, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(586, 100010); -- TODO scrap (gelbe tonne)? cutlery is also in 1 - confirm!
+
+INSERT INTO item(id, name) VALUES(587, 'item_back_scratcher'); -- Back scratcher = Rückenkratzer
+INSERT INTO item_category(item_id, category_id) VALUES(587, 10); -- TODO confirm
+
+INSERT INTO item(id, name) VALUES(588, 'item_cookies'); -- Cookie = Keks
+INSERT INTO item_category(item_id, category_id) VALUES(588, 7);
+
+INSERT INTO item(id, name) VALUES(589, 'item_cold_pack'); -- Cold pack = Kühlakkus
+INSERT INTO item_category(item_id, category_id) VALUES(589, 6);
+
+INSERT INTO item(id, name) VALUES(590, 'item_cold_pack'); -- Cold pack = Kühlkompresse
+INSERT INTO item_category(item_id, category_id) VALUES(590, 6);
+
+INSERT INTO item(id, name) VALUES(591, 'item_incense_stick'); -- Incense stick = Räucherstäbchen
+INSERT INTO item_category(item_id, category_id) VALUES(591, 6);
+
+INSERT INTO item(id, name) VALUES(592, 'item_shaving_machine'); -- Shaving machine = Rasiermaschine
+INSERT INTO item_category(item_id, category_id) VALUES(592, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(592, 5);
+
+INSERT INTO item(id, name) VALUES(593, 'item_headphone_amplifier'); -- Headphone amplifier = Kopfhörer Verstärker
+INSERT INTO item_category(item_id, category_id) VALUES(593, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(593, 5);
+
+-- TODO generell, "electrish" oder "elektronisch" / "electric" oder "electronic"?
+
+INSERT INTO item(id, name) VALUES(594, 'item_toothbrush_head'); -- Toothbrush head = Zahnbürstenkopf
+INSERT INTO item_category(item_id, category_id) VALUES(594, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(594, 5);
+
+INSERT INTO item(id, name) VALUES(595, 'item_pin'); -- Pin = Stecknadeln
+INSERT INTO item_category(item_id, category_id) VALUES(595, 6);
+
+INSERT INTO item(id, name) VALUES(596, 'item_sand_paper'); -- Sand paper = Schleifpapier
+INSERT INTO item_category(item_id, category_id) VALUES(596, 6);
+
+INSERT INTO item(id, name) VALUES(597, 'item_sand_paper'); -- Sand paper = Schleifpapier
+INSERT INTO item_category(item_id, category_id) VALUES(597, 6);
 
 INSERT INTO item_category(item_id, category_id) VALUES(1, 3);
 INSERT INTO item_category(item_id, category_id) VALUES(2, 6);
