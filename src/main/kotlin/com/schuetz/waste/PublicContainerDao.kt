@@ -60,7 +60,12 @@ class PublicContainerDao {
             Unknown
         } else {
             val openingHoursRows: List<OpeningHoursRow> = mapper.readValue(openingHoursJson, object : TypeReference<List<OpeningHoursRow>>() {})
-            val openingHours = openingHoursRows.map { it.toOpeningHours() }
+
+            // TODO distinct(): Try to do this with SQL instead. Currently when an item has multiple categories, the join with public containers
+            // TODO will have duplicates. The group by works to return just one container, but when joining with hours the JSON for some reason
+            // TODO contains duplicate entries. How do retrieve unique entries in JSON?
+            val openingHours = openingHoursRows.map { it.toOpeningHours() }.distinct()
+
             Hours(openingHours)
         }
         else -> throw RuntimeException("Invalid open type: $type")
