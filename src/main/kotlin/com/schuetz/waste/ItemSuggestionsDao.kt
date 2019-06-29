@@ -12,7 +12,8 @@ class ItemSuggestionsDao {
         "select i.id, t.trans as name " +
             "from item i " +
             "inner join translations t on i.name = t.tkey " +
-            "where lower(t.trans) like ? and t.lang = ?",
+            "where lower(t.trans) like ? and t.lang = ? " +
+            "order by t.trans",
         arrayOf(
             "%${term.toLowerCase()}%",
             lang
