@@ -13,8 +13,6 @@ INSERT INTO item(id, name) VALUES(6, 'item_tetra_pak');
 INSERT INTO item_category(item_id, category_id) VALUES(6, 0);
 INSERT INTO item(id, name) VALUES(7, 'item_furniture');
 INSERT INTO item_category(item_id, category_id) VALUES(7, 1);
-INSERT INTO item(id, name) VALUES(8, 'item_glas_white');
-INSERT INTO item_category(item_id, category_id) VALUES(8, 4);
 INSERT INTO item(id, name) VALUES(9, 'item_clothes');
 INSERT INTO item_category(item_id, category_id) VALUES(9, 9);
 
@@ -228,12 +226,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(81, 0);
 
 INSERT INTO item(id, name) VALUES(82, 'item_paper_laminated');
 INSERT INTO item_category(item_id, category_id) VALUES(82, 6);
-
-INSERT INTO item(id, name) VALUES(83, 'item_glas_green');
-INSERT INTO item_category(item_id, category_id) VALUES(83, 8);
-
-INSERT INTO item(id, name) VALUES(84, 'item_glas_brown');
-INSERT INTO item_category(item_id, category_id) VALUES(84, 11);
 
 INSERT INTO item(id, name) VALUES(85, 'item_glas_non_brown_or_white');
 INSERT INTO item_category(item_id, category_id) VALUES(85, 8);
@@ -2149,6 +2141,9 @@ INSERT INTO item_category(item_id, category_id) VALUES(699, 6);
 
 INSERT INTO item(id, name) VALUES(700, 'item_lighter_empty'); -- Lighter (empty) = Feuerzeug (leer)
 INSERT INTO item_category(item_id, category_id) VALUES(700, 6);
+
+INSERT INTO item(id, name) VALUES(701, 'item_packaging_metal'); -- Metallic packing = Metallverpackung
+INSERT INTO item_category(item_id, category_id) VALUES(701, 0);
 
 --INSERT INTO item(id, name) VALUES(701, 'item_lighter_full'); -- Lighter (non disposable, with content) = Feuerzeug (nicht Einweg, voll)
 --INSERT INTO item_category(item_id, category_id) VALUES(701, ?); -- TODO
