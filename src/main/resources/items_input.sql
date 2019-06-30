@@ -2057,7 +2057,7 @@ INSERT INTO item_category(item_id, category_id) VALUES(669, 100000); -- TODO con
 
 INSERT INTO item(id, name) VALUES(671, 'item_gasoline_tank'); -- Gasoline tank = Benzintank
 INSERT INTO item_category(item_id, category_id) VALUES(671, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(671, 100010); -- + werkstatt
+INSERT INTO item_category(item_id, category_id) VALUES(671, 100010); -- TODO + werkstatt
 
 INSERT INTO item(id, name) VALUES(672, 'item_tool_belt'); -- Tool belt (without tools) = Werkzeuggürtel (ohne Werkzeuge)
 INSERT INTO item_category(item_id, category_id) VALUES(672, 9); -- TODO confirm
