@@ -1798,9 +1798,9 @@ INSERT INTO item(id, name) VALUES(585, 'item_multitool'); -- Multitool = Mulitfu
 INSERT INTO item_category(item_id, category_id) VALUES(585, 10);
 INSERT INTO item_category(item_id, category_id) VALUES(585, 100010);
 
-INSERT INTO item(id, name) VALUES(586, 'item_knife'); -- Knife = Messer
-INSERT INTO item_category(item_id, category_id) VALUES(586, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(586, 100010); -- TODO scrap (gelbe tonne)? cutlery is also in 1 - confirm!
+--INSERT INTO item(id, name) VALUES(586, 'item_knife'); -- Knife = Messer
+--INSERT INTO item_category(item_id, category_id) VALUES(586, 100000);
+--INSERT INTO item_category(item_id, category_id) VALUES(586, 100010); -- TODO scrap (gelbe tonne)? cutlery is also in 1 - confirm!
 
 INSERT INTO item(id, name) VALUES(587, 'item_back_scratcher'); -- Back scratcher = Rückenkratzer
 INSERT INTO item_category(item_id, category_id) VALUES(587, 10); -- TODO confirm
