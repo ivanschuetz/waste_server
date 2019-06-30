@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class DisposalController(val containerDao: ContainerDao, val publicContainerDao: PublicContainerDao,
-                         val pickupCompaniesDao: PickupCompaniesDao) {
+                         val pickupCompaniesDao: PickupCompaniesDao, val categoryDao: CategoryDao) {
 
     @GetMapping("/options/{itemId}")
     @ResponseBody
@@ -23,6 +23,7 @@ class DisposalController(val containerDao: ContainerDao, val publicContainerDao:
         val actualLang = extractValidLanguage(lang)
 
         return DisposalOptionsResult(
+            categoryDao.categories(itemId, actualLang),
             containerDao.containers(itemId, actualLang),
             publicContainerDao.publicContainers(itemId),
             pickupCompaniesDao.companies(itemId)

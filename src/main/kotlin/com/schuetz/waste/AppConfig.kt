@@ -23,6 +23,9 @@ class AppConfig {
     fun itemSearchDao(): ItemSearchDao = ItemSearchDao()
 
     @Bean
+    fun categoryDao(): CategoryDao = CategoryDao()
+
+    @Bean
     fun objectMapper() = ObjectMapper().apply {
         registerModule(KotlinModule())
         propertyNamingStrategy = MyPropertyNamingStrategy()
