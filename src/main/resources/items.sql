@@ -500,661 +500,661 @@ INSERT INTO item_category(item_id, category_id) VALUES(158, 6);
 INSERT INTO item(id, name) VALUES(159, 'item_dried_flowers');
 INSERT INTO item_category(item_id, category_id) VALUES(159, 7);
 
-INSERT INTO item(id, name) VALUES(160, 'item_drinking_fountain');
-INSERT INTO item_category(item_id, category_id) VALUES(160, 1);
+INSERT INTO item(id, name) VALUES(160, 'item_drinking_glass');
+INSERT INTO item_category(item_id, category_id) VALUES(160, 6);
 
-INSERT INTO item(id, name) VALUES(161, 'item_drinking_glass');
-INSERT INTO item_category(item_id, category_id) VALUES(161, 6);
+INSERT INTO item(id, name) VALUES(161, 'item_drinks_composite_material');
+INSERT INTO item_category(item_id, category_id) VALUES(161, 0);
 
-INSERT INTO item(id, name) VALUES(162, 'item_drinks_composite_material');
-INSERT INTO item_category(item_id, category_id) VALUES(162, 0);
+INSERT INTO item(id, name) VALUES(162, 'item_drone');
+INSERT INTO item_category(item_id, category_id) VALUES(162, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(162, 5);
 
-INSERT INTO item(id, name) VALUES(163, 'item_drone');
-INSERT INTO item_category(item_id, category_id) VALUES(163, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(163, 5);
+INSERT INTO item(id, name) VALUES(163, 'item_dry_meat');
+INSERT INTO item_category(item_id, category_id) VALUES(163, 6);
 
-INSERT INTO item(id, name) VALUES(164, 'item_dry_meat');
-INSERT INTO item_category(item_id, category_id) VALUES(164, 6);
+INSERT INTO item(id, name) VALUES(164, 'item_dung');
+INSERT INTO item_category(item_id, category_id) VALUES(164, 7);
 
-INSERT INTO item(id, name) VALUES(165, 'item_dung');
-INSERT INTO item_category(item_id, category_id) VALUES(165, 7);
+INSERT INTO item(id, name) VALUES(165, 'item_dvd');
+INSERT INTO item_category(item_id, category_id) VALUES(165, 100015);
 
-INSERT INTO item(id, name) VALUES(166, 'item_dvd');
-INSERT INTO item_category(item_id, category_id) VALUES(166, 100015);
+INSERT INTO item(id, name) VALUES(166, 'item_ear_drops');
+INSERT INTO item_category(item_id, category_id) VALUES(166, 100020);
 
-INSERT INTO item(id, name) VALUES(167, 'item_ear_drops');
-INSERT INTO item_category(item_id, category_id) VALUES(167, 100020);
+INSERT INTO item(id, name) VALUES(167, 'item_ear_plugs');
+INSERT INTO item_category(item_id, category_id) VALUES(167, 6);
 
-INSERT INTO item(id, name) VALUES(168, 'item_ear_plugs');
+INSERT INTO item(id, name) VALUES(168, 'item_earrings');
 INSERT INTO item_category(item_id, category_id) VALUES(168, 6);
 
-INSERT INTO item(id, name) VALUES(169, 'item_earrings');
-INSERT INTO item_category(item_id, category_id) VALUES(169, 6);
+INSERT INTO item(id, name) VALUES(169, 'item_earth');
+INSERT INTO item_category(item_id, category_id) VALUES(169, 7);
 
-INSERT INTO item(id, name) VALUES(170, 'item_earth');
+INSERT INTO item(id, name) VALUES(170, 'item_egg_shells');
 INSERT INTO item_category(item_id, category_id) VALUES(170, 7);
 
-INSERT INTO item(id, name) VALUES(171, 'item_egg_shells');
+INSERT INTO item(id, name) VALUES(171, 'item_eggs');
 INSERT INTO item_category(item_id, category_id) VALUES(171, 7);
 
-INSERT INTO item(id, name) VALUES(172, 'item_eggs');
+INSERT INTO item(id, name) VALUES(172, 'item_eggshells');
 INSERT INTO item_category(item_id, category_id) VALUES(172, 7);
 
-INSERT INTO item(id, name) VALUES(173, 'item_eggshells');
-INSERT INTO item_category(item_id, category_id) VALUES(173, 7);
+INSERT INTO item(id, name) VALUES(173, 'item_electric_pillow');
+INSERT INTO item_category(item_id, category_id) VALUES(173, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(173, 5);
 
-INSERT INTO item(id, name) VALUES(174, 'item_electric_pillow');
-INSERT INTO item_category(item_id, category_id) VALUES(174, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(174, 5);
+INSERT INTO item(id, name) VALUES(174, 'item_electric_shaver');
+INSERT INTO item_category(item_id, category_id) VALUES(174, 9);
 
-INSERT INTO item(id, name) VALUES(175, 'item_electric_shaver');
-INSERT INTO item_category(item_id, category_id) VALUES(175, 9);
+INSERT INTO item(id, name) VALUES(175, 'item_electro');
+INSERT INTO item_category(item_id, category_id) VALUES(175, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(175, 5);
 
-INSERT INTO item(id, name) VALUES(176, 'item_electro');
+INSERT INTO item(id, name) VALUES(176, 'item_electronic_board');
 INSERT INTO item_category(item_id, category_id) VALUES(176, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(176, 5);
 
-INSERT INTO item(id, name) VALUES(177, 'item_electronic_board');
+INSERT INTO item(id, name) VALUES(177, 'item_electronic_organ');
 INSERT INTO item_category(item_id, category_id) VALUES(177, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(177, 5);
 
-INSERT INTO item(id, name) VALUES(178, 'item_electronic_organ');
+INSERT INTO item(id, name) VALUES(178, 'item_electronic_parts');
 INSERT INTO item_category(item_id, category_id) VALUES(178, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(178, 5);
 
-INSERT INTO item(id, name) VALUES(179, 'item_electronic_parts');
+INSERT INTO item(id, name) VALUES(179, 'item_electronic_pen');
 INSERT INTO item_category(item_id, category_id) VALUES(179, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(179, 5);
 
-INSERT INTO item(id, name) VALUES(180, 'item_electronic_pen');
-INSERT INTO item_category(item_id, category_id) VALUES(180, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(180, 5);
+INSERT INTO item(id, name) VALUES(180, 'item_energy_saving_lamp');
+INSERT INTO item_category(item_id, category_id) VALUES(180, 3);
 
-INSERT INTO item(id, name) VALUES(181, 'item_energy_saving_lamp');
-INSERT INTO item_category(item_id, category_id) VALUES(181, 3);
+INSERT INTO item(id, name) VALUES(181, 'item_eraser');
+INSERT INTO item_category(item_id, category_id) VALUES(181, 6);
 
-INSERT INTO item(id, name) VALUES(182, 'item_eraser');
-INSERT INTO item_category(item_id, category_id) VALUES(182, 6);
+INSERT INTO item(id, name) VALUES(182, 'item_eye_drops');
+INSERT INTO item_category(item_id, category_id) VALUES(182, 100020);
 
-INSERT INTO item(id, name) VALUES(183, 'item_eye_drops');
-INSERT INTO item_category(item_id, category_id) VALUES(183, 100020);
+INSERT INTO item(id, name) VALUES(183, 'item_face_sauna');
+INSERT INTO item_category(item_id, category_id) VALUES(183, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(183, 5);
 
-INSERT INTO item(id, name) VALUES(184, 'item_face_sauna');
-INSERT INTO item_category(item_id, category_id) VALUES(184, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(184, 5);
+INSERT INTO item(id, name) VALUES(184, 'item_feathers');
+INSERT INTO item_category(item_id, category_id) VALUES(184, 7);
 
-INSERT INTO item(id, name) VALUES(185, 'item_feathers');
-INSERT INTO item_category(item_id, category_id) VALUES(185, 7);
+INSERT INTO item(id, name) VALUES(185, 'item_figurine');
+INSERT INTO item_category(item_id, category_id) VALUES(185, 6);
 
-INSERT INTO item(id, name) VALUES(186, 'item_figurine');
+INSERT INTO item(id, name) VALUES(186, 'item_films');
 INSERT INTO item_category(item_id, category_id) VALUES(186, 6);
 
-INSERT INTO item(id, name) VALUES(187, 'item_films');
-INSERT INTO item_category(item_id, category_id) VALUES(187, 6);
+INSERT INTO item(id, name) VALUES(187, 'item_fingernail_parts');
+INSERT INTO item_category(item_id, category_id) VALUES(187, 7);
 
-INSERT INTO item(id, name) VALUES(188, 'item_fingernail_parts');
-INSERT INTO item_category(item_id, category_id) VALUES(188, 7);
+INSERT INTO item(id, name) VALUES(188, 'item_fish_cooked');
+INSERT INTO item_category(item_id, category_id) VALUES(188, 100013);
 
-INSERT INTO item(id, name) VALUES(189, 'item_fish_cooked');
-INSERT INTO item_category(item_id, category_id) VALUES(189, 100013);
+INSERT INTO item(id, name) VALUES(189, 'item_fish_food');
+INSERT INTO item_category(item_id, category_id) VALUES(189, 7);
 
-INSERT INTO item(id, name) VALUES(190, 'item_fish_food');
-INSERT INTO item_category(item_id, category_id) VALUES(190, 7);
+INSERT INTO item(id, name) VALUES(190, 'item_fish_raw');
+INSERT INTO item_category(item_id, category_id) VALUES(190, 100013);
 
-INSERT INTO item(id, name) VALUES(191, 'item_fish_raw');
-INSERT INTO item_category(item_id, category_id) VALUES(191, 100013);
+INSERT INTO item(id, name) VALUES(191, 'item_fitness_band');
+INSERT INTO item_category(item_id, category_id) VALUES(191, 6);
 
-INSERT INTO item(id, name) VALUES(192, 'item_fitness_band');
-INSERT INTO item_category(item_id, category_id) VALUES(192, 6);
+INSERT INTO item(id, name) VALUES(192, 'item_fitness_machine');
+INSERT INTO item_category(item_id, category_id) VALUES(192, 1);
 
-INSERT INTO item(id, name) VALUES(193, 'item_fitness_machine');
-INSERT INTO item_category(item_id, category_id) VALUES(193, 1);
+INSERT INTO item(id, name) VALUES(193, 'item_flour');
+INSERT INTO item_category(item_id, category_id) VALUES(193, 7);
 
-INSERT INTO item(id, name) VALUES(194, 'item_flour');
-INSERT INTO item_category(item_id, category_id) VALUES(194, 7);
+INSERT INTO item(id, name) VALUES(194, 'item_flower_pot_plastic');
+INSERT INTO item_category(item_id, category_id) VALUES(194, 10);
 
-INSERT INTO item(id, name) VALUES(195, 'item_flower_pot_plastic');
-INSERT INTO item_category(item_id, category_id) VALUES(195, 10);
+INSERT INTO item(id, name) VALUES(195, 'item_fly_swatter');
+INSERT INTO item_category(item_id, category_id) VALUES(195, 6);
 
-INSERT INTO item(id, name) VALUES(196, 'item_fly_swatter');
-INSERT INTO item_category(item_id, category_id) VALUES(196, 6);
+INSERT INTO item(id, name) VALUES(196, 'item_foliage');
+INSERT INTO item_category(item_id, category_id) VALUES(196, 7);
 
-INSERT INTO item(id, name) VALUES(197, 'item_foliage');
-INSERT INTO item_category(item_id, category_id) VALUES(197, 7);
+INSERT INTO item(id, name) VALUES(197, 'item_food_liquids');
+INSERT INTO item_category(item_id, category_id) VALUES(197, 6);
 
-INSERT INTO item(id, name) VALUES(198, 'item_food_liquids');
-INSERT INTO item_category(item_id, category_id) VALUES(198, 6);
+INSERT INTO item(id, name) VALUES(198, 'item_food_rests');
+INSERT INTO item_category(item_id, category_id) VALUES(198, 7);
 
-INSERT INTO item(id, name) VALUES(199, 'item_food_rests');
-INSERT INTO item_category(item_id, category_id) VALUES(199, 7);
+INSERT INTO item(id, name) VALUES(199, 'item_foto_albums');
+INSERT INTO item_category(item_id, category_id) VALUES(199, 6);
 
-INSERT INTO item(id, name) VALUES(200, 'item_foto_albums');
+INSERT INTO item(id, name) VALUES(200, 'item_french_bowl_used');
 INSERT INTO item_category(item_id, category_id) VALUES(200, 6);
 
-INSERT INTO item(id, name) VALUES(201, 'item_french_bowl_used');
-INSERT INTO item_category(item_id, category_id) VALUES(201, 6);
+INSERT INTO item(id, name) VALUES(201, 'item_fridge');
+INSERT INTO item_category(item_id, category_id) VALUES(201, 1);
 
-INSERT INTO item(id, name) VALUES(202, 'item_fridge');
-INSERT INTO item_category(item_id, category_id) VALUES(202, 1);
+INSERT INTO item(id, name) VALUES(202, 'item_fruits');
+INSERT INTO item_category(item_id, category_id) VALUES(202, 7);
 
-INSERT INTO item(id, name) VALUES(203, 'item_fruits');
-INSERT INTO item_category(item_id, category_id) VALUES(203, 7);
+INSERT INTO item(id, name) VALUES(203, 'item_fruits_vegetables_net');
+INSERT INTO item_category(item_id, category_id) VALUES(203, 10);
 
-INSERT INTO item(id, name) VALUES(204, 'item_fruits_vegetables_net');
-INSERT INTO item_category(item_id, category_id) VALUES(204, 10);
+INSERT INTO item(id, name) VALUES(204, 'item_fryer');
+INSERT INTO item_category(item_id, category_id) VALUES(204, 6);
 
-INSERT INTO item(id, name) VALUES(205, 'item_fryer');
-INSERT INTO item_category(item_id, category_id) VALUES(205, 6);
+INSERT INTO item(id, name) VALUES(205, 'item_furniture');
+INSERT INTO item_category(item_id, category_id) VALUES(205, 1);
 
-INSERT INTO item(id, name) VALUES(206, 'item_furniture');
+INSERT INTO item(id, name) VALUES(206, 'item_futon');
 INSERT INTO item_category(item_id, category_id) VALUES(206, 1);
 
-INSERT INTO item(id, name) VALUES(207, 'item_futon');
-INSERT INTO item_category(item_id, category_id) VALUES(207, 1);
+INSERT INTO item(id, name) VALUES(207, 'item_game_board');
+INSERT INTO item_category(item_id, category_id) VALUES(207, 6);
 
-INSERT INTO item(id, name) VALUES(208, 'item_game_board');
-INSERT INTO item_category(item_id, category_id) VALUES(208, 6);
+INSERT INTO item(id, name) VALUES(208, 'item_game_console');
+INSERT INTO item_category(item_id, category_id) VALUES(208, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(208, 5);
 
-INSERT INTO item(id, name) VALUES(209, 'item_game_console');
+INSERT INTO item(id, name) VALUES(209, 'item_game_controller');
 INSERT INTO item_category(item_id, category_id) VALUES(209, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(209, 5);
 
-INSERT INTO item(id, name) VALUES(210, 'item_game_controller');
-INSERT INTO item_category(item_id, category_id) VALUES(210, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(210, 5);
+INSERT INTO item(id, name) VALUES(210, 'item_garden_trash');
+INSERT INTO item_category(item_id, category_id) VALUES(210, 7);
 
-INSERT INTO item(id, name) VALUES(211, 'item_garden_trash');
-INSERT INTO item_category(item_id, category_id) VALUES(211, 7);
+INSERT INTO item(id, name) VALUES(211, 'item_gasoline');
+INSERT INTO item_category(item_id, category_id) VALUES(211, 100032);
 
-INSERT INTO item(id, name) VALUES(212, 'item_gasoline');
-INSERT INTO item_category(item_id, category_id) VALUES(212, 100032);
+INSERT INTO item(id, name) VALUES(212, 'item_gasoline_tank');
+INSERT INTO item_category(item_id, category_id) VALUES(212, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(212, 100010);
 
-INSERT INTO item(id, name) VALUES(213, 'item_gasoline_tank');
-INSERT INTO item_category(item_id, category_id) VALUES(213, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(213, 100010);
+INSERT INTO item(id, name) VALUES(213, 'item_gift_paper_coated');
+INSERT INTO item_category(item_id, category_id) VALUES(213, 6);
 
-INSERT INTO item(id, name) VALUES(214, 'item_gift_paper_coated');
-INSERT INTO item_category(item_id, category_id) VALUES(214, 6);
+INSERT INTO item(id, name) VALUES(214, 'item_gift_paper_not_coated');
+INSERT INTO item_category(item_id, category_id) VALUES(214, 2);
 
-INSERT INTO item(id, name) VALUES(215, 'item_gift_paper_not_coated');
-INSERT INTO item_category(item_id, category_id) VALUES(215, 2);
+INSERT INTO item(id, name) VALUES(215, 'item_gitar_electric');
+INSERT INTO item_category(item_id, category_id) VALUES(215, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(215, 5);
 
-INSERT INTO item(id, name) VALUES(216, 'item_gitar_electric');
-INSERT INTO item_category(item_id, category_id) VALUES(216, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(216, 5);
+INSERT INTO item(id, name) VALUES(216, 'item_glas_mirror');
+INSERT INTO item_category(item_id, category_id) VALUES(216, 6);
 
-INSERT INTO item(id, name) VALUES(217, 'item_glas_mirror');
-INSERT INTO item_category(item_id, category_id) VALUES(217, 6);
+INSERT INTO item(id, name) VALUES(217, 'item_glas_non_brown_or_white');
+INSERT INTO item_category(item_id, category_id) VALUES(217, 8);
 
-INSERT INTO item(id, name) VALUES(218, 'item_glas_non_brown_or_white');
-INSERT INTO item_category(item_id, category_id) VALUES(218, 8);
+INSERT INTO item(id, name) VALUES(218, 'item_glas_window');
+INSERT INTO item_category(item_id, category_id) VALUES(218, 6);
 
-INSERT INTO item(id, name) VALUES(219, 'item_glas_window');
+INSERT INTO item(id, name) VALUES(219, 'item_glasses');
 INSERT INTO item_category(item_id, category_id) VALUES(219, 6);
 
-INSERT INTO item(id, name) VALUES(220, 'item_glasses');
-INSERT INTO item_category(item_id, category_id) VALUES(220, 6);
+INSERT INTO item(id, name) VALUES(220, 'item_gloves');
+INSERT INTO item_category(item_id, category_id) VALUES(220, 9);
 
-INSERT INTO item(id, name) VALUES(221, 'item_gloves');
-INSERT INTO item_category(item_id, category_id) VALUES(221, 9);
+INSERT INTO item(id, name) VALUES(221, 'item_gloves_rubber');
+INSERT INTO item_category(item_id, category_id) VALUES(221, 6);
 
-INSERT INTO item(id, name) VALUES(222, 'item_gloves_rubber');
-INSERT INTO item_category(item_id, category_id) VALUES(222, 6);
+INSERT INTO item(id, name) VALUES(222, 'item_granite_construction');
+INSERT INTO item_category(item_id, category_id) VALUES(222, 100033);
 
-INSERT INTO item(id, name) VALUES(223, 'item_granite_construction');
-INSERT INTO item_category(item_id, category_id) VALUES(223, 100033);
+INSERT INTO item(id, name) VALUES(223, 'item_graphics_card');
+INSERT INTO item_category(item_id, category_id) VALUES(223, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(223, 5);
 
-INSERT INTO item(id, name) VALUES(224, 'item_graphics_card');
-INSERT INTO item_category(item_id, category_id) VALUES(224, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(224, 5);
+INSERT INTO item(id, name) VALUES(224, 'item_grease');
+INSERT INTO item_category(item_id, category_id) VALUES(224, 6);
 
-INSERT INTO item(id, name) VALUES(225, 'item_grease');
-INSERT INTO item_category(item_id, category_id) VALUES(225, 6);
+INSERT INTO item(id, name) VALUES(225, 'item_guitar_acoustic');
+INSERT INTO item_category(item_id, category_id) VALUES(225, 1);
 
-INSERT INTO item(id, name) VALUES(226, 'item_guitar_acoustic');
-INSERT INTO item_category(item_id, category_id) VALUES(226, 1);
+INSERT INTO item(id, name) VALUES(226, 'item_hair');
+INSERT INTO item_category(item_id, category_id) VALUES(226, 7);
 
-INSERT INTO item(id, name) VALUES(227, 'item_hair');
-INSERT INTO item_category(item_id, category_id) VALUES(227, 7);
+INSERT INTO item(id, name) VALUES(227, 'item_hair_brush');
+INSERT INTO item_category(item_id, category_id) VALUES(227, 6);
 
-INSERT INTO item(id, name) VALUES(228, 'item_hair_brush');
-INSERT INTO item_category(item_id, category_id) VALUES(228, 6);
+INSERT INTO item(id, name) VALUES(228, 'item_hair_color');
+INSERT INTO item_category(item_id, category_id) VALUES(228, 100032);
 
-INSERT INTO item(id, name) VALUES(229, 'item_hair_color');
-INSERT INTO item_category(item_id, category_id) VALUES(229, 100032);
+INSERT INTO item(id, name) VALUES(229, 'item_hair_drier');
+INSERT INTO item_category(item_id, category_id) VALUES(229, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(229, 5);
 
-INSERT INTO item(id, name) VALUES(230, 'item_hair_drier');
-INSERT INTO item_category(item_id, category_id) VALUES(230, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(230, 5);
+INSERT INTO item(id, name) VALUES(230, 'item_hairnet');
+INSERT INTO item_category(item_id, category_id) VALUES(230, 6);
 
-INSERT INTO item(id, name) VALUES(231, 'item_hairnet');
+INSERT INTO item(id, name) VALUES(231, 'item_halloween_mask');
 INSERT INTO item_category(item_id, category_id) VALUES(231, 6);
 
-INSERT INTO item(id, name) VALUES(232, 'item_halloween_mask');
+INSERT INTO item(id, name) VALUES(232, 'item_hamburger');
 INSERT INTO item_category(item_id, category_id) VALUES(232, 6);
 
-INSERT INTO item(id, name) VALUES(233, 'item_hamburger');
+INSERT INTO item(id, name) VALUES(233, 'item_hand_bag_not_usable');
 INSERT INTO item_category(item_id, category_id) VALUES(233, 6);
 
-INSERT INTO item(id, name) VALUES(234, 'item_hand_bag_not_usable');
-INSERT INTO item_category(item_id, category_id) VALUES(234, 6);
+INSERT INTO item(id, name) VALUES(234, 'item_hand_bag_usable');
+INSERT INTO item_category(item_id, category_id) VALUES(234, 9);
 
-INSERT INTO item(id, name) VALUES(235, 'item_hand_bag_usable');
-INSERT INTO item_category(item_id, category_id) VALUES(235, 9);
+INSERT INTO item(id, name) VALUES(235, 'item_hand_brush');
+INSERT INTO item_category(item_id, category_id) VALUES(235, 6);
 
-INSERT INTO item(id, name) VALUES(236, 'item_hand_brush');
-INSERT INTO item_category(item_id, category_id) VALUES(236, 6);
+INSERT INTO item(id, name) VALUES(236, 'item_handcuffs');
+INSERT INTO item_category(item_id, category_id) VALUES(236, 10);
 
-INSERT INTO item(id, name) VALUES(237, 'item_handcuffs');
-INSERT INTO item_category(item_id, category_id) VALUES(237, 10);
+INSERT INTO item(id, name) VALUES(237, 'item_handheld_electric_mixer');
+INSERT INTO item_category(item_id, category_id) VALUES(237, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(237, 5);
 
-INSERT INTO item(id, name) VALUES(238, 'item_handheld_electric_mixer');
-INSERT INTO item_category(item_id, category_id) VALUES(238, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(238, 5);
+INSERT INTO item(id, name) VALUES(238, 'item_handkerchief');
+INSERT INTO item_category(item_id, category_id) VALUES(238, 6);
 
-INSERT INTO item(id, name) VALUES(239, 'item_handkerchief');
-INSERT INTO item_category(item_id, category_id) VALUES(239, 6);
+INSERT INTO item(id, name) VALUES(239, 'item_hanger_metal');
+INSERT INTO item_category(item_id, category_id) VALUES(239, 10);
 
-INSERT INTO item(id, name) VALUES(240, 'item_hanger_metal');
+INSERT INTO item(id, name) VALUES(240, 'item_hanger_plastic');
 INSERT INTO item_category(item_id, category_id) VALUES(240, 10);
 
-INSERT INTO item(id, name) VALUES(241, 'item_hanger_plastic');
-INSERT INTO item_category(item_id, category_id) VALUES(241, 10);
+INSERT INTO item(id, name) VALUES(241, 'item_harddrive');
+INSERT INTO item_category(item_id, category_id) VALUES(241, 100013);
 
-INSERT INTO item(id, name) VALUES(242, 'item_harddrive');
-INSERT INTO item_category(item_id, category_id) VALUES(242, 100013);
+INSERT INTO item(id, name) VALUES(242, 'item_hat');
+INSERT INTO item_category(item_id, category_id) VALUES(242, 9);
 
-INSERT INTO item(id, name) VALUES(243, 'item_hat');
-INSERT INTO item_category(item_id, category_id) VALUES(243, 9);
+INSERT INTO item(id, name) VALUES(243, 'item_hay');
+INSERT INTO item_category(item_id, category_id) VALUES(243, 7);
 
-INSERT INTO item(id, name) VALUES(244, 'item_hay');
-INSERT INTO item_category(item_id, category_id) VALUES(244, 7);
+INSERT INTO item(id, name) VALUES(244, 'item_head_scratcher_metal');
+INSERT INTO item_category(item_id, category_id) VALUES(244, 10);
 
-INSERT INTO item(id, name) VALUES(245, 'item_head_scratcher_metal');
-INSERT INTO item_category(item_id, category_id) VALUES(245, 10);
+INSERT INTO item(id, name) VALUES(245, 'item_headphone_amplifier');
+INSERT INTO item_category(item_id, category_id) VALUES(245, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(245, 5);
 
-INSERT INTO item(id, name) VALUES(246, 'item_headphone_amplifier');
+INSERT INTO item(id, name) VALUES(246, 'item_headphones');
 INSERT INTO item_category(item_id, category_id) VALUES(246, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(246, 5);
 
-INSERT INTO item(id, name) VALUES(247, 'item_headphones');
+INSERT INTO item(id, name) VALUES(247, 'item_hearing_aid');
 INSERT INTO item_category(item_id, category_id) VALUES(247, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(247, 5);
 
-INSERT INTO item(id, name) VALUES(248, 'item_hearing_aid');
-INSERT INTO item_category(item_id, category_id) VALUES(248, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(248, 5);
+INSERT INTO item(id, name) VALUES(248, 'item_heat_resisting_glas');
+INSERT INTO item_category(item_id, category_id) VALUES(248, 6);
 
-INSERT INTO item(id, name) VALUES(249, 'item_heat_resisting_glas');
-INSERT INTO item_category(item_id, category_id) VALUES(249, 6);
+INSERT INTO item(id, name) VALUES(249, 'item_heat_shrink_tubing');
+INSERT INTO item_category(item_id, category_id) VALUES(249, 10);
 
-INSERT INTO item(id, name) VALUES(250, 'item_heat_shrink_tubing');
-INSERT INTO item_category(item_id, category_id) VALUES(250, 10);
+INSERT INTO item(id, name) VALUES(250, 'item_heater');
+INSERT INTO item_category(item_id, category_id) VALUES(250, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(250, 100010);
+INSERT INTO item_category(item_id, category_id) VALUES(250, 1);
 
-INSERT INTO item(id, name) VALUES(251, 'item_heater');
-INSERT INTO item_category(item_id, category_id) VALUES(251, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(251, 100010);
-INSERT INTO item_category(item_id, category_id) VALUES(251, 1);
+INSERT INTO item(id, name) VALUES(251, 'item_heating_oil');
+INSERT INTO item_category(item_id, category_id) VALUES(251, 100032);
 
-INSERT INTO item(id, name) VALUES(252, 'item_heating_oil');
-INSERT INTO item_category(item_id, category_id) VALUES(252, 100032);
+INSERT INTO item(id, name) VALUES(252, 'item_hedge_trimmer');
+INSERT INTO item_category(item_id, category_id) VALUES(252, 10);
+INSERT INTO item_category(item_id, category_id) VALUES(252, 100010);
 
-INSERT INTO item(id, name) VALUES(253, 'item_hedge_trimmer');
-INSERT INTO item_category(item_id, category_id) VALUES(253, 10);
-INSERT INTO item_category(item_id, category_id) VALUES(253, 100010);
+INSERT INTO item(id, name) VALUES(253, 'item_helmet');
+INSERT INTO item_category(item_id, category_id) VALUES(253, 6);
 
-INSERT INTO item(id, name) VALUES(254, 'item_helmet');
-INSERT INTO item_category(item_id, category_id) VALUES(254, 6);
+INSERT INTO item(id, name) VALUES(254, 'item_herbicide');
+INSERT INTO item_category(item_id, category_id) VALUES(254, 100032);
 
-INSERT INTO item(id, name) VALUES(255, 'item_herbicide');
-INSERT INTO item_category(item_id, category_id) VALUES(255, 100032);
+INSERT INTO item(id, name) VALUES(255, 'item_hifi_audio');
+INSERT INTO item_category(item_id, category_id) VALUES(255, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(255, 5);
 
-INSERT INTO item(id, name) VALUES(256, 'item_hifi_audio');
-INSERT INTO item_category(item_id, category_id) VALUES(256, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(256, 5);
+INSERT INTO item(id, name) VALUES(256, 'item_high_gloss_paper');
+INSERT INTO item_category(item_id, category_id) VALUES(256, 7);
 
-INSERT INTO item(id, name) VALUES(257, 'item_high_gloss_paper');
-INSERT INTO item_category(item_id, category_id) VALUES(257, 7);
+INSERT INTO item(id, name) VALUES(257, 'item_home_chemicals');
+INSERT INTO item_category(item_id, category_id) VALUES(257, 100032);
 
-INSERT INTO item(id, name) VALUES(258, 'item_home_chemicals');
+INSERT INTO item(id, name) VALUES(258, 'item_home_cleaner');
 INSERT INTO item_category(item_id, category_id) VALUES(258, 100032);
 
-INSERT INTO item(id, name) VALUES(259, 'item_home_cleaner');
+INSERT INTO item(id, name) VALUES(259, 'item_home_cleaning_substances');
 INSERT INTO item_category(item_id, category_id) VALUES(259, 100032);
 
-INSERT INTO item(id, name) VALUES(260, 'item_home_cleaning_substances');
-INSERT INTO item_category(item_id, category_id) VALUES(260, 100032);
+INSERT INTO item(id, name) VALUES(260, 'item_hoodie');
+INSERT INTO item_category(item_id, category_id) VALUES(260, 9);
 
-INSERT INTO item(id, name) VALUES(261, 'item_hoodie');
-INSERT INTO item_category(item_id, category_id) VALUES(261, 9);
+INSERT INTO item(id, name) VALUES(261, 'item_hot_dog');
+INSERT INTO item_category(item_id, category_id) VALUES(261, 6);
 
-INSERT INTO item(id, name) VALUES(262, 'item_hot_dog');
-INSERT INTO item_category(item_id, category_id) VALUES(262, 6);
+INSERT INTO item(id, name) VALUES(262, 'item_hoverboard');
+INSERT INTO item_category(item_id, category_id) VALUES(262, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(262, 5);
 
-INSERT INTO item(id, name) VALUES(263, 'item_hoverboard');
-INSERT INTO item_category(item_id, category_id) VALUES(263, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(263, 5);
+INSERT INTO item(id, name) VALUES(263, 'item_hygienic');
+INSERT INTO item_category(item_id, category_id) VALUES(263, 6);
 
-INSERT INTO item(id, name) VALUES(264, 'item_hygienic');
+INSERT INTO item(id, name) VALUES(264, 'item_identity_card');
 INSERT INTO item_category(item_id, category_id) VALUES(264, 6);
 
-INSERT INTO item(id, name) VALUES(265, 'item_identity_card');
+INSERT INTO item(id, name) VALUES(265, 'item_incense_stick');
 INSERT INTO item_category(item_id, category_id) VALUES(265, 6);
 
-INSERT INTO item(id, name) VALUES(266, 'item_incense_stick');
+INSERT INTO item(id, name) VALUES(266, 'item_incontinence_articles');
 INSERT INTO item_category(item_id, category_id) VALUES(266, 6);
 
-INSERT INTO item(id, name) VALUES(267, 'item_incontinence_articles');
-INSERT INTO item_category(item_id, category_id) VALUES(267, 6);
+INSERT INTO item(id, name) VALUES(267, 'item_induction_cooker');
+INSERT INTO item_category(item_id, category_id) VALUES(267, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(267, 5);
 
-INSERT INTO item(id, name) VALUES(268, 'item_induction_cooker');
+INSERT INTO item(id, name) VALUES(268, 'item_inhaler');
 INSERT INTO item_category(item_id, category_id) VALUES(268, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(268, 5);
 
-INSERT INTO item(id, name) VALUES(269, 'item_inhaler');
-INSERT INTO item_category(item_id, category_id) VALUES(269, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(269, 5);
+INSERT INTO item(id, name) VALUES(269, 'item_injection_used');
+INSERT INTO item_category(item_id, category_id) VALUES(269, 100001);
 
-INSERT INTO item(id, name) VALUES(270, 'item_injection_used');
-INSERT INTO item_category(item_id, category_id) VALUES(270, 100001);
+INSERT INTO item(id, name) VALUES(270, 'item_ipad');
+INSERT INTO item_category(item_id, category_id) VALUES(270, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(270, 5);
 
-INSERT INTO item(id, name) VALUES(271, 'item_ipad');
+INSERT INTO item(id, name) VALUES(271, 'item_iron_electric');
 INSERT INTO item_category(item_id, category_id) VALUES(271, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(271, 5);
 
-INSERT INTO item(id, name) VALUES(272, 'item_iron_electric');
-INSERT INTO item_category(item_id, category_id) VALUES(272, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(272, 5);
+INSERT INTO item(id, name) VALUES(272, 'item_iron_large');
+INSERT INTO item_category(item_id, category_id) VALUES(272, 100000);
 
-INSERT INTO item(id, name) VALUES(273, 'item_iron_large');
-INSERT INTO item_category(item_id, category_id) VALUES(273, 100000);
+INSERT INTO item(id, name) VALUES(273, 'item_iron_small');
+INSERT INTO item_category(item_id, category_id) VALUES(273, 10);
+INSERT INTO item_category(item_id, category_id) VALUES(273, 100010);
 
-INSERT INTO item(id, name) VALUES(274, 'item_iron_small');
-INSERT INTO item_category(item_id, category_id) VALUES(274, 10);
-INSERT INTO item_category(item_id, category_id) VALUES(274, 100010);
+INSERT INTO item(id, name) VALUES(274, 'item_ironing_board');
+INSERT INTO item_category(item_id, category_id) VALUES(274, 1);
 
-INSERT INTO item(id, name) VALUES(275, 'item_ironing_board');
-INSERT INTO item_category(item_id, category_id) VALUES(275, 1);
+INSERT INTO item(id, name) VALUES(275, 'item_isolation_cup');
+INSERT INTO item_category(item_id, category_id) VALUES(275, 6);
 
-INSERT INTO item(id, name) VALUES(276, 'item_isolation_cup');
-INSERT INTO item_category(item_id, category_id) VALUES(276, 6);
+INSERT INTO item(id, name) VALUES(276, 'item_jacket');
+INSERT INTO item_category(item_id, category_id) VALUES(276, 9);
 
-INSERT INTO item(id, name) VALUES(277, 'item_jacket');
-INSERT INTO item_category(item_id, category_id) VALUES(277, 9);
+INSERT INTO item(id, name) VALUES(277, 'item_jam');
+INSERT INTO item_category(item_id, category_id) VALUES(277, 7);
 
-INSERT INTO item(id, name) VALUES(278, 'item_jam');
-INSERT INTO item_category(item_id, category_id) VALUES(278, 7);
+INSERT INTO item(id, name) VALUES(278, 'item_jeans');
+INSERT INTO item_category(item_id, category_id) VALUES(278, 9);
 
-INSERT INTO item(id, name) VALUES(279, 'item_jeans');
-INSERT INTO item_category(item_id, category_id) VALUES(279, 9);
+INSERT INTO item(id, name) VALUES(279, 'item_jewerly_metal');
+INSERT INTO item_category(item_id, category_id) VALUES(279, 10);
 
-INSERT INTO item(id, name) VALUES(280, 'item_jewerly_metal');
-INSERT INTO item_category(item_id, category_id) VALUES(280, 10);
+INSERT INTO item(id, name) VALUES(280, 'item_jewerly_plastic');
+INSERT INTO item_category(item_id, category_id) VALUES(280, 6);
 
-INSERT INTO item(id, name) VALUES(281, 'item_jewerly_plastic');
-INSERT INTO item_category(item_id, category_id) VALUES(281, 6);
+INSERT INTO item(id, name) VALUES(281, 'item_juice');
+INSERT INTO item_category(item_id, category_id) VALUES(281, 14);
 
-INSERT INTO item(id, name) VALUES(282, 'item_juice');
-INSERT INTO item_category(item_id, category_id) VALUES(282, 14);
+INSERT INTO item(id, name) VALUES(282, 'item_juice_bag');
+INSERT INTO item_category(item_id, category_id) VALUES(282, 0);
 
-INSERT INTO item(id, name) VALUES(283, 'item_juice_bag');
-INSERT INTO item_category(item_id, category_id) VALUES(283, 0);
+INSERT INTO item(id, name) VALUES(283, 'item_key');
+INSERT INTO item_category(item_id, category_id) VALUES(283, 10);
+INSERT INTO item_category(item_id, category_id) VALUES(283, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(283, 100010);
 
-INSERT INTO item(id, name) VALUES(284, 'item_key');
+INSERT INTO item(id, name) VALUES(284, 'item_key_ring');
 INSERT INTO item_category(item_id, category_id) VALUES(284, 10);
 INSERT INTO item_category(item_id, category_id) VALUES(284, 100000);
 INSERT INTO item_category(item_id, category_id) VALUES(284, 100010);
 
-INSERT INTO item(id, name) VALUES(285, 'item_key_ring');
-INSERT INTO item_category(item_id, category_id) VALUES(285, 10);
-INSERT INTO item_category(item_id, category_id) VALUES(285, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(285, 100010);
+INSERT INTO item(id, name) VALUES(285, 'item_keyboard');
+INSERT INTO item_category(item_id, category_id) VALUES(285, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(285, 5);
 
-INSERT INTO item(id, name) VALUES(286, 'item_keyboard');
+INSERT INTO item(id, name) VALUES(286, 'item_kindle');
 INSERT INTO item_category(item_id, category_id) VALUES(286, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(286, 5);
 
-INSERT INTO item(id, name) VALUES(287, 'item_kindle');
-INSERT INTO item_category(item_id, category_id) VALUES(287, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(287, 5);
+INSERT INTO item(id, name) VALUES(287, 'item_kitchen_cloth');
+INSERT INTO item_category(item_id, category_id) VALUES(287, 6);
 
-INSERT INTO item(id, name) VALUES(288, 'item_kitchen_cloth');
+INSERT INTO item(id, name) VALUES(288, 'item_kitchen_sponge');
 INSERT INTO item_category(item_id, category_id) VALUES(288, 6);
 
-INSERT INTO item(id, name) VALUES(289, 'item_kitchen_sponge');
+INSERT INTO item(id, name) VALUES(289, 'item_kitchen_towel_used');
 INSERT INTO item_category(item_id, category_id) VALUES(289, 6);
 
-INSERT INTO item(id, name) VALUES(290, 'item_kitchen_towel_used');
-INSERT INTO item_category(item_id, category_id) VALUES(290, 6);
+INSERT INTO item(id, name) VALUES(290, 'item_knife');
+INSERT INTO item_category(item_id, category_id) VALUES(290, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(290, 100010);
 
-INSERT INTO item(id, name) VALUES(291, 'item_knife');
-INSERT INTO item_category(item_id, category_id) VALUES(291, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(291, 100010);
+INSERT INTO item(id, name) VALUES(291, 'item_knitted_materials');
+INSERT INTO item_category(item_id, category_id) VALUES(291, 9);
 
-INSERT INTO item(id, name) VALUES(292, 'item_knitted_materials');
-INSERT INTO item_category(item_id, category_id) VALUES(292, 9);
+INSERT INTO item(id, name) VALUES(292, 'item_ladder_metal');
+INSERT INTO item_category(item_id, category_id) VALUES(292, 10);
+INSERT INTO item_category(item_id, category_id) VALUES(292, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(292, 100010);
 
-INSERT INTO item(id, name) VALUES(293, 'item_ladder_metal');
-INSERT INTO item_category(item_id, category_id) VALUES(293, 10);
-INSERT INTO item_category(item_id, category_id) VALUES(293, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(293, 100010);
+INSERT INTO item(id, name) VALUES(293, 'item_lamp');
+INSERT INTO item_category(item_id, category_id) VALUES(293, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(293, 5);
+INSERT INTO item_category(item_id, category_id) VALUES(293, 1);
 
-INSERT INTO item(id, name) VALUES(294, 'item_lamp');
-INSERT INTO item_category(item_id, category_id) VALUES(294, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(294, 5);
-INSERT INTO item_category(item_id, category_id) VALUES(294, 1);
+INSERT INTO item(id, name) VALUES(294, 'item_lamp_halogen');
+INSERT INTO item_category(item_id, category_id) VALUES(294, 6);
 
-INSERT INTO item(id, name) VALUES(295, 'item_lamp_halogen');
-INSERT INTO item_category(item_id, category_id) VALUES(295, 6);
+INSERT INTO item(id, name) VALUES(295, 'item_latern_metal');
+INSERT INTO item_category(item_id, category_id) VALUES(295, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(295, 100010);
 
-INSERT INTO item(id, name) VALUES(296, 'item_latern_metal');
-INSERT INTO item_category(item_id, category_id) VALUES(296, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(296, 100010);
+INSERT INTO item(id, name) VALUES(296, 'item_latex');
+INSERT INTO item_category(item_id, category_id) VALUES(296, 6);
 
-INSERT INTO item(id, name) VALUES(297, 'item_latex');
-INSERT INTO item_category(item_id, category_id) VALUES(297, 6);
+INSERT INTO item(id, name) VALUES(297, 'item_laundry_rack_metal');
+INSERT INTO item_category(item_id, category_id) VALUES(297, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(297, 1);
 
-INSERT INTO item(id, name) VALUES(298, 'item_laundry_rack_metal');
-INSERT INTO item_category(item_id, category_id) VALUES(298, 100000);
+INSERT INTO item(id, name) VALUES(298, 'item_laundry_rack_plastic');
+INSERT INTO item_category(item_id, category_id) VALUES(298, 10);
 INSERT INTO item_category(item_id, category_id) VALUES(298, 1);
 
-INSERT INTO item(id, name) VALUES(299, 'item_laundry_rack_plastic');
-INSERT INTO item_category(item_id, category_id) VALUES(299, 10);
-INSERT INTO item_category(item_id, category_id) VALUES(299, 1);
+INSERT INTO item(id, name) VALUES(299, 'item_lawn');
+INSERT INTO item_category(item_id, category_id) VALUES(299, 7);
 
-INSERT INTO item(id, name) VALUES(300, 'item_lawn');
-INSERT INTO item_category(item_id, category_id) VALUES(300, 7);
+INSERT INTO item(id, name) VALUES(300, 'item_lcd_monitor');
+INSERT INTO item_category(item_id, category_id) VALUES(300, 15);
+INSERT INTO item_category(item_id, category_id) VALUES(300, 6);
 
-INSERT INTO item(id, name) VALUES(301, 'item_lcd_monitor');
-INSERT INTO item_category(item_id, category_id) VALUES(301, 15);
-INSERT INTO item_category(item_id, category_id) VALUES(301, 6);
+INSERT INTO item(id, name) VALUES(301, 'item_lead');
+INSERT INTO item_category(item_id, category_id) VALUES(301, 100000);
+INSERT INTO item_category(item_id, category_id) VALUES(301, 100010);
 
-INSERT INTO item(id, name) VALUES(302, 'item_lead');
-INSERT INTO item_category(item_id, category_id) VALUES(302, 100000);
-INSERT INTO item_category(item_id, category_id) VALUES(302, 100010);
+INSERT INTO item(id, name) VALUES(302, 'item_leather');
+INSERT INTO item_category(item_id, category_id) VALUES(302, 6);
 
-INSERT INTO item(id, name) VALUES(303, 'item_leather');
-INSERT INTO item_category(item_id, category_id) VALUES(303, 6);
+INSERT INTO item(id, name) VALUES(303, 'item_led');
+INSERT INTO item_category(item_id, category_id) VALUES(303, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(303, 5);
 
-INSERT INTO item(id, name) VALUES(304, 'item_led');
-INSERT INTO item_category(item_id, category_id) VALUES(304, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(304, 5);
+INSERT INTO item(id, name) VALUES(304, 'item_lego');
+INSERT INTO item_category(item_id, category_id) VALUES(304, 10);
 
-INSERT INTO item(id, name) VALUES(305, 'item_lego');
-INSERT INTO item_category(item_id, category_id) VALUES(305, 10);
+INSERT INTO item(id, name) VALUES(305, 'item_lemons');
+INSERT INTO item_category(item_id, category_id) VALUES(305, 7);
 
-INSERT INTO item(id, name) VALUES(306, 'item_lemons');
-INSERT INTO item_category(item_id, category_id) VALUES(306, 7);
+INSERT INTO item(id, name) VALUES(306, 'item_letter_envelope');
+INSERT INTO item_category(item_id, category_id) VALUES(306, 2);
 
-INSERT INTO item(id, name) VALUES(307, 'item_letter_envelope');
+INSERT INTO item(id, name) VALUES(307, 'item_letter_envelope_plastic_window');
 INSERT INTO item_category(item_id, category_id) VALUES(307, 2);
 
-INSERT INTO item(id, name) VALUES(308, 'item_letter_envelope_plastic_window');
-INSERT INTO item_category(item_id, category_id) VALUES(308, 2);
+INSERT INTO item(id, name) VALUES(308, 'item_life_jacket');
+INSERT INTO item_category(item_id, category_id) VALUES(308, 6);
 
-INSERT INTO item(id, name) VALUES(309, 'item_life_jacket');
+INSERT INTO item(id, name) VALUES(309, 'item_light_bulb');
 INSERT INTO item_category(item_id, category_id) VALUES(309, 6);
 
-INSERT INTO item(id, name) VALUES(310, 'item_light_bulb');
+INSERT INTO item(id, name) VALUES(310, 'item_lighter_disposable');
 INSERT INTO item_category(item_id, category_id) VALUES(310, 6);
 
-INSERT INTO item(id, name) VALUES(311, 'item_lighter_disposable');
+INSERT INTO item(id, name) VALUES(311, 'item_lighter_empty');
 INSERT INTO item_category(item_id, category_id) VALUES(311, 6);
 
-INSERT INTO item(id, name) VALUES(312, 'item_lighter_empty');
-INSERT INTO item_category(item_id, category_id) VALUES(312, 6);
+INSERT INTO item(id, name) VALUES(312, 'item_limestone_construction');
+INSERT INTO item_category(item_id, category_id) VALUES(312, 100033);
 
-INSERT INTO item(id, name) VALUES(313, 'item_limestone_construction');
-INSERT INTO item_category(item_id, category_id) VALUES(313, 100033);
+INSERT INTO item(id, name) VALUES(313, 'item_lipstick');
+INSERT INTO item_category(item_id, category_id) VALUES(313, 6);
 
-INSERT INTO item(id, name) VALUES(314, 'item_lipstick');
+INSERT INTO item(id, name) VALUES(314, 'item_litter_pets');
 INSERT INTO item_category(item_id, category_id) VALUES(314, 6);
 
-INSERT INTO item(id, name) VALUES(315, 'item_litter_pets');
-INSERT INTO item_category(item_id, category_id) VALUES(315, 6);
+INSERT INTO item(id, name) VALUES(315, 'item_liver_sausage');
+INSERT INTO item_category(item_id, category_id) VALUES(315, 7);
 
-INSERT INTO item(id, name) VALUES(316, 'item_liver_sausage');
-INSERT INTO item_category(item_id, category_id) VALUES(316, 7);
+INSERT INTO item(id, name) VALUES(316, 'item_lunch_box');
+INSERT INTO item_category(item_id, category_id) VALUES(316, 10);
 
-INSERT INTO item(id, name) VALUES(317, 'item_lunch_box');
-INSERT INTO item_category(item_id, category_id) VALUES(317, 10);
+INSERT INTO item(id, name) VALUES(317, 'item_mac_computer');
+INSERT INTO item_category(item_id, category_id) VALUES(317, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(317, 5);
 
-INSERT INTO item(id, name) VALUES(318, 'item_mac_computer');
-INSERT INTO item_category(item_id, category_id) VALUES(318, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(318, 5);
+INSERT INTO item(id, name) VALUES(318, 'item_magnet');
+INSERT INTO item_category(item_id, category_id) VALUES(318, 100000);
 
-INSERT INTO item(id, name) VALUES(319, 'item_magnet');
-INSERT INTO item_category(item_id, category_id) VALUES(319, 100000);
+INSERT INTO item(id, name) VALUES(319, 'item_make_up_plastic');
+INSERT INTO item_category(item_id, category_id) VALUES(319, 0);
 
-INSERT INTO item(id, name) VALUES(320, 'item_make_up_plastic');
-INSERT INTO item_category(item_id, category_id) VALUES(320, 0);
+INSERT INTO item(id, name) VALUES(320, 'item_margarine');
+INSERT INTO item_category(item_id, category_id) VALUES(320, 7);
 
-INSERT INTO item(id, name) VALUES(321, 'item_margarine');
-INSERT INTO item_category(item_id, category_id) VALUES(321, 7);
+INSERT INTO item(id, name) VALUES(321, 'item_marmor_construction');
+INSERT INTO item_category(item_id, category_id) VALUES(321, 100033);
 
-INSERT INTO item(id, name) VALUES(322, 'item_marmor_construction');
-INSERT INTO item_category(item_id, category_id) VALUES(322, 100033);
+INSERT INTO item(id, name) VALUES(322, 'item_massage_device');
+INSERT INTO item_category(item_id, category_id) VALUES(322, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(322, 5);
 
-INSERT INTO item(id, name) VALUES(323, 'item_massage_device');
-INSERT INTO item_category(item_id, category_id) VALUES(323, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(323, 5);
+INSERT INTO item(id, name) VALUES(323, 'item_mattress');
+INSERT INTO item_category(item_id, category_id) VALUES(323, 1);
+INSERT INTO item_category(item_id, category_id) VALUES(323, 9);
 
-INSERT INTO item(id, name) VALUES(324, 'item_mattress');
-INSERT INTO item_category(item_id, category_id) VALUES(324, 1);
-INSERT INTO item_category(item_id, category_id) VALUES(324, 9);
+INSERT INTO item(id, name) VALUES(324, 'item_meat_cooked');
+INSERT INTO item_category(item_id, category_id) VALUES(324, 7);
 
-INSERT INTO item(id, name) VALUES(325, 'item_meat_cooked');
-INSERT INTO item_category(item_id, category_id) VALUES(325, 7);
+INSERT INTO item(id, name) VALUES(325, 'item_meat_raw');
+INSERT INTO item_category(item_id, category_id) VALUES(325, 6);
 
-INSERT INTO item(id, name) VALUES(326, 'item_meat_raw');
+INSERT INTO item(id, name) VALUES(326, 'item_med_passed');
 INSERT INTO item_category(item_id, category_id) VALUES(326, 6);
 
-INSERT INTO item(id, name) VALUES(327, 'item_med_passed');
+INSERT INTO item(id, name) VALUES(327, 'item_menstruation_cup');
 INSERT INTO item_category(item_id, category_id) VALUES(327, 6);
 
-INSERT INTO item(id, name) VALUES(328, 'item_menstruation_cup');
+INSERT INTO item(id, name) VALUES(328, 'item_metal_big');
 INSERT INTO item_category(item_id, category_id) VALUES(328, 6);
 
-INSERT INTO item(id, name) VALUES(329, 'item_metal_big');
-INSERT INTO item_category(item_id, category_id) VALUES(329, 6);
+INSERT INTO item(id, name) VALUES(329, 'item_microwave');
+INSERT INTO item_category(item_id, category_id) VALUES(329, 1);
 
-INSERT INTO item(id, name) VALUES(330, 'item_microwave');
-INSERT INTO item_category(item_id, category_id) VALUES(330, 1);
+INSERT INTO item(id, name) VALUES(330, 'item_milk');
+INSERT INTO item_category(item_id, category_id) VALUES(330, 14);
 
-INSERT INTO item(id, name) VALUES(331, 'item_milk');
-INSERT INTO item_category(item_id, category_id) VALUES(331, 14);
+INSERT INTO item(id, name) VALUES(331, 'item_milk_bag');
+INSERT INTO item_category(item_id, category_id) VALUES(331, 0);
 
-INSERT INTO item(id, name) VALUES(332, 'item_milk_bag');
-INSERT INTO item_category(item_id, category_id) VALUES(332, 0);
+INSERT INTO item(id, name) VALUES(332, 'item_mixer');
+INSERT INTO item_category(item_id, category_id) VALUES(332, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(332, 5);
 
-INSERT INTO item(id, name) VALUES(333, 'item_mixer');
+INSERT INTO item(id, name) VALUES(333, 'item_mobile_phone');
 INSERT INTO item_category(item_id, category_id) VALUES(333, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(333, 5);
 
-INSERT INTO item(id, name) VALUES(334, 'item_mobile_phone');
-INSERT INTO item_category(item_id, category_id) VALUES(334, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(334, 5);
+INSERT INTO item(id, name) VALUES(334, 'item_model_railroad');
+INSERT INTO item_category(item_id, category_id) VALUES(334, 10);
 
-INSERT INTO item(id, name) VALUES(335, 'item_model_railroad');
-INSERT INTO item_category(item_id, category_id) VALUES(335, 10);
+INSERT INTO item(id, name) VALUES(335, 'item_modem');
+INSERT INTO item_category(item_id, category_id) VALUES(335, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(335, 5);
 
-INSERT INTO item(id, name) VALUES(336, 'item_modem');
-INSERT INTO item_category(item_id, category_id) VALUES(336, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(336, 5);
+INSERT INTO item(id, name) VALUES(336, 'item_mop');
+INSERT INTO item_category(item_id, category_id) VALUES(336, 6);
 
-INSERT INTO item(id, name) VALUES(337, 'item_mop');
-INSERT INTO item_category(item_id, category_id) VALUES(337, 6);
+INSERT INTO item(id, name) VALUES(337, 'item_motor');
+INSERT INTO item_category(item_id, category_id) VALUES(337, 100000);
 
-INSERT INTO item(id, name) VALUES(338, 'item_motor');
+INSERT INTO item(id, name) VALUES(338, 'item_motorcycle');
 INSERT INTO item_category(item_id, category_id) VALUES(338, 100000);
 
-INSERT INTO item(id, name) VALUES(339, 'item_motorcycle');
-INSERT INTO item_category(item_id, category_id) VALUES(339, 100000);
+INSERT INTO item(id, name) VALUES(339, 'item_mouse');
+INSERT INTO item_category(item_id, category_id) VALUES(339, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(339, 5);
 
-INSERT INTO item(id, name) VALUES(340, 'item_mouse');
-INSERT INTO item_category(item_id, category_id) VALUES(340, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(340, 5);
+INSERT INTO item(id, name) VALUES(340, 'item_mouse_pad');
+INSERT INTO item_category(item_id, category_id) VALUES(340, 6);
 
-INSERT INTO item(id, name) VALUES(341, 'item_mouse_pad');
-INSERT INTO item_category(item_id, category_id) VALUES(341, 6);
+INSERT INTO item(id, name) VALUES(341, 'item_multitool');
+INSERT INTO item_category(item_id, category_id) VALUES(341, 10);
+INSERT INTO item_category(item_id, category_id) VALUES(341, 100010);
 
-INSERT INTO item(id, name) VALUES(342, 'item_multitool');
-INSERT INTO item_category(item_id, category_id) VALUES(342, 10);
-INSERT INTO item_category(item_id, category_id) VALUES(342, 100010);
+INSERT INTO item(id, name) VALUES(342, 'item_music_keyboard');
+INSERT INTO item_category(item_id, category_id) VALUES(342, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(342, 5);
 
-INSERT INTO item(id, name) VALUES(343, 'item_music_keyboard');
-INSERT INTO item_category(item_id, category_id) VALUES(343, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(343, 5);
+INSERT INTO item(id, name) VALUES(343, 'item_nail_polish');
+INSERT INTO item_category(item_id, category_id) VALUES(343, 100032);
 
-INSERT INTO item(id, name) VALUES(344, 'item_nail_polish');
-INSERT INTO item_category(item_id, category_id) VALUES(344, 100032);
+INSERT INTO item(id, name) VALUES(344, 'item_nails');
+INSERT INTO item_category(item_id, category_id) VALUES(344, 6);
 
-INSERT INTO item(id, name) VALUES(345, 'item_nails');
+INSERT INTO item(id, name) VALUES(345, 'item_napkin_not_used');
 INSERT INTO item_category(item_id, category_id) VALUES(345, 6);
 
-INSERT INTO item(id, name) VALUES(346, 'item_napkin_not_used');
+INSERT INTO item(id, name) VALUES(346, 'item_napkin_used');
 INSERT INTO item_category(item_id, category_id) VALUES(346, 6);
 
-INSERT INTO item(id, name) VALUES(347, 'item_napkin_used');
-INSERT INTO item_category(item_id, category_id) VALUES(347, 6);
+INSERT INTO item(id, name) VALUES(347, 'item_newspaper');
+INSERT INTO item_category(item_id, category_id) VALUES(347, 2);
 
-INSERT INTO item(id, name) VALUES(348, 'item_newspaper');
-INSERT INTO item_category(item_id, category_id) VALUES(348, 2);
+INSERT INTO item(id, name) VALUES(348, 'item_nintendo');
+INSERT INTO item_category(item_id, category_id) VALUES(348, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(348, 5);
 
-INSERT INTO item(id, name) VALUES(349, 'item_nintendo');
-INSERT INTO item_category(item_id, category_id) VALUES(349, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(349, 5);
+INSERT INTO item(id, name) VALUES(349, 'item_noodles_plastic_window');
+INSERT INTO item_category(item_id, category_id) VALUES(349, 2);
 
-INSERT INTO item(id, name) VALUES(350, 'item_noodles_plastic_window');
+INSERT INTO item(id, name) VALUES(350, 'item_notebook');
 INSERT INTO item_category(item_id, category_id) VALUES(350, 2);
 
-INSERT INTO item(id, name) VALUES(351, 'item_notebook');
-INSERT INTO item_category(item_id, category_id) VALUES(351, 2);
+INSERT INTO item(id, name) VALUES(351, 'item_nuts');
+INSERT INTO item_category(item_id, category_id) VALUES(351, 7);
 
-INSERT INTO item(id, name) VALUES(352, 'item_nuts');
-INSERT INTO item_category(item_id, category_id) VALUES(352, 7);
+INSERT INTO item(id, name) VALUES(352, 'item_nylons');
+INSERT INTO item_category(item_id, category_id) VALUES(352, 6);
 
-INSERT INTO item(id, name) VALUES(353, 'item_nylons');
-INSERT INTO item_category(item_id, category_id) VALUES(353, 6);
+INSERT INTO item(id, name) VALUES(353, 'item_oil_essence');
+INSERT INTO item_category(item_id, category_id) VALUES(353, 100032);
 
-INSERT INTO item(id, name) VALUES(354, 'item_oil_essence');
-INSERT INTO item_category(item_id, category_id) VALUES(354, 100032);
+INSERT INTO item(id, name) VALUES(354, 'item_ointment');
+INSERT INTO item_category(item_id, category_id) VALUES(354, 100020);
 
-INSERT INTO item(id, name) VALUES(355, 'item_ointment');
-INSERT INTO item_category(item_id, category_id) VALUES(355, 100020);
+INSERT INTO item(id, name) VALUES(355, 'item_old_pictures');
+INSERT INTO item_category(item_id, category_id) VALUES(355, 6);
 
-INSERT INTO item(id, name) VALUES(356, 'item_old_pictures');
-INSERT INTO item_category(item_id, category_id) VALUES(356, 6);
+INSERT INTO item(id, name) VALUES(356, 'item_oscilloscope');
+INSERT INTO item_category(item_id, category_id) VALUES(356, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(356, 5);
 
-INSERT INTO item(id, name) VALUES(357, 'item_oscilloscope');
-INSERT INTO item_category(item_id, category_id) VALUES(357, 100013);
-INSERT INTO item_category(item_id, category_id) VALUES(357, 5);
+INSERT INTO item(id, name) VALUES(357, 'item_oven');
+INSERT INTO item_category(item_id, category_id) VALUES(357, 1);
 
-INSERT INTO item(id, name) VALUES(358, 'item_oven');
-INSERT INTO item_category(item_id, category_id) VALUES(358, 1);
+INSERT INTO item(id, name) VALUES(358, 'item_pacifier');
+INSERT INTO item_category(item_id, category_id) VALUES(358, 6);
 
-INSERT INTO item(id, name) VALUES(359, 'item_pacifier');
-INSERT INTO item_category(item_id, category_id) VALUES(359, 6);
+INSERT INTO item(id, name) VALUES(359, 'item_packaging_metal');
+INSERT INTO item_category(item_id, category_id) VALUES(359, 0);
 
 INSERT INTO item(id, name) VALUES(360, 'item_packing_cardboard');
 INSERT INTO item_category(item_id, category_id) VALUES(360, 2);
@@ -1720,7 +1720,7 @@ INSERT INTO item(id, name) VALUES(535, 'item_toothbrush_head');
 INSERT INTO item_category(item_id, category_id) VALUES(535, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(535, 5);
 
-INSERT INTO item(id, name) VALUES(536, 'item_touchscreen_pen');
+INSERT INTO item(id, name) VALUES(536, 'item_touchscreen_pen_electronic');
 INSERT INTO item_category(item_id, category_id) VALUES(536, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(536, 5);
 

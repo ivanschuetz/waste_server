@@ -1882,10 +1882,10 @@ INSERT INTO item_category(item_id, category_id) VALUES(612, 5);
 --INSERT INTO item(id, name) VALUES(614, 'item_smartphone_armband'); -- Smartphone armband = Smartphone Sportarmband
 --INSERT INTO item_category(item_id, category_id) VALUES(614, 6); -- TODO confirm
 
---INSERT INTO item(id, name) VALUES(615, 'item_touchscreen_pen'); -- Touchscreen pen (metal) = Touchscreen-Stift (Metall)
+--INSERT INTO item(id, name) VALUES(615, 'item_touchscreen_pen_metal'); -- Touchscreen pen (metal) = Touchscreen-Stift (Metall)
 --INSERT INTO item_category(item_id, category_id) VALUES(615, 10); -- TODO confirm
 
-INSERT INTO item(id, name) VALUES(616, 'item_touchscreen_pen'); -- Touchscreen pen (electronic) = Touchscreen-Stift (elektrisch)
+INSERT INTO item(id, name) VALUES(616, 'item_touchscreen_pen_electronic'); -- Touchscreen pen (electronic) = Touchscreen-Stift (elektrisch)
 INSERT INTO item_category(item_id, category_id) VALUES(616, 100013);
 INSERT INTO item_category(item_id, category_id) VALUES(616, 5);
 
@@ -1899,9 +1899,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(618, 5); -- TODO apple st
 
 INSERT INTO item(id, name) VALUES(619, 'item_tube_food'); -- Aluminium Tube (food) = Tube aus Aluminium (Essen)
 INSERT INTO item_category(item_id, category_id) VALUES(619, 10);
-
-INSERT INTO item(id, name) VALUES(620, 'item_drinking_fountain'); -- Drinking fountain = Trinkbrunnen
-INSERT INTO item_category(item_id, category_id) VALUES(620, 1);
 
 --INSERT INTO item(id, name) VALUES(621, 'item_drinking_fountain'); -- Drinking fountain = Trinkbrunnen
 --INSERT INTO item_category(item_id, category_id) VALUES(621, 10); -- TODO needs tipp to separate electronic parts
@@ -1995,9 +1992,6 @@ INSERT INTO item_category(item_id, category_id) VALUES(645, 7);
 
 --INSERT INTO item(id, name) VALUES(647, 'item_barbecue'); -- Barbecue = Grill
 --INSERT INTO item_category(item_id, category_id) VALUES(647, ?); -- TODO
-
---INSERT INTO item(id, name) VALUES(648, 'item_barbecue_burning_paste'); -- Barbecue burning paste = Grill Brennpaste
---INSERT INTO item_category(item_id, category_id) VALUES(648, ?); -- TODO
 
 --INSERT INTO item(id, name) VALUES(648, 'item_barbecue_burning_paste'); -- Barbecue burning paste = Grill Brennpaste
 --INSERT INTO item_category(item_id, category_id) VALUES(648, ?); -- TODO
