@@ -8,7 +8,7 @@ class ItemSearchDao {
     @Autowired
     lateinit var jdbcTemplate: JdbcTemplate
 
-    fun search(term: String, lang: String): SearchResultDTO? = jdbcTemplate.query(
+    fun search(term: String, lang: String): ItemDTO? = jdbcTemplate.query(
         "select i.id, t.trans as name " +
             "from item i " +
             "inner join translations t on i.name = t.tkey " +
@@ -17,7 +17,7 @@ class ItemSearchDao {
             term.toLowerCase(),
             lang
         )) { result: ResultSet, _: Int ->
-            SearchResultDTO(
+            ItemDTO(
                 result.getLong("id"),
                 result.getString("name")
             )

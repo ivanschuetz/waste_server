@@ -8,7 +8,7 @@ class ItemSuggestionsDao {
     @Autowired
     lateinit var jdbcTemplate: JdbcTemplate
 
-    fun suggestions(term: String, lang: String): List<ItemSuggestionDTO> = jdbcTemplate.query(
+    fun suggestions(term: String, lang: String): List<ItemDTO> = jdbcTemplate.query(
         "select i.id, t.trans as name " +
             "from item i " +
             "inner join translations t on i.name = t.tkey " +
@@ -19,7 +19,7 @@ class ItemSuggestionsDao {
             "%${term.toLowerCase()}%",
             lang
         )) { result: ResultSet, _: Int ->
-            ItemSuggestionDTO(
+            ItemDTO(
                 result.getLong("id"),
                 result.getString("name")
             )

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 class ItemsController(val itemSuggestionsDao: ItemSuggestionsDao, val itemSearchDao: ItemSearchDao) {
     @GetMapping("/suggestions/{term}")
     @ResponseBody
-    fun suggestions(@PathVariable term: String, @RequestHeader("lang") lang: String): List<ItemSuggestionDTO> {
+    fun suggestions(@PathVariable term: String, @RequestHeader("lang") lang: String): List<ItemDTO> {
         if (term.length > 100) {
             println("ERROR: Bad request, term is too long: $term")
             throw BadRequestException()
@@ -26,7 +26,7 @@ class ItemsController(val itemSuggestionsDao: ItemSuggestionsDao, val itemSearch
 
     @GetMapping("/search/{term}")
     @ResponseBody
-    fun search(@PathVariable term: String, @RequestHeader("lang") lang: String): SearchResultDTO? {
+    fun search(@PathVariable term: String, @RequestHeader("lang") lang: String): ItemDTO? {
         if (term.length > 100) {
             println("ERROR: Bad request, term is too long: $term")
             throw BadRequestException()
