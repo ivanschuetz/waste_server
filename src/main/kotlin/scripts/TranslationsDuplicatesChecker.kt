@@ -12,6 +12,8 @@ fun main() {
 
     showDuplicates(translationsDE)
     showDuplicates(translationsEN)
+
+    println("Finished checking for translation duplicates.")
 }
 
 private fun showDuplicates(translations: List<TranslationTranslationLine>) {
