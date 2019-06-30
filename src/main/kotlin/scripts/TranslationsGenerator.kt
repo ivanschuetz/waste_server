@@ -7,7 +7,7 @@ import scripts.TranslationLine.TranslationTranslationLine
 import java.io.File
 
 fun main() {
-    val input = File("./src/main/resources/items.sql")
+    val input = File("./src/main/resources/items_input.sql")
 
     val itemResults = input.readLines().map { toItemInsertResult(it) }
 
