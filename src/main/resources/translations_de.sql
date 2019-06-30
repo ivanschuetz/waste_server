@@ -488,7 +488,7 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_boots_not_usable', 'de'
 INSERT INTO translations(tkey, lang, trans) VALUES('item_shoes_not_usable', 'de', 'Schuhe (nicht benutzbar)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_vr_set', 'de', 'Virtual Reality Set');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_baby_bottle_plastic', 'de', 'Babyflasche (Plastik)');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_baby_bottle_glas_white', 'de', 'Babyflasche (white glas)');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_baby_bottle_glas_white', 'de', 'Babyflasche (Weißglas)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_pregnancy_test', 'de', 'Schwangerschaftstest');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_rail_metal', 'de', 'Eisenbahnschiene (Metall)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_lego', 'de', 'Lego');

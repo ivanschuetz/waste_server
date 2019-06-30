@@ -5,7 +5,7 @@ INSERT INTO translations(tkey, lang, trans) VALUES('container_bulky', 'en', 'Bul
 INSERT INTO translations(tkey, lang, trans) VALUES('container_blue', 'en', 'Blue container');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_white', 'en', 'White glas');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_green', 'en', 'Green glas');
-INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_brown', 'en', 'Brow glas');
+INSERT INTO translations(tkey, lang, trans) VALUES('container_glas_brown', 'en', 'Brown glas');
 INSERT INTO translations(tkey, lang, trans) VALUES('container_scrap', 'en', 'Yellow / Orange container');
 
 INSERT INTO translations(tkey, lang, trans) VALUES('category_packaging', 'en', 'Packaging');
@@ -487,7 +487,7 @@ INSERT INTO translations(tkey, lang, trans) VALUES('item_boots_not_usable', 'en'
 INSERT INTO translations(tkey, lang, trans) VALUES('item_shoes_not_usable', 'en', 'Shoes (not usable)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_vr_set', 'en', 'Virtual reality set');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_baby_bottle_plastic', 'en', 'Baby bottle (plastic)');
-INSERT INTO translations(tkey, lang, trans) VALUES('item_baby_bottle_glas_white', 'en', 'Baby bottle (white glas)');
+INSERT INTO translations(tkey, lang, trans) VALUES('item_baby_bottle_glas_white', 'en', 'Baby bottle (white glass)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_pregnancy_test', 'en', 'Pregnancy test');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_rail_metal', 'en', 'Rail (metal)');
 INSERT INTO translations(tkey, lang, trans) VALUES('item_lego', 'en', 'Lego');
