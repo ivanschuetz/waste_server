@@ -1217,8 +1217,8 @@ INSERT INTO item_category(item_id, category_id) VALUES(390, 6);
 --INSERT INTO item(id, name) VALUES(391, 'item_sex_doll'); -- Sex doll = Sexpuppe
 --INSERT INTO item_category(item_id, category_id) VALUES(391, ?); -- TODO sondermueell
 
-INSERT INTO item(id, name) VALUES(392, 'item_ball_gag'); -- Ballgag = Ballknebel
-INSERT INTO item_category(item_id, category_id) VALUES(392, 6);
+--INSERT INTO item(id, name) VALUES(392, 'item_ball_gag'); -- Ballgag = Ballknebel
+--INSERT INTO item_category(item_id, category_id) VALUES(392, 6);
 
 INSERT INTO item(id, name) VALUES(393, 'item_rope'); -- Rope = Seil
 INSERT INTO item_category(item_id, category_id) VALUES(393, 6);
@@ -1682,11 +1682,11 @@ INSERT INTO item_category(item_id, category_id) VALUES(545, 5);
 INSERT INTO item(id, name) VALUES(546, 'item_hoodie'); -- Hoodie = Hoodie
 INSERT INTO item_category(item_id, category_id) VALUES(546, 9);
 
-INSERT INTO item(id, name) VALUES(547, 'item_sex_toy_silicone'); -- Sex toy (silicone) = Sexspielzeug (Silikon)
-INSERT INTO item_category(item_id, category_id) VALUES(547, 6);
-
-INSERT INTO item(id, name) VALUES(548, 'item_sex_toy_plastic'); -- Sex toy (plastic) = Sexspielzeug (Plastik)
-INSERT INTO item_category(item_id, category_id) VALUES(548, 6);
+--INSERT INTO item(id, name) VALUES(547, 'item_sex_toy_silicone'); -- Sex toy (silicone) = Sexspielzeug (Silikon)
+--INSERT INTO item_category(item_id, category_id) VALUES(547, 6);
+--
+--INSERT INTO item(id, name) VALUES(548, 'item_sex_toy_plastic'); -- Sex toy (plastic) = Sexspielzeug (Plastik)
+--INSERT INTO item_category(item_id, category_id) VALUES(548, 6);
 
 INSERT INTO item(id, name) VALUES(549, 'item_sweater'); -- Sweater = Pullover
 INSERT INTO item_category(item_id, category_id) VALUES(549, 9);
@@ -1979,7 +1979,8 @@ INSERT INTO item_category(item_id, category_id) VALUES(640, 100032); -- TODO con
 --INSERT INTO item_category(item_id, category_id) VALUES(642, 9); -- TODO confirm
 
 INSERT INTO item(id, name) VALUES(643, 'item_electric_shaver'); -- Electric shaver = Elektrischer Rasierer
-INSERT INTO item_category(item_id, category_id) VALUES(643, 9);
+INSERT INTO item_category(item_id, category_id) VALUES(643, 100013);
+INSERT INTO item_category(item_id, category_id) VALUES(643, 5);
 
 --INSERT INTO item(id, name) VALUES(644, 'item_whisky_stone_soapstone'); -- Whisky stone (Soapstone) = Whiskystein (Speckstein)
 --INSERT INTO item_category(item_id, category_id) VALUES(644, ?); -- TODO
