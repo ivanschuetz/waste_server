@@ -20,6 +20,9 @@ class AppConfig {
     fun pickupCompaniesContainerDao(): PickupCompaniesDao = PickupCompaniesDao()
 
     @Bean
+    fun itemSearchDao(): ItemSearchDao = ItemSearchDao()
+
+    @Bean
     fun objectMapper() = ObjectMapper().apply {
         registerModule(KotlinModule())
         propertyNamingStrategy = MyPropertyNamingStrategy()
