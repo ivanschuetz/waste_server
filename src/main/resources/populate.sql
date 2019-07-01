@@ -3,7 +3,9 @@
 BEGIN;
 \i /home/ivan/sql/init.sql
 \i /home/ivan/sql/translations_de.sql
+\i /home/ivan/sql/translations_tips_de.sql
 \i /home/ivan/sql/translations_en.sql
+\i /home/ivan/sql/translations_tips_en.sql
 \i /home/ivan/sql/containers.sql
 \i /home/ivan/sql/p_containers.sql
 \i /home/ivan/sql/categories.sql
@@ -17,4 +19,6 @@ BEGIN;
 \i /home/ivan/sql/p_containers_clothes.sql
 \i /home/ivan/sql/p_containers_clothes_item.sql
 \i /home/ivan/sql/opening_hours.sql
+\i /home/ivan/sql/tags.sql
+\i /home/ivan/sql/tips.sql
 COMMIT;

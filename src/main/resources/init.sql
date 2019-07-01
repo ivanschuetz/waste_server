@@ -3,12 +3,16 @@ DROP TABLE IF EXISTS category_p_container;
 DROP TABLE IF EXISTS category_container;
 DROP TABLE IF EXISTS item_category;
 DROP TABLE IF EXISTS category_pickup_company;
+DROP TABLE IF EXISTS tag_tip;
+DROP TABLE IF EXISTS item_tag;
 DROP TABLE IF EXISTS p_container_hours;
 DROP TABLE IF EXISTS container;
 DROP TABLE IF EXISTS item;
 DROP TABLE IF EXISTS category;
 DROP TABLE IF EXISTS p_container;
 DROP TABLE IF EXISTS pickup_company;
+DROP TABLE IF EXISTS tip;
+DROP TABLE IF EXISTS tag;
 
 CREATE TABLE IF NOT EXISTS translations
 (
@@ -115,6 +119,39 @@ CREATE TABLE IF NOT EXISTS category_pickup_company
   UNIQUE (category_id, company_id),
   FOREIGN KEY (category_id) REFERENCES category (id),
   FOREIGN KEY (company_id) REFERENCES pickup_company (id)
+);
+
+CREATE TABLE IF NOT EXISTS tag
+(
+  id serial,
+  name VARCHAR(150) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS item_tag
+(
+  item_id INTEGER NOT NULL,
+  tag_id INTEGER NOT NULL,
+  UNIQUE (item_id, tag_id),
+  FOREIGN KEY (item_id) REFERENCES item (id),
+  FOREIGN KEY (tag_id) REFERENCES tag (id)
+);
+
+CREATE TABLE IF NOT EXISTS tip
+(
+  id serial,
+  text VARCHAR(150) NOT NULL,
+  type INTEGER NOT NULL, -- 0 -> How to dispose, 1 -> Repurpose item
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS tag_tip
+(
+  tag_id INTEGER NOT NULL,
+  tip_id INTEGER NOT NULL,
+  UNIQUE (tag_id, tip_id),
+  FOREIGN KEY (tag_id) REFERENCES tag (id),
+  FOREIGN KEY (tip_id) REFERENCES tip (id)
 );
 
 GRANT CONNECT ON DATABASE waste TO waste_app;

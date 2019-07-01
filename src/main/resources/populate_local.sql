@@ -3,7 +3,9 @@
 BEGIN;
 \i /Users/ischuetz/dev/waste/server/src/main/resources/init.sql
 \i /Users/ischuetz/dev/waste/server/src/main/resources/translations_de.sql
+\i /Users/ischuetz/dev/waste/server/src/main/resources/translations_tips_de.sql
 \i /Users/ischuetz/dev/waste/server/src/main/resources/translations_en.sql
+\i /Users/ischuetz/dev/waste/server/src/main/resources/translations_tips_en.sql
 \i /Users/ischuetz/dev/waste/server/src/main/resources/containers.sql
 \i /Users/ischuetz/dev/waste/server/src/main/resources/p_containers.sql
 \i /Users/ischuetz/dev/waste/server/src/main/resources/categories.sql
@@ -17,4 +19,6 @@ BEGIN;
 \i /Users/ischuetz/dev/waste/altkleider/src/main/resources/p_containers_clothes.sql
 \i /Users/ischuetz/dev/waste/altkleider/src/main/resources/p_containers_clothes_item.sql
 \i /Users/ischuetz/dev/waste/server/src/main/resources/opening_hours.sql
+\i /Users/ischuetz/dev/waste/server/src/main/resources/tags.sql
+\i /Users/ischuetz/dev/waste/server/src/main/resources/tips.sql
 COMMIT;
