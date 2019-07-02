@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class DisposalController(val containerDao: ContainerDao, val publicContainerDao: PublicContainerDao,
-                         val pickupCompaniesDao: PickupCompaniesDao, val categoryDao: CategoryDao, val tipDao: TipDao) {
+class DisposalController(val containerDao: ContainerDao, val recipientsDao: RecipientsDao,
+                         val categoryDao: CategoryDao, val tipDao: TipDao) {
 
     @GetMapping("/options/{itemId}")
     @ResponseBody
@@ -25,8 +25,7 @@ class DisposalController(val containerDao: ContainerDao, val publicContainerDao:
         return DisposalOptionsResult(
             categoryDao.categories(itemId, actualLang),
             containerDao.containers(itemId, actualLang),
-            publicContainerDao.publicContainers(itemId),
-            pickupCompaniesDao.companies(itemId),
+            recipientsDao.recipients(itemId),
             tipDao.tips(itemId, actualLang)
         )
     }
