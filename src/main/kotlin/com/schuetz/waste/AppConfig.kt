@@ -23,7 +23,10 @@ class AppConfig {
     fun categoryDao(): CategoryDao = CategoryDao()
 
     @Bean
-    fun tipDao(): TipDao = TipDao()
+    fun itemTipDao(): ItemTipDao = ItemTipDao()
+
+    @Bean
+    fun categoryTipDao(): CategoryTipDao = CategoryTipDao()
 
     @Bean
     fun objectMapper() = ObjectMapper().apply {
