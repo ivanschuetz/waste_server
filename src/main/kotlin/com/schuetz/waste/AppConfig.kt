@@ -14,7 +14,10 @@ class AppConfig {
     fun containerDao(): ContainerDao = ContainerDao()
 
     @Bean
-    fun recipientsDao(): RecipientsDao = RecipientsDao()
+    fun recipientsDao(): CategoryRecipientsDao = CategoryRecipientsDao()
+
+    @Bean
+    fun itemRecipientsDao(): ItemRecipientsDao = ItemRecipientsDao()
 
     @Bean
     fun itemSearchDao(): ItemSearchDao = ItemSearchDao()
