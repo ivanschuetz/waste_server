@@ -26,13 +26,33 @@ class DisposalController(val containerDao: ContainerDao,
         }
         val actualLang = extractValidLanguage(lang)
 
+        val categories = categoryDao.categories(itemUuid, actualLang)
+            .collapseCategories("category_electro", listOf("category_electro_small"))
+            .map { CategoryDTO(it.uuid, it.nameTranslation) }
+
         return DisposalOptionsResult(
-            categoryDao.categories(itemUuid, actualLang),
+            categories,
             containerDao.containers(itemUuid, actualLang),
             itemRecipientsDao.recipients(itemUuid),
             categoryRecipientsDao.recipients(itemUuid),
             itemTipDao.tips(itemUuid, actualLang),
             categoryTipDao.tips(itemUuid, actualLang)
         )
+    }
+}
+
+/**
+ * Removes categories (identified with translation keys) from list, when toPreserve category is present.
+ * This is used for certain cases where showing similar categories to the client may seem unecessarily verbose.
+ * E.g. "electro" and "electro small". Showing only "electro" is enough for the client.
+ */
+private fun List<CategoryResult>.collapseCategories(toPreserve: String, toRemove: List<String>): List<CategoryResult> {
+    val categoryToPreserve: CategoryResult? = firstOrNull { it.nameKey == toPreserve }
+    val categoriesToRemove: List<CategoryResult> = filter { category -> toRemove.any { tr -> tr == category.nameKey }}
+    return when {
+        categoryToPreserve != null && categoriesToRemove.isNotEmpty() -> {
+            this - categoriesToRemove
+        }
+        else -> this
     }
 }
