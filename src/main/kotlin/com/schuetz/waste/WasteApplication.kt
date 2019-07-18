@@ -13,8 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.web.cors.CorsConfiguration
-import org.springframework.web.servlet.config.annotation.CorsRegistry
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 
 
 @SpringBootApplication
@@ -25,22 +24,6 @@ class WasteApplication : CommandLineRunner {
 fun main(args: Array<String>) {
     runApplication<WasteApplication>(*args)
 }
-
-/**
- * Enables CORS for localhost
- */
-@Configuration
-class MyConfiguration {
-    @Bean
-    fun corsConfigurer(): WebMvcConfigurer {
-        return object : WebMvcConfigurer {
-            override fun addCorsMappings(registry: CorsRegistry) {
-                registry.addMapping("/**")
-            }
-        }
-    }
-}
-
 
 @Configuration
 @EnableWebSecurity
@@ -56,8 +39,23 @@ class WebSecurityConfig : WebSecurityConfigurerAdapter() {
 
     @Throws(Exception::class)
     override fun configure(http: HttpSecurity) {
+        // Allows everyhing
+//        http.cors().configurationSource {
+//            CorsConfiguration().applyPermitDefaultValues()
+//        }
+
         http.cors().configurationSource {
-            CorsConfiguration().applyPermitDefaultValues()
+            CorsConfiguration().apply {
+                allowCredentials = true
+                allowedOrigins = listOf(
+                    "https://wohin-mit.de:3002",
+                    "http://localhost:3000"
+                )
+                allowedMethods = listOf("GET")
+                addAllowedHeader("*") // Not sure why this is needed, but without cors doesn't work (OPTIONS returns 403) (at least for localhost)
+                val source = UrlBasedCorsConfigurationSource()
+                source.registerCorsConfiguration("/**", this)
+            }
         }
 
         http.authorizeRequests()
