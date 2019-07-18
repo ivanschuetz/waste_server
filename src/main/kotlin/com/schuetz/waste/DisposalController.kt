@@ -14,10 +14,10 @@ class DisposalController(val containerDao: ContainerDao,
                          val itemTipDao: ItemTipDao,
                          val categoryTipDao: CategoryTipDao) {
 
-    @GetMapping("/options/{itemId}")
+    @GetMapping("/options/{itemUuid}")
     @ResponseBody
-    fun options(@PathVariable itemId: Long, @RequestHeader("lang") lang: String): DisposalOptionsResult {
-        if (itemId < 0) {
+    fun options(@PathVariable itemUuid: String, @RequestHeader("lang") lang: String): DisposalOptionsResult {
+        if (itemUuid.length != 36) {
             throw BadRequestException()
         }
         if (lang.length > 10) { // Block evidently malicious content
@@ -27,12 +27,12 @@ class DisposalController(val containerDao: ContainerDao,
         val actualLang = extractValidLanguage(lang)
 
         return DisposalOptionsResult(
-            categoryDao.categories(itemId, actualLang),
-            containerDao.containers(itemId, actualLang),
-            itemRecipientsDao.recipients(itemId),
-            categoryRecipientsDao.recipients(itemId),
-            itemTipDao.tips(itemId, actualLang),
-            categoryTipDao.tips(itemId, actualLang)
+            categoryDao.categories(itemUuid, actualLang),
+            containerDao.containers(itemUuid, actualLang),
+            itemRecipientsDao.recipients(itemUuid),
+            categoryRecipientsDao.recipients(itemUuid),
+            itemTipDao.tips(itemUuid, actualLang),
+            categoryTipDao.tips(itemUuid, actualLang)
         )
     }
 }

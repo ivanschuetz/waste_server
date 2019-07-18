@@ -22,7 +22,7 @@ data class OpeningHoursRow(var recipient_id: String = "", var weekday: String = 
 fun toRecipientDTO(result: ResultSet): RecipientDTO {
     val open = toOpen(result.getString("open"), result.getString("json"))
     return RecipientDTO(
-        result.getLong("id"),
+        result.getString("uuid"),
         result.getString("name"),
         result.getString("address"),
         result.getString("company"),

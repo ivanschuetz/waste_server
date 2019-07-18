@@ -1,6 +1,6 @@
 package com.schuetz.waste
 
-data class RecipientDTO(val id: Long, val name: String?, val address: String?, val company: String?, val phone: String?,
+data class RecipientDTO(val id: String, val name: String?, val address: String?, val company: String?, val phone: String?,
                          val url: String?, val email: String?, val lat: Float?, val lon: Float?, val openType: String,
                         val open: Open, val type: Int, val hasPickup: Boolean, val hasInPlace: Boolean)
 

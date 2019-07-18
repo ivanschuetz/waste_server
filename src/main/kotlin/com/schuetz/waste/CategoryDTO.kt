@@ -1,3 +1,3 @@
 package com.schuetz.waste
 
-data class CategoryDTO(val id: Long, val name: String)
+data class CategoryDTO(val id: String, val name: String)
