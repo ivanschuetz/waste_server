@@ -16,6 +16,7 @@ repositories {
     maven("https://repo.spring.io/snapshot")
     maven("https://repo.spring.io/milestone")
     maven("https://oss.sonatype.org/content/repositories/snapshots")
+	maven("https://raw.github.com/weddini/spring-boot-throttling/mvn-repo/")
 }
 
 springBoot {
@@ -40,6 +41,8 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("com.h2database:h2")
+
+	compile("com.weddini.throttling:spring-boot-throttling-starter:0.0.9")
 }
 
 tasks.withType<KotlinCompile> {

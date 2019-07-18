@@ -1,10 +1,13 @@
 package com.schuetz.waste
 
+import com.weddini.throttling.Throttling
+import com.weddini.throttling.ThrottlingType.RemoteAddr
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestHeader
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RestController
+import java.util.concurrent.TimeUnit.SECONDS
 
 @RestController
 class DisposalController(val containerDao: ContainerDao,
@@ -15,6 +18,7 @@ class DisposalController(val containerDao: ContainerDao,
                          val categoryTipDao: CategoryTipDao) {
 
     @GetMapping("/options/{itemUuid}")
+    @Throttling(type = RemoteAddr, limit = 1, timeUnit = SECONDS)
     @ResponseBody
     fun options(@PathVariable itemUuid: String, @RequestHeader("lang") lang: String): DisposalOptionsResult {
         if (itemUuid.length != 36) {
