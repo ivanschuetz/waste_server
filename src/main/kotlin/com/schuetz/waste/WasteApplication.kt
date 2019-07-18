@@ -1,12 +1,21 @@
 package com.schuetz.waste
 
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
+import org.springframework.security.config.annotation.web.builders.HttpSecurity
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+import org.springframework.security.crypto.password.PasswordEncoder
+import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.servlet.config.annotation.CorsRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
+
 
 @SpringBootApplication
 class WasteApplication : CommandLineRunner {
@@ -33,13 +42,33 @@ class MyConfiguration {
 }
 
 
-//@Configuration
-//@EnableWebSecurity
-//public class WebSecurityConfig : WebSecurityConfigurerAdapter() {
-//
-//    override fun configure(http: HttpSecurity) {
-//        http.cors().configurationSource {
-//            CorsConfiguration().applyPermitDefaultValues()
-//        }
-//    }
-//}
+@Configuration
+@EnableWebSecurity
+class WebSecurityConfig : WebSecurityConfigurerAdapter() {
+
+    @Autowired
+    @Throws(Exception::class)
+    fun configureGlobal(auth: AuthenticationManagerBuilder) {
+        auth.inMemoryAuthentication()
+            .withUser("wohinmit").password(passwordEncoder().encode("set582Ax9upK3QqB6"))
+            .authorities("ROLE_USER")
+    }
+
+    @Throws(Exception::class)
+    override fun configure(http: HttpSecurity) {
+        http.cors().configurationSource {
+            CorsConfiguration().applyPermitDefaultValues()
+        }
+
+        http.authorizeRequests()
+            .antMatchers("/securityNone").permitAll()
+            .anyRequest().authenticated()
+            .and()
+            .httpBasic()
+    }
+
+    @Bean
+    fun passwordEncoder(): PasswordEncoder {
+        return BCryptPasswordEncoder()
+    }
+}
