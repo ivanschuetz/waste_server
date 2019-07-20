@@ -48,7 +48,7 @@ class WebSecurityConfig : WebSecurityConfigurerAdapter() {
             CorsConfiguration().apply {
                 allowCredentials = true
                 allowedOrigins = listOf(
-                    "https://wohin-mit.de:3002",
+                    "https://wohin-mit.de",
                     "http://localhost:3000"
                 )
                 allowedMethods = listOf("GET")
