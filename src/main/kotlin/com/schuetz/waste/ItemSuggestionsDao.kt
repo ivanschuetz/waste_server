@@ -13,7 +13,7 @@ class ItemSuggestionsDao {
             "from item i " +
             "inner join translations t on i.name = t.tkey " +
             "where lower(t.trans) like ? and t.lang = ? " +
-            "order by t.trans " +
+            "order by length(t.trans) " +
             "limit 10",
         arrayOf(
             "%${term.toLowerCase()}%",
