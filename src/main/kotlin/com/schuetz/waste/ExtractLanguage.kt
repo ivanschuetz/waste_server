@@ -9,4 +9,4 @@ fun extractValidLanguage(langStr: String): String = when {
     "en"
 }()
 
-private fun isSupportedLang(langCode: String) = langCode == "en" || langCode == "de"
+private fun isSupportedLang(langCode: String) = langCode == "en" || langCode == "de" || langCode == "tr"
