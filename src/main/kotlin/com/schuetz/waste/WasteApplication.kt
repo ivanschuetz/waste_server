@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.http.HttpMethod
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
@@ -51,7 +52,7 @@ class WebSecurityConfig : WebSecurityConfigurerAdapter() {
                     "https://wohin-mit.de",
                     "http://localhost:3000"
                 )
-                allowedMethods = listOf("GET")
+                allowedMethods = listOf("GET", "POST")
                 addAllowedHeader("*") // Not sure why this is needed, but without cors doesn't work (OPTIONS returns 403) (at least for localhost)
                 val source = UrlBasedCorsConfigurationSource()
                 source.registerCorsConfiguration("/**", this)
@@ -60,9 +61,11 @@ class WebSecurityConfig : WebSecurityConfigurerAdapter() {
 
         http.authorizeRequests()
             .antMatchers("/securityNone").permitAll()
+            .antMatchers(HttpMethod.POST, "/**").permitAll()
             .anyRequest().authenticated()
             .and()
             .httpBasic()
+            .and().csrf().disable() // This is needed for POST requests to work, otherwise 403
     }
 
     @Bean
