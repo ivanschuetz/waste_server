@@ -32,6 +32,9 @@ class AppConfig {
     fun categoryTipDao(): CategoryTipDao = CategoryTipDao()
 
     @Bean
+    fun recipientDao(): RecipientDao = RecipientDao()
+
+    @Bean
     fun objectMapper() = ObjectMapper().apply {
         registerModule(KotlinModule())
         propertyNamingStrategy = MyPropertyNamingStrategy()
