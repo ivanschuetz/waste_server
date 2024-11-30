@@ -1,6 +1,1 @@
-pluginManagement {
-	repositories {
-		gradlePluginPortal()
-	}
-}
-rootProject.name = "waste"
+rootProject.name = "wohinmit"
